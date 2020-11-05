@@ -75,6 +75,11 @@
   
   @media (max-width: 996px) {
 
+
+.wrapper-withaut-p{
+  padding-top: 0;
+}
+
     .br-main-title{
       display: none;
     }
@@ -172,11 +177,11 @@ text-align: center;
   
   
   @media (max-width: 550px) {
-
+    .finance-open__time{
+      margin-top: -55px;
+    }
 
     .finance-open {
-     
-    
         &__lp-item {
        margin-top: 30px;
     flex-direction: column;
