@@ -3,34 +3,41 @@
   color: #77CCF9;
 }
 .personal {
-padding-top: 100px;
+padding-top: 50px;
+padding-bottom: 50px;
   &__container {
       margin-top: 129px;
-      max-width: 1500px;
+      max-width: 1550px;
       margin: 0 auto;
       padding-right: 20px;
       padding-left: 20px;
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
   } 
 
   &__panel {
       width: 25%;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
       background: #FFFFFF;
+      top: 0;
 box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+position: sticky;
   }
-
+&__panel-ul{
+  margin-top: 40px;
+}
   &__list {
     font-family: "Cuprum-Bold";
 font-size: 16px;
 line-height: 30px;
 color: #063453;
-margin-left: 50px;
+margin-left: 80px;
 position: relative;
-margin-top: 20px;
+margin-top: 16px;
 color: #063453;
 list-style-type: none;
+transition: all .5s ease-out;
 &:before{
 position: absolute;
 content: '';
@@ -38,7 +45,13 @@ position: absolute;
 width: 16px;
 height: 16px;
 top: 7px;
-left: -24px;
+left: -37px;
+transition: all .5s ease-out;
+
+}
+&:hover{
+  color: #77CCF9;
+
 }
   }
 
@@ -67,9 +80,12 @@ padding-bottom: 90px;
 font-weight: normal;
 color: #063453;
 text-align: center;
+padding-left: 20px;
+padding-right: 20px;
   }
 
   &__welcome {
+    margin-top: -20px;
       font-size: 30px;
           }
   &__welcome--pink {
@@ -157,54 +173,112 @@ color: #063453;
       }
 }
 
-.personal__panel-ul li:nth-child(1){
+.personal__panel-ul a:nth-child(1) li{
+  transition: all 1s ease-out;
   &:before{
     background:url(../../img/svg/account-mune-icon-1.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-1-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(2){
+.personal__panel-ul a:nth-child(2) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-2.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-2-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(3){
+.personal__panel-ul a:nth-child(3)  li{
   &:before{
     background:url(../../img/svg/account-mune-icon-3.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-3-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(4){
+.personal__panel-ul a:nth-child(4) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-4.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-4-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(5){
+.personal__panel-ul a:nth-child(5) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-5.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-5-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(6){
+.personal__panel-ul a:nth-child(6) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-6.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-6-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(7){
+.personal__panel-ul a:nth-child(7) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-7.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-7–hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(8){
+.personal__panel-ul a:nth-child(8) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-8.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-8-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(9){
+.personal__panel-ul a:nth-child(9) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-9.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-9-hov.svg);
+        }
+    }
 }
-.personal__panel-ul  li:nth-child(10){
+.personal__panel-ul a:nth-child(10) li{
   &:before{
     background:url(../../img/svg/account-mune-icon-10.svg);
     }
+    &:hover{
+      &:before{
+        background:url(../../img/svg/account-mune-icon-10-hov.svg);
+        }
+    }
 }
 
+
+.account-img-main{
+  margin-top: 20px;
+}
+.account-main-i{
+  height: 300px;
+}
