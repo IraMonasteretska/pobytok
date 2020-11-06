@@ -139,6 +139,7 @@ margin-top: -7px;
     &:hover .finance__item-img {
       transform: scale(1.1);
     }
+    
   }
 }
 
@@ -191,13 +192,6 @@ margin-top: -7px;
   display: flex;
   justify-content: space-between;
 
-
-  // &__img-b{
-  //   transition: all 1s ease-out;
-  //   &:hover{
-  //    transform: scale(1.2);
-  //   }
-  // }
 		&__left-part {
       width: 77%;
       margin-right: 30px;
@@ -212,7 +206,13 @@ display: flex;
 justify-content: space-between;
 padding-bottom: 20px;
 padding-right: 10px;
-
+&:hover .finance-open__img-block{
+  transform: scale(1.1);
+}
+  &:hover .finance-open__tb-title{
+    color: #03A9F4;
+  }
+ 
 		}
 
 		&__img-block {
@@ -223,10 +223,8 @@ padding-right: 10px;
       padding-right: 20px;
       width: 40%;
       margin-top: 20px;
-      transition: all 1s ease-out;
-      &:hover{
-       transform: scale(1.1);
-      }
+      transition: all .5s ease-out;
+      
 		}
 
 		&__text-block {
@@ -242,9 +240,7 @@ color: #063453;
 font-style: normal;
 font-weight: 500;
 transition: all 0.4s ease-out; 
-&:hover{
-  color: #03A9F4;
-}
+
 		}
 
 	

@@ -5,7 +5,10 @@ function openCurrency(){
   curencyAccaunt.classList.toggle('active')
   iconFinance.classList.toggle('active')
 }
-
+  // document.getElementById("defaultOpenTab").click();
+  let trtr =   document.getElementById("defaultOpenTab")
+  console.log(trtr);
+  trtr.click();
 
 document.addEventListener("click", function(event) {
   let target = event.target;
@@ -28,3 +31,4 @@ if(target.classList.contains('finance-open__number')){
  curencyAccaunt.classList.remove('active')
  iconFinance.classList.remove('active')
 });
+
