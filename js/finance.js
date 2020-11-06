@@ -5,10 +5,7 @@ function openCurrency(){
   curencyAccaunt.classList.toggle('active')
   iconFinance.classList.toggle('active')
 }
-  // document.getElementById("defaultOpenTab").click();
-  let trtr =   document.getElementById("defaultOpenTab")
-  console.log(trtr);
-  trtr.click();
+
 
 document.addEventListener("click", function(event) {
   let target = event.target;
@@ -32,3 +29,10 @@ if(target.classList.contains('finance-open__number')){
  iconFinance.classList.remove('active')
 });
 
+const mandatoryOverlay = document.querySelector('.mandatory-registration-popup');
+
+let addNewNotice = document.querySelector('.add-new-notice')
+addNewNotice.addEventListener('click', function(){
+  mandatoryOverlay.classList.remove('visually-hidden');
+  // console.log('asdasd')
+})

@@ -2452,7 +2452,7 @@
     <img class="vacancy__head--bg" src="img/svg/crediting-add.svg" alt="">
     <div class="vacancy__head--info">
       <p>Здесь можно разместить 2-3 строки текста об услугах , которые представляються или любую важную инфо</p>
-      <a href="#" class="btn-add">
+      <a href="#" class="btn-add add-new-notice">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.9772 6.13636H8.8636V1.02273C8.8636 0.45818 8.40541 0 7.84087 0H7.15909C6.59454 0 6.13636 0.45818 6.13636 1.02273V6.13636H1.02273C0.45818 6.13636 0 6.59454 0 7.15909V7.84087C0 8.40541 0.45818 8.8636 1.02273 8.8636H6.13636V13.9772C6.13636 14.5418 6.59454 15 7.15909 15H7.84087C8.40541 15 8.8636 14.5418 8.8636 13.9772V8.8636H13.9772C14.5418 8.8636 15 8.40541 15 7.84087V7.15909C15 6.59454 14.5418 6.13636 13.9772 6.13636Z"
@@ -3124,13 +3124,52 @@
   </div>
 
 </section>
+<section class="overlay mandatory-registration-popup visually-hidden">
+  <div class="mandatory-registration-popup__wrap">
+    <button class="sign-wrap__btn">Закрыть</button>
 
+    <div>
+      <div class="mandatory-registration-popup__top-block">
+        <p>Чтобы добавить объявление, вы должны зарегистрироваться как Пользователь, Агентство по трудоустройству или Прямой работодатель.</p>
+      </div>
+      <div class="mandatory-registration-popup__bottom-block">
+        <div>
+          <button class="header-nav__link login-btn">
+            <svg class="login-btn--icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path d="M3.75 0V3.75001H6.24998V2.49998H16.25V17.5H6.24998V16.25H3.75V20H18.75V0H3.75Z" fill="#77CCF9"></path>
+                <path d="M6.09863 12.8662L7.8662 14.6338L12.5 10L7.86624 5.36621L6.09867 7.13378L7.71487 8.74997H1.25V11.25H7.71487L6.09863 12.8662Z" fill="#77CCF9"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="20" height="20" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <span>Вход</span>
+          </button>
+          <button class="header-nav__link registration-btn" >
+            <svg class="registration-btn--icon" width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.8338 4.58339C12.8338 7.11469 10.7817 9.16661 8.25038 9.16661C5.71909 9.16661 3.66699 7.11469 3.66699 4.58339C3.66699 2.05209 5.71909 0 8.25038 0C10.7817 0 12.8338 2.05209 12.8338 4.58339Z" fill="#77CCF9"></path>
+              <path d="M12.1459 11H4.35411C1.9534 11 0 12.9534 0 15.3541V18.5625C0 18.942 0.307999 19.25 0.6875 19.25H15.8125C16.192 19.25 16.5 18.942 16.5 18.5625V15.3541C16.5 12.9534 14.5466 11 12.1459 11Z" fill="#77CCF9"></path>
+            </svg>
+            <svg class="registration-btn--icon-mobile" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.66688 3.80957C9.66688 5.36117 8.40901 6.619 6.85731 6.619C5.30562 6.619 4.04774 5.36117 4.04774 3.80957C4.04774 2.25792 5.30566 1 6.85731 1C8.40896 1 9.66688 2.25792 9.66688 3.80957ZM3.619 10.1428H10.0953C11.5384 10.1428 12.7143 11.3187 12.7143 12.7618V14.9999H1V12.7618C1 11.3187 2.17589 10.1428 3.619 10.1428Z" stroke="#77CCF9" stroke-width="2"></path>
+            </svg>
+            <span>Регистрация</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
-
+  <script src="js/mandatory-reg.js"></script>
 <script src="js/main.js"></script>
 <script src="js/goup.js"></script>
 <script src="js/sign-in-popup.js"></script>
