@@ -186,8 +186,7 @@ color: #063453;
 }
 .personal__panel-ul a:nth-child(2) li{
   &:before{
-    // background:url(../img/svg/account-mune-icon-2.svg);
-    background:url(../img/svg/account-mune-icon-10-hov.svg);
+    background:url(../img/svg/account-mune-icon-2.svg);
     }
     &:hover{
       &:before{
@@ -207,8 +206,7 @@ color: #063453;
 }
 .personal__panel-ul a:nth-child(4) li{
   &:before{
-    // background:url(../img/svg/account-mune-icon-4.svg);
-    background:url(../img/svg/account-mune-icon-6-hov.svg);
+    background:url(../img/svg/account-mune-icon-4.svg);
     }
     &:hover{
       &:before{
@@ -268,6 +266,7 @@ color: #063453;
 }
 .personal__panel-ul a:nth-child(10) li{
   &:before{
+
     background:url(../img/svg/account-mune-icon-10.svg); 
     }
     &:hover{
