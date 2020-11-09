@@ -185,7 +185,9 @@ margin-top: -7px;
 
 
 
-
+.finance-open__lp-item .finance-open__sticer-cont{
+  top: 33px;
+}
 
 
 .finance-open {
@@ -198,6 +200,7 @@ margin-top: -7px;
 		}
 
 		&__lp-item {
+      position: relative;
    margin-top: 30px;
    min-height: 250px;
       background: #FFFFFF;
@@ -207,6 +210,9 @@ justify-content: space-between;
 padding-bottom: 20px;
 padding-right: 10px;
 &:hover .finance-open__img-block{
+  transform: scale(1.1);
+}
+&:hover .finance-open__sticer-cont{
   transform: scale(1.1);
 }
   &:hover .finance-open__tb-title{
@@ -532,6 +538,7 @@ margin-top: 30px;
     margin-top:  30px;
     width: 100%; 
 position: relative;
+
   }
 
   &__sticer-cont-rabat {
@@ -548,6 +555,7 @@ position: relative;
   align-items: center;
   position: absolute;
   top: 20px;
+  transition: all 0.5s ease-out;
 }
 
 &__sticer-cont-nic{
