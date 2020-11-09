@@ -175,6 +175,22 @@ color: #063453;
       }
 }
 
+.load-svg-icon-acc{
+ position: absolute;
+ transform: translateX(30000px);
+  background:url(../img/svg/account-mune-icon-1-hov.svg),
+   url(../img/svg/account-mune-icon-2-hov.svg),
+    url(../img/svg/account-mune-icon-3-hov.svg),
+    url(../img/svg/account-mune-icon-4-hov.svg),
+    url(../img/svg/account-mune-icon-5-hov.svg),
+    url(../img/svg/account-mune-icon-6-hov.svg),
+    url(../img/svg/account-mune-icon-7-hov.svg),
+    url(../img/svg/account-mune-icon-8-hov.svg),
+    url(../img/svg/account-mune-icon-9-hov.svg),
+    url(../img/svg/account-mune-icon-10-hov.svg),
+    url(../img/svg/account-mune-icon11-hov.svg),;
+}
+
 .personal__panel-ul a:nth-child(2) li{
   transition: all 1s ease-out;
   &:before{
@@ -248,16 +264,6 @@ color: #063453;
 }
 .personal__panel-ul a:nth-child(9) li{
   &:before{
-    background:url(../img/svg/account-mune-icon-8.svg);
-    }
-    &:hover{
-      &:before{
-        background:url(../img/svg/account-mune-icon-8-hov.svg);
-        }
-    }
-}
-.personal__panel-ul a:nth-child(10) li{
-  &:before{
     background:url(../img/svg/account-mune-icon-9.svg);
     }
     &:hover{
@@ -266,14 +272,24 @@ color: #063453;
         }
     }
 }
-.personal__panel-ul a:nth-child(11) li{
+.personal__panel-ul a:nth-child(10) li{
   &:before{
-
-    background:url(../img/svg/account-mune-icon-10.svg); 
+    background:url(../img/svg/account-mune-icon-10.svg);
     }
     &:hover{
       &:before{
         background:url(../img/svg/account-mune-icon-10-hov.svg);
+        }
+    }
+}
+.personal__panel-ul a:nth-child(11) li{
+  &:before{
+
+    background:url(../img/svg/account-mune-icon-11.svg); 
+    }
+    &:hover{
+      &:before{
+        background:url(../img/svg/account-mune-icon-11-hov.svg);
         }
     }
 }
