@@ -1,14 +1,24 @@
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+//   document.getElementById("defaultOpenTab").click();
+
+
+let accountMobileMenu = document.querySelector('.personal__mobile-menu');
+let accountMobileMenuPanel = document.querySelector('.personal__panel');
+console.log(accountMobileMenu)
+accountMobileMenu.addEventListener('click', getMobileMenuAcc)
+function getMobileMenuAcc(){
+  accountMobileMenuPanel.style.left = '0'
+  console.log('qweqw')
 }
-  document.getElementById("defaultOpenTab").click();

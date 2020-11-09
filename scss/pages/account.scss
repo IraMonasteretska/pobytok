@@ -283,3 +283,43 @@ color: #063453;
 .account-main-i{
   height: 300px;
 }
+
+
+
+.personal {
+&__mobile-menu{
+ 
+  width: 54px;
+  height: 54px;
+  background: #063453;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+}
+  &__mobile-menu-inner {
+    width: 37px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+   &:before{
+     position: absolute;
+     content: '';
+     width: 37px;
+     height: 2px;
+     background: #fff;
+     top: -10px;
+     left: 0;
+   }
+   &:after{
+    position: absolute;
+    content: '';
+    width: 37px;
+    height: 2px;
+    background: #fff;
+    top: 10px;
+    left: 0;
+  }
+  }
+}
