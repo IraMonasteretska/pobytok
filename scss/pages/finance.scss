@@ -535,17 +535,41 @@ position: relative;
   }
 
   &__sticer-cont-rabat {
-    width: 101px;
-    height: 42px;
+    min-width: 101px;
+    min-height: 42px;
     border-bottom-right-radius: 30px;
     background: #F33939;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
+    
   }
 
+&__sticer-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+
+&__sticer-cont-nic{
+  min-width: 137px;
+  min-height: 42px;
+  background: url(../../img/svg/sticker-4.svg);
+}
+
+  &__sticer-cont-promocja{
+    min-width: 127px;
+    min-height: 42px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #00B0F3;
+  }
+
+  &__sticer-cont-podarunkowa{
+    min-width: 197px;
+    min-height: 42px;
+background: #FECA57;
+border-radius: 100px;
+  }
   &__sticker {
     font-family: "Cuprum-Bold";
     font-size: 19px;

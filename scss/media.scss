@@ -319,17 +319,41 @@
  
 
 
-
-  &__sticer-cont-rabat {
-    width: 60px;
-    height: 32px;
+  &__sticer-cont-rabat{
+    min-width: 55px;
+    min-height: 26px ;
     border-bottom-right-radius: 20px;
-    top: 10px;
+    top: 0px;
   }
 
   &__sticker {
-    font-size: 16px;
+    font-size: 14px;
   }
+
+
+
+
+&__sticer-cont-nic{
+  top: -10px;
+  min-width: 73px;
+  min-height: 45px;
+  background-size: 73px 45px;
+  background-repeat: no-repeat;
+}
+
+&__sticer-cont-promocja{
+  top: 0px;
+  min-width: 75px;
+  min-height: 22px;
+}
+
+&__sticer-cont-podarunkowa{
+  top: 0px;
+  min-width: 130px;
+  min-height: 20px;
+background: #FECA57;
+border-radius: 100px;
+}
 }
 }
 
