@@ -88,7 +88,7 @@
 
     .personal__panel{
       flex: 0 0 270px;
-      // width: 270px;
+
       margin-right: 15px;
     }
 
@@ -255,6 +255,12 @@
 
 
 @media (max-width: 650px) {
+  .backgrount-opacity-all {
+    display: block;
+  }
+  .close-mobile-acc, .personal .personal__mobile-menu-cont{
+    display: flex;
+  }
   .personal {
     padding-top: 0px;
     padding-bottom: 30px;
@@ -281,16 +287,15 @@
       } 
     
       &__panel {
-        left: -300px;
+        transform: translateX(-270px);
           width: 270px;
           padding-bottom: 60px;
           background: #FFFFFF;
           height: 100vh;
     box-shadow: none;
     top: 0;
-    z-index: 2;
+    z-index: 20;
     position: fixed;
-    transition: top 1s ease-out 0.5s;
     overflow: scroll;
 
       }
@@ -384,9 +389,6 @@ margin-top: 0;
       width: 300px;
       &::before {
         display: none;
-        // top: 3px;
-        // right: 50%;
-        // transform: rotate(90deg);
       }
     }
 

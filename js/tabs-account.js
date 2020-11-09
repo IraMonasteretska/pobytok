@@ -14,11 +14,21 @@
 //   document.getElementById("defaultOpenTab").click();
 
 
+let backgrountOpacityAll = document.querySelector('.backgrount-opacity-all');
 let accountMobileMenu = document.querySelector('.personal__mobile-menu');
 let accountMobileMenuPanel = document.querySelector('.personal__panel');
-console.log(accountMobileMenu)
+let closeMobileAcc = document.querySelector('.close-mobile-acc');
+
 accountMobileMenu.addEventListener('click', getMobileMenuAcc)
 function getMobileMenuAcc(){
-  accountMobileMenuPanel.style.left = '0'
-  console.log('qweqw')
+
+  accountMobileMenuPanel.classList.add('active')
+  backgrountOpacityAll.classList.add('active')
 }
+closeMobileAcc.addEventListener('click', closeMobileMenuAcc)
+function closeMobileMenuAcc(){
+  accountMobileMenuPanel.classList.remove('active')
+  backgrountOpacityAll.classList.remove('active')
+
+}
+
