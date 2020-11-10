@@ -34,5 +34,4 @@ const mandatoryOverlay = document.querySelector('.mandatory-registration-popup')
 let addNewNotice = document.querySelector('.add-new-notice')
 addNewNotice.addEventListener('click', function(){
   mandatoryOverlay.classList.remove('visually-hidden');
-  // console.log('asdasd')
 })

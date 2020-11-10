@@ -1,4 +1,15 @@
 @media (max-width: 1440px) {
+  
+  .personal {
+
+    &__service-text {
+      font-size: 16px;
+  line-height: 22px;
+    }
+  }
+  
+
+
   .ticket__item {
     min-height: 150px;
   }
@@ -56,6 +67,10 @@
 }
 @media (max-width: 1350px) {
 
+
+
+  
+
   .personal__frame {
     padding-bottom: 40px;
 }
@@ -72,6 +87,25 @@
 
 
 @media (max-width: 1100px) {
+
+  .personal {
+
+    &__service-item {
+      flex-direction: column;
+    }
+  
+    &__service-img-cont {
+      width: 100%;
+    }
+  
+    &__service-text {
+      padding-right: 10px;
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
+  
+
   .account-img-main{
     width: 500px;
   }
@@ -124,7 +158,7 @@
 
 
 
-@media (max-width: 996px) {
+@media (max-width: 998px) {
   .personal__welcome {
     font-size: 25px;
   }
@@ -193,6 +227,35 @@
     }
   }
 
+
+  .personal__price-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   padding-top: 10px;
+ margin-bottom: 20px;
+padding-right: 10px;
+padding-left: 10px;
+  }
+  .personal__price-wrapper{
+
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+.personal__form-title{
+  font-size: 20px;
+  
+}
+
+ .personal__frame-cont{
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
   .finance-main {
     padding-bottom: 0px;
     padding-left: 30px;
@@ -218,6 +281,41 @@
       line-height: 26px;
     }
   }
+
+
+
+.input-avatar-acc{
+font-size: 16px;
+margin-top: -15px;
+margin-bottom: -200px;
+}
+
+
+.uloads-new-ava {
+margin-top: 0px;
+margin-bottom: 0px;
+padding-top: 20px;
+
+}
+.uloads-new-ava-text {
+  font-size: 16px;
+}
+.popap-account-ava p{
+  padding-bottom: 30px;
+}
+
+.button-save-file-in {
+font-size: 16x;
+margin-top: 0px;
+}
+.subbtn-text-form {
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 0px;
+}
+
+
+
 }
 
 @media (max-width: 880px) {
@@ -255,6 +353,11 @@
 
 
 @media (max-width: 650px) {
+
+  .personal__form-title{
+    font-size: 20px;
+    padding-right: 80px;
+  }
   .backgrount-opacity-all {
     display: block;
   }
