@@ -956,10 +956,14 @@ padding-right: 50px;
 }
 
 
-
+.personal__frame-add-realty{
+  .personal__form-text{
+    margin-left: 20px;
+        }
+}
 
 .personal {
-  // transition: all 1s ease-out;
+
   
   &__radio-btn-three {
     display: flex;
@@ -982,7 +986,20 @@ padding-right: 50px;
     max-width: 850px;
   }
 
+  &__radio-btn-two{
+    display: flex;
+    justify-content: space-between;
+    max-width:290px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #063453;
+    transition: all 1s ease-out;
+  }
+
 }
+
+
+
 
 
 
