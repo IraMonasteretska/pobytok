@@ -32,7 +32,6 @@ loadFileXml.addEventListener('click', function(){
     if(loadFileXml.value != 'Выбрать файл'){
       loadFileXml.classList.add('done-select-file')
       buttonSaveFileIn.classList.add('done-select-file')
-      personalChangeAva.classList.add('active')
     }
   }
 })

@@ -19,6 +19,9 @@ let accountMobileMenu = document.querySelector('.personal__mobile-menu');
 let accountMobileMenuPanel = document.querySelector('.personal__panel');
 let closeMobileAcc = document.querySelector('.close-mobile-acc');
 
+
+
+
 accountMobileMenu.addEventListener('click', getMobileMenuAcc)
 function getMobileMenuAcc(){
 
@@ -139,10 +142,19 @@ function createSelect() {
       element.setAttribute('selected', 'selected');
     }
     var buttonSelect = document.getElementsByClassName('select-dropdown__button');
+   
     for (var i = 0, len = buttonSelect.length; i < len; i++) {
       buttonSelect[i].addEventListener('click', function (e) {
 				e.preventDefault();
 				displyUl(this);
 			}, false);
-		}
+    }
+    let buttonSelectQuery = document.querySelector('.select-dropdown__button');
+buttonSelectQuery.addEventListener('click', getSelectMenu)
+
+function getSelectMenu(){
+  buttonSelectQuery.classList.toggle('active')
 }
+}
+
+

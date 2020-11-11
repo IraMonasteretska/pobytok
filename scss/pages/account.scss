@@ -817,7 +817,17 @@ align-items: center;
 		margin-right: 0px;
 	}
 
+
+
+// 	&__button.active {
+//     &:before{
+// transform: rotate(180deg);
+// top: 20px;
+//     }
+//   }
+
 	&__button {
+    transition: all .4s ease-out;
 		padding: 10px 45px 10px 20px;
 		background-color: #F2F4F5;;
 		color: #7B8A99;
@@ -827,7 +837,19 @@ align-items: center;
    max-width: 370px;
     width: 100%;
     text-align: left;
+    position: relative;
     height: 58px;
+
+    &:before{
+      transition: all .4s ease-out;
+position: absolute;
+content: '';
+top: 25px;
+right: 25px;
+width: 20px;
+height: 20px;
+background: url(../img/svg/select-arrow.svg) no-repeat;
+    }
 
 		&::focus {
 			outline: none;
@@ -908,7 +930,6 @@ font-family: "Cuprum-Bold";
 position: relative;
 transition: all .4s ease-out;
 margin-top: auto;
-display: none;
 padding-right: 50px;
 &:before{
   position: absolute;
@@ -930,7 +951,40 @@ padding-right: 50px;
 }
 }
 
-&__change-ava.active{
-display: block;
+
+
 }
+
+
+
+
+.personal {
+  // transition: all 1s ease-out;
+  
+  &__radio-btn-three {
+    display: flex;
+    justify-content: space-between;
+    max-width:360px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #063453;
+    transition: all 1s ease-out;
+  }
+
+  &__radio-btn-three label {
+    margin-left: 10px;
+  }
+
+  &__add-select-cont{
+    margin-top: 50px;
+    display: flex;
+    
+    max-width: 850px;
+  }
+
 }
+
+
+
+
+  
