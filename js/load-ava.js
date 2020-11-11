@@ -1,7 +1,10 @@
-
+const personalChangeAva = document.querySelector('.personal__change-ava');
 const mandatoryOverlay = document.querySelector('.mandatory-registration-popup');
 let personalAvatar = document.querySelector('.personal__avatar')
 personalAvatar.addEventListener('click', function(){
+  mandatoryOverlay.classList.remove('visually-hidden');
+})
+personalChangeAva.addEventListener('click', function(){
   mandatoryOverlay.classList.remove('visually-hidden');
 })
 
@@ -10,6 +13,8 @@ buttonSaveFileIn.addEventListener('click', function(){
   mandatoryOverlay.classList.add('visually-hidden');
 })
 
+
+// 
 
 let loadFileXml = document.querySelector('#loadFileXml');
 loadFileXml.addEventListener('click', function(){
@@ -27,6 +32,7 @@ loadFileXml.addEventListener('click', function(){
     if(loadFileXml.value != 'Выбрать файл'){
       loadFileXml.classList.add('done-select-file')
       buttonSaveFileIn.classList.add('done-select-file')
+      personalChangeAva.classList.add('active')
     }
   }
 })

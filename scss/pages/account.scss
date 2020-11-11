@@ -888,3 +888,49 @@ align-items: center;
 .select-custom-acc{
 width: 100%;
 }
+
+
+.personal {
+
+  &__ava-change-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &__change-ava {
+    padding-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+color: #77CCF9;
+font-family: "Cuprum-Bold";
+position: relative;
+transition: all .4s ease-out;
+margin-top: auto;
+display: none;
+padding-right: 50px;
+&:before{
+  position: absolute;
+  transition: all .4s ease-out;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 20px;
+  background: url(../../img/svg/edit-ava-icom.svg);
+  background-repeat: no-repeat;
+  }
+  &:hover:before{
+    background: url(../../img/svg/edit-ava-icom-hov.svg);
+    background-repeat: no-repeat;
+}
+&:hover{
+  color: rgb(6, 52, 83);;
+}
+}
+
+&__change-ava.active{
+display: block;
+}
+}
