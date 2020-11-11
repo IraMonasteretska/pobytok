@@ -1,14 +1,10 @@
 @media (max-width: 1440px) {
-  
   .personal {
-
     &__service-text {
       font-size: 16px;
-  line-height: 22px;
+      line-height: 22px;
     }
   }
-  
-
 
   .ticket__item {
     min-height: 150px;
@@ -66,65 +62,56 @@
   }
 }
 @media (max-width: 1350px) {
-
-
-
-  
-
   .personal__frame {
     padding-bottom: 40px;
-}
+  }
 
-  .account-img-main{
+  .account-img-main {
     width: 700px;
   }
-  .account-main-i{
+  .account-main-i {
     height: 250px;
   }
-
 }
-
-
 
 @media (max-width: 1100px) {
 
-  .personal {
 
+  .personal {
     &__service-item {
       flex-direction: column;
     }
-  
+
     &__service-img-cont {
       width: 100%;
     }
-  
+
     &__service-text {
       padding-right: 10px;
       width: 100%;
       padding-left: 10px;
     }
   }
-  
 
-  .account-img-main{
+  .account-img-main {
     width: 500px;
   }
-  .account-main-i{
+  .account-main-i {
     height: 180px;
   }
 
   .personal__list {
     margin-left: 65px;
-    &:before{
-    left: -37px;
-      }
+    &:before {
+      left: -37px;
     }
+  }
 
-    .personal__panel{
-      flex: 0 0 270px;
+  .personal__panel {
+    flex: 0 0 270px;
 
-      margin-right: 15px;
-    }
+    margin-right: 15px;
+  }
 
   .ticket__item {
     min-height: 120px;
@@ -140,34 +127,28 @@
   }
 }
 
-
 @media (max-width: 1024px) {
-  .account-img-main{
+  .account-img-main {
     margin-top: -50px;
     width: 100%;
   }
-  .account-main-i{
+  .account-main-i {
     height: 170px;
   }
 
   .personal__welcome {
     margin-top: 20px;
   }
-
-  }
-
-
+}
 
 @media (max-width: 998px) {
   .personal__welcome {
     font-size: 25px;
   }
-  .account-img-main{
+  .account-img-main {
     margin-top: -50px;
-    
-    
   }
-  .account-main-i{
+  .account-main-i {
     max-height: 165px;
     height: auto;
   }
@@ -227,34 +208,31 @@
     }
   }
 
-
   .personal__price-title {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-   padding-top: 10px;
- margin-bottom: 20px;
-padding-right: 10px;
-padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  .personal__price-wrapper{
-
+  .personal__price-wrapper {
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10px;
   }
 
-.personal__form-title{
-  font-size: 20px;
-  
-}
+  .personal__form-title {
+    font-size: 20px;
+  }
 
- .personal__frame-cont{
-   width: 100%;
-   padding-left: 10px;
-   padding-right: 10px;
- }
+  .personal__frame-cont {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .finance-main {
     padding-bottom: 0px;
@@ -282,44 +260,37 @@ padding-left: 10px;
     }
   }
 
+  .input-avatar-acc {
+    font-size: 16px;
+    margin-top: -15px;
+    margin-bottom: -200px;
+  }
 
+  .uloads-new-ava {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+  }
+  .uloads-new-ava-text {
+    font-size: 16px;
+  }
+  .popap-account-ava p {
+    padding-bottom: 30px;
+  }
 
-.input-avatar-acc{
-font-size: 16px;
-margin-top: -15px;
-margin-bottom: -200px;
-}
-
-
-.uloads-new-ava {
-margin-top: 0px;
-margin-bottom: 0px;
-padding-top: 20px;
-
-}
-.uloads-new-ava-text {
-  font-size: 16px;
-}
-.popap-account-ava p{
-  padding-bottom: 30px;
-}
-
-.button-save-file-in {
-font-size: 16x;
-margin-top: 0px;
-}
-.subbtn-text-form {
-padding-left: 10px;
-padding-right: 10px;
-margin-top: 0px;
-}
-
-
-
+  .button-save-file-in {
+    font-size: 16x;
+    margin-top: 0px;
+  }
+  .subbtn-text-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 880px) {
-  .account-main-i{
+  .account-main-i {
     height: 130px;
   }
 }
@@ -336,32 +307,32 @@ margin-top: 0px;
   .container-table-cred {
     margin-top: -40px;
   }
-  .account-main-i{
+  .account-main-i {
     height: 100px;
     overflow: hidden;
   }
-  .personal__register-status,  .personal__your-name {
+  .personal__register-status,
+  .personal__your-name {
     font-size: 15px;
-      }
+  }
 
-      .account-img-main{
-        margin-top: -40px;
-        width: 300px;
-        overflow: hidden;
-      }
+  .account-img-main {
+    margin-top: -40px;
+    width: 300px;
+    overflow: hidden;
+  }
 }
 
-
 @media (max-width: 650px) {
-
-  .personal__form-title{
+  .personal__form-title {
     font-size: 20px;
     padding-right: 80px;
   }
   .backgrount-opacity-all {
     display: block;
   }
-  .close-mobile-acc, .personal .personal__mobile-menu-cont{
+  .close-mobile-acc,
+  .personal .personal__mobile-menu-cont {
     display: flex;
   }
   .personal {
@@ -369,107 +340,94 @@ margin-top: 0px;
     padding-bottom: 30px;
     margin-top: -20px;
 
-    &__mobile-menu{
+    &__mobile-menu {
       display: flex;
       margin-bottom: 20px;
     }
 
-    &__img-cont{
+    &__img-cont {
       margin-top: 36px;
-      
+
       width: 100%;
       padding-left: 10px;
       padding-right: 10px;
     }
 
-      &__container {
-        width: 100%;
-          padding-right: 0px;
-          padding-left: 0px;
-         
-      } 
-    
-      &__panel {
-        transform: translateX(-270px);
-          width: 270px;
-          padding-bottom: 60px;
-          background: #FFFFFF;
-          height: 100vh;
-    box-shadow: none;
-    top: 0;
-    z-index: 20;
-    position: fixed;
-    overflow: scroll;
-
-      }
-    &__panel-ul{
-      margin-top: 10px;
-    } 
-    
-      &__frame {
-          width: 100%;
-          background: #FFFFFF;
-    box-shadow:none;
-    padding-bottom: 0px;
-      }
-&__register-status{
-  margin-top: 0;
-}
-      &__welcome {
-        margin-top: -25px;
-              }
+    &__container {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
     }
 
+    &__panel {
+      transform: translateX(-270px);
+      width: 270px;
+      padding-bottom: 60px;
+      background: #ffffff;
+      height: 100vh;
+      box-shadow: none;
+      top: 0;
+      z-index: 20;
+      position: fixed;
+      overflow: scroll;
+    }
+    &__panel-ul {
+      margin-top: 10px;
+    }
 
-
-    
-.finance-open {
- 
-
-
-  &__sticer-cont-rabat{
-    min-width: 55px;
-    min-height: 26px ;
-    border-bottom-right-radius: 20px;
-    top: 0px;
+    &__frame {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: none;
+      padding-bottom: 0px;
+    }
+    &__register-status {
+      margin-top: 0;
+    }
+    &__welcome {
+      margin-top: -25px;
+    }
   }
 
-  &__sticker {
-    font-size: 14px;
+  .finance-open {
+    &__sticer-cont-rabat {
+      min-width: 55px;
+      min-height: 26px;
+      border-bottom-right-radius: 20px;
+      top: 0px;
+    }
+
+    &__sticker {
+      font-size: 14px;
+    }
+
+    &__sticer-cont-nic {
+      top: -10px;
+      min-width: 73px;
+      min-height: 45px;
+      background-size: 73px 45px;
+      background-repeat: no-repeat;
+    }
+
+    &__sticer-cont-promocja {
+      top: 0px;
+      min-width: 75px;
+      min-height: 22px;
+    }
+
+    &__sticer-cont-podarunkowa {
+      top: 0px;
+      min-width: 130px;
+      min-height: 20px;
+      background: #feca57;
+      border-radius: 100px;
+    }
   }
-
-
-
-
-&__sticer-cont-nic{
-  top: -10px;
-  min-width: 73px;
-  min-height: 45px;
-  background-size: 73px 45px;
-  background-repeat: no-repeat;
 }
-
-&__sticer-cont-promocja{
-  top: 0px;
-  min-width: 75px;
-  min-height: 22px;
-}
-
-&__sticer-cont-podarunkowa{
-  top: 0px;
-  min-width: 130px;
-  min-height: 20px;
-background: #FECA57;
-border-radius: 100px;
-}
-}
-}
-
-
 
 @media (max-width: 550px) {
-  .ticket__item-first{
-margin-top: 0;
+  .ticket__item-first {
+    margin-top: 0;
   }
   .ticket {
     padding-top: 0px;
