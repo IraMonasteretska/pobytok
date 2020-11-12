@@ -173,12 +173,6 @@ function createSelect() {
       false
     );
   }
-  //     let buttonSelectQuery = document.querySelector('.select-dropdown__button');
-  // buttonSelectQuery.addEventListener('click', getSelectMenu)
-
-  // function getSelectMenu(){
-  //   buttonSelectQuery.classList.toggle('active')
-  // }
 }
 
 let photoLabel = document.querySelector(".personal__add-photo-label");
@@ -195,8 +189,6 @@ bunnerLabel.addEventListener("click", getBunnerBlock);
 function getBunnerBlock() {
   leadBunner.classList.toggle("active");
 }
-
-let cityPolish = document.querySelector(".select-custom-acc-v");
 
 
 
