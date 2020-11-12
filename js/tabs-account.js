@@ -131,6 +131,7 @@ function createSelect() {
         "span"
       );
       element.parentNode.classList.toggle("active");
+
       if(element.parentNode.classList.contains('select-dropdown__list--6')){
       let cityPolish = document.querySelectorAll(".select-custom-acc-v");
       for (i = 0; i < cityPolish.length; i++) {
@@ -142,6 +143,9 @@ function createSelect() {
           break;
         }
       }
+
+
+
     }
       element.parentNode.parentNode.children[1].classList.toggle("active");
       element.parentNode.parentNode.children[1].style.color = "#464646";
@@ -193,3 +197,6 @@ function getBunnerBlock() {
 }
 
 let cityPolish = document.querySelector(".select-custom-acc-v");
+
+
+

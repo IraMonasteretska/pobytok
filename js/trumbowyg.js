@@ -361,13 +361,13 @@ jQuery.trumbowyg = {
                 lists: ['unorderedList', 'orderedList']
             },
             btns: [
-                ['viewHTML'],
+                // ['viewHTML'],
                 ['undo', 'redo'],
                 ['formatting'],
                 'btnGrp-semantic',
                 ['superscript', 'subscript'],
-                ['link'],
-                ['insertImage'],
+                // ['link'],
+                // ['insertImage'],
                 'btnGrp-justify',
                 'btnGrp-lists',
                 ['horizontalRule'],
@@ -1588,3 +1588,5 @@ jQuery.trumbowyg = {
         }
     };
 })(navigator, window, document, jQuery);
+
+
