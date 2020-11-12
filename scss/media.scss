@@ -1,4 +1,14 @@
 @media (max-width: 1440px) {
+
+  .personal {
+    &__bot-fixed-taxa {
+
+padding-left: 15px;
+padding-right: 15px;
+    }
+  }
+
+
   .personal {
     &__service-text {
       font-size: 16px;
@@ -74,6 +84,55 @@
   }
 }
 
+@media (max-width: 1250px) {
+
+.personal__add-select-cont{
+  display: block;
+}
+
+.personal__all-radio-cont{
+  display: block;
+}
+
+.select-custom-acc {
+  margin-top: 40px;
+}
+.personal__form-text-start {
+  margin-top: -30px;
+}
+
+.personal__radio-btn-three{
+  display: block;
+padding-top: 0px;
+}
+.personal__lead-bunner-add{
+  margin-left: 0px;
+}
+
+.personal__bunner-example-img{
+  width: 100% ;
+}
+
+.personal__bunner-item-img{
+  width: 250px;
+}
+.personal__radio-two-container{
+  display: block;
+}
+.personal__radio-right-part{
+  justify-content:flex-start ;
+padding-left: 47px;
+margin-top: 20px;
+}
+
+.personal__radio-right-part{
+margin-left: -100px;
+}
+.personal__radio-btn-three label{
+  margin-top: 20px;
+}
+}
+
 @media (max-width: 1100px) {
 
   .personal {
@@ -124,6 +183,47 @@
       transform: translateX(0px);
     }
   }
+
+
+  .personal {
+    &__bot-fixed-taxa {
+  box-shadow: 0px 0px 15px;
+    }
+  
+    &__bot-select {
+      padding-top: 15px;
+      font-size: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    &__bot-radio-cont {
+      padding-bottom: 10px;
+    }
+  
+    &__radio-day {
+      font-family: "Cuprum-Bold";
+      font-size: 14px;
+     &::before{
+       top: -3px !important;
+       left: 5px !important;
+     }
+    }
+  
+    &__radio-price {
+      margin-left: 11px;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  
+    &__price-item-old {
+      margin-top: 16px ;
+  margin-left: 11px;
+  font-size: 14px;
+    }
+  }
+  
+
 }
 
 @media (max-width: 1024px) {
@@ -286,6 +386,35 @@
     padding-right: 10px;
     margin-top: 0px;
   }
+
+  .personal {
+
+  
+    &__bot-select {
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+  
+    &__bot-radio-cont {
+  flex-wrap: wrap;
+  justify-content: center;
+    }
+  
+  
+    &__radio-day {
+    margin-left: 20px;
+   
+    }
+  
+    &__bot-radio-item {
+     margin-top: -15px;
+     margin-bottom: 0;
+      
+    }
+  }
+
+
+
 }
 
 @media (max-width: 880px) {
@@ -321,6 +450,13 @@
     overflow: hidden;
   }
 }
+
+// @media (max-width: 690px) {
+// .personal__radio-right-part label{
+//   padding-left: 30px !important;
+// }
+// }
+
 
 @media (max-width: 650px) {
   .personal__form-title {
@@ -568,6 +704,12 @@
 }
 
 @media (max-width: 380px) {
+
+  .personal__bot-radio-cont {
+    justify-content: space-between;
+      }
+
+
   .finance__category {
     justify-content: space-between;
   }
