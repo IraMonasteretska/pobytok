@@ -143,9 +143,21 @@ function createSelect() {
           break;
         }
       }
+    }
 
 
-
+    if(element.parentNode.classList.contains('select-dropdown__list--0')){
+      let catPolish = document.querySelectorAll(".select-custom-acc-cat");
+      // for (i = 0; i < cityPolish.length; i++) {
+      //   catPolish[i].classList.remove("active");
+      // }
+      for (i = 0; i <  catPolish.length; i++) {
+        catPolish[i]
+        // if (element.getAttribute("data-value") == i + 2) {
+        //   catPolish[i].classList.add("active");
+        //   break;
+        // }
+      }
     }
       element.parentNode.parentNode.children[1].classList.toggle("active");
       element.parentNode.parentNode.children[1].style.color = "#464646";

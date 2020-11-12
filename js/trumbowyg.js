@@ -27,8 +27,8 @@ jQuery.trumbowyg = {
             unorderedList: 'Unordered list',
             orderedList: 'Ordered list',
 
-            insertImage: 'Insert Image',
-            link: 'Link',
+            // insertImage: 'Insert Image',
+            // link: 'Link',
             createLink: 'Insert link',
             unlink: 'Remove link',
 
@@ -284,9 +284,9 @@ jQuery.trumbowyg = {
                 key: 'K',
                 tag: 'a'
             },
-            unlink: {},
+            // unlink: {},
 
-            insertImage: {},
+            // insertImage: {},
 
             justifyLeft: {
                 tag: 'left',
@@ -1171,24 +1171,7 @@ jQuery.trumbowyg = {
             }
             t.execCmd('unlink', undefined, undefined, true);
         },
-        insertImage: function () {
-            var t = this;
-            t.saveRange();
-            t.openModalInsert(t.lang.insertImage, {
-                url: {
-                    label: 'URL',
-                    required: true
-                },
-                alt: {
-                    label: t.lang.description,
-                    value: t.getRangeText()
-                }
-            }, function (v) { // v are values
-                t.execCmd('insertImage', v.url);
-                $('img[src="' + v.url + '"]:not([alt])', t.$box).attr('alt', v.alt);
-                return true;
-            });
-        },
+        // s
         fullscreen: function () {
             var t = this,
                 prefix = t.o.prefix,
