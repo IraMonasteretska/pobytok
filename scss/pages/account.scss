@@ -1415,3 +1415,43 @@ display: block;
   .personal__lead-bunner-inputtt{
     margin-left: 70px;
   }
+
+
+
+
+  .personal {
+
+		&__real-add-new {
+      position: absolute;
+      top: -10px;
+      right: 0;
+      transition: all 0.5s ease-out;
+background: #00AB5B;
+border-radius: 8px;
+height: 48px;
+max-width: 260px;
+padding-left: 10px;
+padding-right: 10px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover .personal__real-add-new-text{
+  color:#063453;
+}
+    }
+    
+    &__real-add-new-text{
+      transition: all 0.5s ease-out;
+      font-family: "Cuprum-Bold";
+      font-size: 18px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding-left: 10px;
+    }
+
+    &__frame-cont-re{
+position: relative;
+    }
+}

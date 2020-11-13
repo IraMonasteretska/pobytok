@@ -443,6 +443,33 @@ margin-left: -100px;
 
 @media (max-width: 995px) {
 
+
+
+  .personal {
+
+		&__real-add-new {
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: static;
+      top: -10px;
+      right: 0;
+height: 40px;
+max-width: 220px;
+padding-left: 7px;
+padding-right: 7px;
+    }
+    
+    &__real-add-new-text{
+      font-size: 16px;
+      padding-left: 6px;
+    }
+}
+
+
+
+
+
   .account-img-main {
     margin-top: -50px;
     width: 70%;
@@ -708,6 +735,13 @@ top: 30px;
 }
 
 @media (max-width: 550px) {
+
+.www-on-link{
+  width: 70px;
+right: 10px;
+bottom: 10px;
+}
+
   .ticket__item-first {
     margin-top: 0;
   }
@@ -851,6 +885,12 @@ top: 30px;
 }
 
 @media (max-width: 380px) {
+
+  .www-on-link{
+    width: 50px;
+  right: 7px;
+  bottom: 7px;
+  }
 
   .personal__bot-radio-cont {
     justify-content: space-between;

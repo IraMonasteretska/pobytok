@@ -15,13 +15,18 @@ function closeMobileMenuAcc() {
 }
 
 if (document.querySelector(".personal__real-icon-play")) {
-  let iconPlay = document.querySelector(".personal__real-icon-play");
-  let realColPlay = document.querySelector(".personal__real-col-play ");
-  let realColPause = document.querySelector(".personal__real-col-pause");
-  iconPlay.addEventListener("click", function () {
-    realColPlay.classList.toggle("block");
-    realColPause.classList.toggle("block");
+
+  let iconPlay = document.querySelectorAll(".personal__real-icon-play");
+  let realColPlay = document.querySelectorAll(".personal__real-col-play ");
+  let realColPause = document.querySelectorAll(".personal__real-col-pause");
+
+  for (let i = 0; i < iconPlay.length; i++) {
+   iconPlay[i].addEventListener("click", function () {
+    realColPlay[i].classList.toggle("block");
+    realColPause[i].classList.toggle("block");
   });
+  }
+
 }
 
 document.addEventListener("DOMContentLoaded", createSelect, false);
