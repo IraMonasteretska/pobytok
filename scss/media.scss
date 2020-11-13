@@ -72,6 +72,22 @@ padding-right: 15px;
   }
 }
 @media (max-width: 1350px) {
+
+
+  .personal__stick-cont{
+    flex-direction: column;
+    
+  }
+
+
+  .personal__stick-item{
+width: 100%;
+margin-top: 80px;
+margin-left: 15px;
+&:nth-child(1){
+  margin-top: 0;
+}
+  }
   .personal__frame {
     padding-bottom: 40px;
   }
@@ -431,6 +447,12 @@ margin-left: -100px;
   .account-main-i {
     height: 130px;
   }
+
+
+	.personal__type-advert-b {
+font-size: 15px ;
+}
+
 }
 
 @media (max-width: 776px) {
@@ -568,6 +590,23 @@ margin-left: -100px;
       border-radius: 100px;
     }
   }
+
+  .personal__stick-cont{
+ margin-bottom: 60px; 
+  }
+
+  .personal__stick-item{
+margin-top: 50px;
+
+  }
+
+  .personal-open__sticer-cont{
+top: 30px;
+  }
+
+.st-ct{
+  top: 17px;
+}
 }
 
 @media (max-width: 550px) {

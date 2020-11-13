@@ -1295,7 +1295,7 @@ transition: all .3s ease-out;
   display: block;
 }
 
-.finance-open__sticer-cont{
+.personal-open__sticer-cont{
   margin-top: -30px;
 }
 
@@ -1305,7 +1305,7 @@ transition: all .3s ease-out;
 
 
 .sticer-advent-n, .sticer-advent-r, .sticer-advent-p, .sticer-advent-pr{
-  top: 30px;
+  top: 0px;
   display: none;
 }
 
@@ -1370,3 +1370,28 @@ display: block;
   .visual-editor-cont-desc.active{
     display: block;
   }
+
+
+  .personal__stick-item:nth-child(1){
+    flex: 0 0 27%
+  }
+
+  
+  .personal__stick-item:nth-child(2){
+    flex: 0 0 30%
+  }
+
+  
+  .personal__stick-item:nth-child(3){
+    flex: 0 0 37%
+  }
+
+  
+  .personal__stick-item:nth-child(4){
+    flex: 0 0 35%
+  }
+
+  
+
+
+ 
