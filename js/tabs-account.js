@@ -132,10 +132,11 @@ function createSelect() {
       );
       element.parentNode.classList.toggle("active");
 
-      if(element.parentNode.classList.contains('select-dropdown__list--6')){
+      if(element.parentNode.previousSibling.previousSibling.classList.contains('selectCityPolish')){
       let cityPolish = document.querySelectorAll(".select-custom-acc-v");
       for (i = 0; i < cityPolish.length; i++) {
         cityPolish[i].classList.remove("active");
+        
       }
       for (i = 0; i < cityPolish.length; i++) {
         if (element.getAttribute("data-value") == i + 2) {
@@ -145,18 +146,18 @@ function createSelect() {
       }
     }
 
-
     if(element.parentNode.classList.contains('select-dropdown__list--0')){
       let catPolish = document.querySelectorAll(".select-custom-acc-cat");
-      // for (i = 0; i < cityPolish.length; i++) {
-      //   catPolish[i].classList.remove("active");
-      // }
       for (i = 0; i <  catPolish.length; i++) {
-        catPolish[i]
-        // if (element.getAttribute("data-value") == i + 2) {
-        //   catPolish[i].classList.add("active");
-        //   break;
-        // }
+        catPolish[i].classList.remove("active");
+      }
+      for (i = 0; i <  catPolish.length; i++) {
+        console.log(catPolish[i] + i);
+
+        if (element.getAttribute("data-value") == i + 1) {
+          catPolish[i].classList.add("active");
+          break;
+        }
       }
     }
       element.parentNode.parentNode.children[1].classList.toggle("active");
@@ -202,5 +203,23 @@ function getBunnerBlock() {
   leadBunner.classList.toggle("active");
 }
 
+
+
+
+let linkLabel = document.querySelector(".personal__add-link-label");
+let leadLink = document.querySelector(".add-link-check");
+
+linkLabel.addEventListener("click", getLinkBlock);
+function getLinkBlock() {
+  leadLink.classList.toggle("active");
+}
+
+
+// let cityPolish = document.querySelectorAll(".select-custom-acc-v");
+//       for (i = 0; i < cityPolish.length; i++) {
+//         // if
+//         // cityPolish[i].remove();
+//         console.log(cityPolish[i]);
+//       }
 
 

@@ -1186,18 +1186,109 @@ text-align: center;
     margin-top: 16px !important;
 margin-left: 17px;
   }
+
+  &__stick-cont{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between ;
+    width: 80%;
+  }
 }
 
-.select-custom-acc-v{
+.select-custom-acc-v, .select-custom-acc-cat{
 display: none ;
 margin-top: 20px;
 }
 
-.select-custom-acc-v.active{
+.select-custom-acc-v.active, .select-custom-acc-cat.active{
   display: block;
   }
 
 
-  // .trumbowyg-insertImage-button {
-  //   display: none !important;
-  // }
+  .personal {
+
+
+		&__type-advert {
+      display: flex;
+      justify-content: center;
+		}
+
+		&__type-advert-bunner {
+      border-radius:  8px 0px 0px 8px ;
+    }
+    &__type-advert-bunner.active {
+      background: #063453;
+		}
+
+		&__type-advert-b {
+      background: #7B8A99;
+cursor: pointer;
+height: 58px;
+color: #F2F4F5;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+transition: all .3s ease-out;
+&:hover{
+  color: #77CCF9;
+}
+		}
+
+		&__type-advert-desc {
+      border-radius: 0px 8px 8px 0px;
+    }
+    &__type-advert-desc.active {
+      background: #063453;
+    }
+    
+    &__cont-img-stick{
+      width: 85%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &__img-stick-main{
+      width: 100%;
+    }
+}
+
+.add-link-check{
+  margin-top: 30px;
+  display: none;
+  margin-bottom: -20px;
+  
+}
+
+.add-link-check.active{
+  display: block;
+}
+
+.finance-open__sticer-cont{
+  margin-top: -30px;
+}
+
+.personal__stick-cont{
+  margin-bottom: 90px;
+}
+
+
+.sticer-advent-n{
+  top: 30px;
+  display: none;
+}
+
+.sticer-advent-p{
+  top: 30px;
+  display: none;
+}
+
+.sticer-advent-pr{
+  top: 30px;
+  display: none;
+}
+
+.sticer-advent-r{
+  top: 30px;
+  display: none;
+}
