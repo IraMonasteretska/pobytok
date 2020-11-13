@@ -1275,11 +1275,11 @@ transition: all .3s ease-out;
       display: block;
     }
 
-    &__img-stick-main-bunner, &__img-stick-main-desc{
+    &__img-stick-main-bunner, &__img-stick-main-desc, &__img-stick-main-bunne, &__img-stick-main-des{
       display: none;
     }
 
-    &__img-stick-main-bunner.active, &__img-stick-main-desc.active{
+    &__img-stick-main-bunner.active, &__img-stick-main-desc.active,  &__img-stick-main-bunne.active, &__img-stick-main-des.active{
       display: block;
     }
 
@@ -1355,14 +1355,14 @@ display: none;
   }
 
 
-  .www-on-link{
+  .www-on-link, .www-on-link-sticker{
     position: absolute;
     bottom: 20px;
     right: 20px;
 display: none;
   }
 
-  .www-on-link.active{
+  .www-on-link.active,.www-on-link-sticker.active{
 display: block;
   }
 
@@ -1397,7 +1397,14 @@ display: block;
 
   
 
+  .input-cont-upload-wrapper, .input-cont-upload-banner{
+    display: none;
+  }
 
+  .input-cont-upload-wrapper.active, .input-cont-upload-banner.active{
+    display: block;
+  }
+ 
  
 
   .personal__lead-bunner-inputtt{

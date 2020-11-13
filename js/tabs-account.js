@@ -193,6 +193,7 @@ function getBunnerBlock() {
 }
 
 let wwwOnLink = document.querySelector(".www-on-link");
+let wwwOnLinkSticker = document.querySelector(".www-on-link-sticker");
 let linkLabel = document.querySelector(".personal__add-link-label");
 let leadLink = document.querySelector(".add-link-check");
 
@@ -200,6 +201,7 @@ linkLabel.addEventListener("click", getLinkBlock);
 function getLinkBlock() {
   leadLink.classList.toggle("active");
   wwwOnLink.classList.toggle("active");
+  wwwOnLinkSticker.classList.toggle("active");
 }
 
 let stickLabel = document.querySelector(".personal__add-sick-label");
@@ -272,8 +274,13 @@ function getGalaryLabel() {
 
 
 
+let uploadWrapper= document.querySelector(".input-cont-upload-wrapper");
+let uploadBanner= document.querySelector(".input-cont-upload-banner");
+
 let typeAdvertDescImg= document.querySelector(".personal__img-stick-main-desc");
 let typeAdvertBunnerImg= document.querySelector(".personal__img-stick-main-bunner");
+let typeAdvertDescIm= document.querySelector(".personal__img-stick-main-des");
+let typeAdvertBunnerIm= document.querySelector(".personal__img-stick-main-bunne");
 let typeAdvertDesc= document.querySelector(".personal__type-advert-desc");
 let typeAdvertBunner= document.querySelector(".personal__type-advert-bunner");
 let typeAdvertB= document.querySelector(".personal__type-advert-b");
@@ -282,11 +289,15 @@ let visualEditor= document.querySelector(".visual-editor-cont-desc");
 
 typeAdvertBunner.addEventListener("click", getTypeAdvertBunner);
 function getTypeAdvertBunner() {
+  uploadBanner.classList.add("active");
+  uploadWrapper.classList.remove("active");
   typeAdvertDesc.classList.remove("active");
   typeAdvertBunner.classList.add("active");
   visualEditor.classList.remove("active");
   typeAdvertDescImg.classList.add("active");
   typeAdvertBunnerImg.classList.remove("active");
+  typeAdvertDescIm.classList.add("active");
+  typeAdvertBunnerIm.classList.remove("active");
   if(bunnerLabel.classList.contains('active')){
     visualEditor.classList.add("active");
   }
@@ -294,10 +305,14 @@ function getTypeAdvertBunner() {
 
 typeAdvertDesc.addEventListener("click", getTypeAdvertDesc);
 function getTypeAdvertDesc() {
+  uploadBanner.classList.remove("active");
+  uploadWrapper.classList.add("active");
   typeAdvertDesc.classList.add("active");
   typeAdvertBunner.classList.remove("active");
   typeAdvertBunnerImg.classList.add("active");
   typeAdvertDescImg.classList.remove("active");
+  typeAdvertBunnerIm.classList.add("active");
+  typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
 }
 
