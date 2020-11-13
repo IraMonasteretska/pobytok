@@ -1216,30 +1216,37 @@ margin-top: 20px;
 		&__type-advert-bunner {
       border-radius:  8px 0px 0px 8px ;
     }
-    &__type-advert-bunner.active {
-      background: #063453;
-		}
+  
 
 		&__type-advert-b {
-      background: #7B8A99;
+      border: 1px solid #063453;
+      background: #fff;
 cursor: pointer;
 height: 58px;
-color: #F2F4F5;
+color: #063453;
 display: flex;
 justify-content: center;
 align-items: center;
 width: 50%;
+font-size: 18px;
 transition: all .3s ease-out;
 &:hover{
   color: #77CCF9;
 }
+    }
+    &__type-advert-bunner.active {
+      background: #063453;
 		}
 
 		&__type-advert-desc {
       border-radius: 0px 8px 8px 0px;
     }
-    &__type-advert-desc.active {
+    &__type-advert-b.active {
       background: #063453;
+        color: #DFE5EC;
+        &:hover{
+          color: #77CCF9;
+        }
     }
     
     &__cont-img-stick{
@@ -1250,6 +1257,30 @@ transition: all .3s ease-out;
 
     &__img-stick-main{
       width: 100%;
+    }
+
+     &__cont-img-stick-desc{
+       margin-top: 30px;
+     }
+
+     &__form-text-name{
+       margin-top: 30px;
+     }
+
+     &__add-galary-descc{
+       display: none;
+     }
+
+     &__add-galary-descc.active{
+      display: block;
+    }
+
+    &__img-stick-main-bunner, &__img-stick-main-desc{
+      display: none;
+    }
+
+    &__img-stick-main-bunner.active, &__img-stick-main-desc.active{
+      display: block;
     }
 }
 
@@ -1273,22 +1304,69 @@ transition: all .3s ease-out;
 }
 
 
-.sticer-advent-n{
+.sticer-advent-n, .sticer-advent-r, .sticer-advent-p, .sticer-advent-pr{
   top: 30px;
   display: none;
 }
 
-.sticer-advent-p{
-  top: 30px;
+
+.sticer-advent-n.active{
+  display: flex;
+}
+
+.sticer-advent-p.active{
+  display: flex;
+}
+
+.sticer-advent-pr.active{
+  display: flex;
+}
+
+.sticer-advent-r.active{
+  display: flex;
+}
+
+.add-stick-check{
   display: none;
 }
 
-.sticer-advent-pr{
-  top: 30px;
-  display: none;
+.add-stick-check.active{
+  display: block;
 }
 
-.sticer-advent-r{
-  top: 30px;
-  display: none;
+.personal label{
+  cursor: pointer;
 }
+
+.personal__desc-upp{
+  margin: 0 ;
+}
+
+.bunner-advent-desc, .bunner-advent-desc-withaut{
+display: none;
+}
+
+.bunner-advent-desc.active, .bunner-advent-desc-withaut.active{
+  display: block;
+  }
+
+
+  .www-on-link{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+display: none;
+  }
+
+  .www-on-link.active{
+display: block;
+  }
+
+  .visual-editor-cont-desc{
+    display: none;
+  }
+
+  
+  .visual-editor-cont-desc.active{
+    display: block;
+  }

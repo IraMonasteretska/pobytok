@@ -1,18 +1,3 @@
-// function openCity(evt, cityName) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//       tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//       tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-// document.getElementById("defaultOpenTab").click();
-
 let backgrountOpacityAll = document.querySelector(".backgrount-opacity-all");
 let accountMobileMenu = document.querySelector(".personal__mobile-menu");
 let accountMobileMenuPanel = document.querySelector(".personal__panel");
@@ -201,25 +186,119 @@ function getPhotoBlock() {
 bunnerLabel.addEventListener("click", getBunnerBlock);
 function getBunnerBlock() {
   leadBunner.classList.toggle("active");
+  bunnerLabel.classList.toggle("active");
+  if( typeAdvertBunner.classList.contains('active')){
+    visualEditor.classList.toggle("active");
+  }
 }
 
-
-
-
+let wwwOnLink = document.querySelector(".www-on-link");
 let linkLabel = document.querySelector(".personal__add-link-label");
 let leadLink = document.querySelector(".add-link-check");
 
 linkLabel.addEventListener("click", getLinkBlock);
 function getLinkBlock() {
   leadLink.classList.toggle("active");
+  wwwOnLink.classList.toggle("active");
+}
+
+let stickLabel = document.querySelector(".personal__add-sick-label");
+let leadStick = document.querySelector(".add-stick-check");
+
+stickLabel.addEventListener("click", getStickBlock);
+function getStickBlock() {
+  leadStick.classList.toggle("active");
+}
+
+let addStickRabat = document.querySelector(".add-stick-rabat");
+let adventR = document.querySelector(".sticer-advent-r");
+let addStickNic = document.querySelector(".add-stick-nic");
+let adventN = document.querySelector(".sticer-advent-n");
+let addStickKarta = document.querySelector(".add-stick-karta");
+let adventP = document.querySelector(".sticer-advent-p");
+let addStickPromocija = document.querySelector(".add-stick-promocija");
+let adventPr = document.querySelector(".sticer-advent-pr");
+addStickRabat.click()
+addStickRabat.addEventListener("click", getAddStickRabat);
+function getAddStickRabat() {
+  adventPr.classList.remove("active")
+  adventP.classList.remove("active")
+  adventN.classList.remove("active")
+  adventR.classList.add("active");
+}
+
+addStickPromocija.addEventListener("click", getAddStickPromocija);
+function getAddStickPromocija() {
+  adventPr.classList.add("active")
+  adventP.classList.remove("active")
+  adventN.classList.remove("active")
+  adventR.classList.remove("active");
+}
+
+addStickKarta.addEventListener("click", getAddStickKarta);
+function getAddStickKarta() {
+  adventPr.classList.remove("active")
+  adventN.classList.remove("active")
+  adventR.classList.remove("active");
+  adventP.classList.add("active");
+}
+
+addStickNic.addEventListener("click", getAddStickNic);
+function getAddStickNic() {
+  adventPr.classList.remove("active")
+  adventR.classList.remove("active");
+  adventP.classList.remove("active");
+  adventN.classList.add("active");
 }
 
 
-// let cityPolish = document.querySelectorAll(".select-custom-acc-v");
-//       for (i = 0; i < cityPolish.length; i++) {
-//         // if
-//         // cityPolish[i].remove();
-//         console.log(cityPolish[i]);
-//       }
+
+
+
+let addGalaryLabel = document.querySelector(".personal__add-galary-label");
+let adventDesc = document.querySelector(".bunner-advent-desc");
+let adventDescWithaut= document.querySelector(".bunner-advent-desc-withaut");
+let adventDescGalary= document.querySelector(".personal__add-galary-descc");
+
+addGalaryLabel.addEventListener("click", getGalaryLabel);
+function getGalaryLabel() {
+  adventDesc.classList.toggle("active");
+  adventDescWithaut.classList.toggle("active");
+  adventDescGalary.classList.toggle("active");
+}
+
+
+
+
+
+
+let typeAdvertDescImg= document.querySelector(".personal__img-stick-main-desc");
+let typeAdvertBunnerImg= document.querySelector(".personal__img-stick-main-bunner");
+let typeAdvertDesc= document.querySelector(".personal__type-advert-desc");
+let typeAdvertBunner= document.querySelector(".personal__type-advert-bunner");
+let typeAdvertB= document.querySelector(".personal__type-advert-b");
+let visualEditor= document.querySelector(".visual-editor-cont-desc");
+
+
+typeAdvertBunner.addEventListener("click", getTypeAdvertBunner);
+function getTypeAdvertBunner() {
+  typeAdvertDesc.classList.remove("active");
+  typeAdvertBunner.classList.add("active");
+  visualEditor.classList.remove("active");
+  typeAdvertDescImg.classList.add("active");
+  typeAdvertBunnerImg.classList.remove("active");
+  if(bunnerLabel.classList.contains('active')){
+    visualEditor.classList.add("active");
+  }
+}
+
+typeAdvertDesc.addEventListener("click", getTypeAdvertDesc);
+function getTypeAdvertDesc() {
+  typeAdvertDesc.classList.add("active");
+  typeAdvertBunner.classList.remove("active");
+  typeAdvertBunnerImg.classList.add("active");
+  typeAdvertDescImg.classList.remove("active");
+  visualEditor.classList.add("active");
+}
 
 

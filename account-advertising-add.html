@@ -454,7 +454,7 @@
               <p class="personal__type-advert-bunner personal__type-advert-b active">
                 Баннер
               </p>
-              <p class="personal__type-advert-desc personal__type-advert-b">
+              <p class="personal__type-advert-desc personal__type-advert-b ">
                 Описание
               </p>
             </div>
@@ -482,7 +482,7 @@
             <div class="personal__stick-cont">
               <div class="personal__stick-item">
                 <input type="radio" id="addStickCheck1" name="typeSale" value="burter" class="personal__radio-btn" />
-                <label for="addStickCheck1" class="personal__add-photo-label personal__add-sick-label">
+                <label for="addStickCheck1" class="personal__add-photo-label personal__add-sick-label add-stick-rabat">
                   <div class="finance-open__sticer-cont-rabat finance-open__sticer-cont personal__stick">
                     <div class="finance-open__sticker">Rabat</div>
                   </div>
@@ -491,7 +491,7 @@
 
               <div class="personal__stick-item">
                 <input type="radio" id="addStickCheck2" name="typeSale" value="burter" class="personal__radio-btn" />
-                <label for="addStickCheck2" class="personal__add-photo-label personal__add-sick-label">
+                <label for="addStickCheck2" class="personal__add-photo-label personal__add-sick-label add-stick-promocija">
                   <div class="finance-open__sticer-cont-promocja finance-open__sticer-cont">
                     <div class="finance-open__sticker">Promocja</div>
                   </div>
@@ -500,7 +500,7 @@
 
               <div class="personal__stick-item">
                 <input type="radio" id="addStickCheck3" name="typeSale" value="burter" class="personal__radio-btn" />
-                <label for="addStickCheck3" class="personal__add-photo-label personal__add-sick-label">
+                <label for="addStickCheck3" class="personal__add-photo-label personal__add-sick-label add-stick-karta">
                   <div class="finance-open__sticer-cont-podarunkowa finance-open__sticer-cont">
                     <div class="finance-open__sticker">Karta podarunkowa</div>
                   </div>
@@ -508,8 +508,8 @@
               </div>
 
               <div class="personal__stick-item">
-                <input type="radio" id="addStickCheck4" name="typeSale" value="burter" class="personal__radio-btn" />
-                <label for="addStickCheck4" class="personal__add-photo-label personal__add-sick-label">
+                <input type="radio" id="addStickCheck4" name="typeSale" value="burter" class="personal__radio-btn " />
+                <label for="addStickCheck4" class="personal__add-photo-label personal__add-sick-label add-stick-nic">
                   <div class="finance-open__sticer-cont finance-open__sticer-cont-nic">
                     <div class="finance-open__sticker">Nic z tego</div>
                   </div>
@@ -518,8 +518,9 @@
             </div>
 
             <div class="personal__cont-img-stick">
-              <img src="img/svg/bunner-advent-img.svg" alt="" class="personal__img-stick-main" />
-              <div class="finance-open__sticer-cont-rabat finance-open__sticer-cont personal__stick sticer-advent-r">
+              <img src="img/svg/bunner-advent-img.svg" alt="" class="personal__img-stick-main personal__img-stick-main-bunner" />
+              <img src="img/svg/bunner-800-img.svg" alt="" class="personal__img-stick-main  personal__img-stick-main-desc active" />
+              <div class="finance-open__sticer-cont-rabat finance-open__sticer-cont personal__stick sticer-advent-r active">
                 <div class="finance-open__sticker">Rabat</div>
               </div>
               <div class="finance-open__sticer-cont-promocja finance-open__sticer-cont sticer-advent-pr">
@@ -531,26 +532,28 @@
               <div class="finance-open__sticer-cont finance-open__sticer-cont-nic sticer-advent-n">
                 <div class="finance-open__sticker">Nic z tego</div>
               </div>
+              <img src="img/svg/www-bunner.svg" class="www-on-link" alt="">
             </div>
           </div>
 
-          <div class="visual-editor-cont">
-            <p class="personal__form-text">Описание</p>
-            <textarea id="editor" name="text" class="form-control">
-        <!-- <?= $text ?> -->
-      </textarea>
-          </div>
 
           <div class="personal__add-bunner-container">
             <input type="checkbox" class="personal__add-bunner-check" id="addBannerCheck" />
             <label for="addBannerCheck" class="personal__add-bunner-label">
-              Добавить баннер
+              Сделать подробное описание
             </label>
           </div>
 
-          <div class="personal__lead-bunner-add personal__lead-bunner">
-            <div class="personal__bunner-example-cont">
-              <img src="img/svg/bunner-example.svg " class="personal__bunner-example-img" alt="" />
+          <div class="personal__lead-bunner-add personal__lead-bunner personal__desc-upp">
+            <div class="personal__add-bunner-container">
+              <input type="checkbox" class="personal__add-bunner-check" id="addGalaryCheck" />
+              <label for="addGalaryCheck" class="personal__add-bunner-label personal__add-galary-label">
+                Добавить галерею
+              </label>
+            </div>
+            <div class="personal__cont-img-stick personal__cont-img-stick-desc">
+              <img src="img/svg/bunner-example.svg" class="personal__bunner-example-img  bunner-advent-desc" alt="" />
+              <img src="img/svg/bunner-withaut-photo.svg" class="personal__bunner-example-img  bunner-advent-desc-withaut active" alt="" />
             </div>
             <input type="button" class="personal__lead-bunner-inputt" value="Загрузить баннер"
               onclick="document.getElementById('fileBunner').click();" />
@@ -559,43 +562,63 @@
               <img src="img/png/uploud-bunner.png" alt="" class="personal__bunner-item-img" />
               <span class="personal__close-bunner"> </span>
             </div>
-          </div>
 
-          <div class="personal__add-photo-container">
-            <input type="checkbox" class="personal__add-photo-check" id="addPhotoCheck" />
-            <label for="addPhotoCheck" class="personal__add-photo-label">
-              Добавить фотографии
-            </label>
-          </div>
-          <div class="personal__lead-bunner-add personal__lead-photo">
-            <div class="personal__bunner-example-cont">
-              <img src="img/svg/bunner-example.svg " class="personal__bunner-example-img" alt="" />
-            </div>
-            <input type="button" class="personal__lead-bunner-inputt" value="Загрузить фотографии"
-              onclick="document.getElementById('filePhoto').click();" />
-            <input type="file" multiple style="display: none" id="filePhoto" name="filePhoto" />
-
+     <div class="personal__add-galary-descc">
+            <input type="button" class="personal__lead-bunner-inputt" value="Загрузить фотографии" onclick="document.getElementById('filePhoto').click();" />
+            <input type="file"   multiple  style="display:none;" id="filePhoto" name="filePhoto"/>
+            
             <div class="personal__bunner-item-con">
-              <div class="personal__bunner-item">
-                <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img" />
-                <span class="personal__close-bunner"> </span>
-                <input type="radio" id="photoIdUload1" name="typeSale4" value="sale" class="personal__radio-btn" />
-                <label for="photoIdUload1" class="personal__photo-label">Главное фото</label>
-              </div>
-              <div class="personal__bunner-item">
-                <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img" />
-                <span class="personal__close-bunner"> </span>
-                <input type="radio" id="photoIdUload2" name="typeSale4" value="sale" class="personal__radio-btn" />
-                <label for="photoIdUload2" class="personal__photo-label">Главное фото</label>
-              </div>
-              <div class="personal__bunner-item">
-                <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img" />
-                <span class="personal__close-bunner"> </span>
-                <input type="radio" id="photoIdUload3" name="typeSale4" value="sale" class="personal__radio-btn" />
-                <label for="photoIdUload3" class="personal__photo-label">Главное фото</label>
-              </div>
+            <div class="personal__bunner-item">
+              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
+              <span class="personal__close-bunner"> </span>
+              <input
+              type="radio"
+              id="photoIdUload1"
+              name="typeSale4"
+              value="sale"
+              class="personal__radio-btn"
+            />
+            <label for="photoIdUload1" class="personal__photo-label">Главное фото</label>
+            </div>
+            <div class="personal__bunner-item">
+              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
+              <span class="personal__close-bunner"> </span>
+              <input
+              type="radio"
+              id="photoIdUload2"
+              name="typeSale4"
+              value="sale"
+              class="personal__radio-btn"
+            />
+            <label for="photoIdUload2" class="personal__photo-label">Главное фото</label>
+            </div>
+            <div class="personal__bunner-item">
+              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
+              <span class="personal__close-bunner"> </span>
+              <input
+              type="radio"
+              id="photoIdUload3"
+              name="typeSale4"
+              value="sale"
+              class="personal__radio-btn"
+            />
+            <label for="photoIdUload3" class="personal__photo-label">Главное фото</label>
             </div>
           </div>
+        </div>
+            <div class="select-custom-acc">
+              <p class="personal__form-text personal__form-text-name">Название</p>
+              <input type="text" name="" class="personal__input" placeholder="Название" />
+            </div>
+          </div>
+
+          <div class="visual-editor-cont visual-editor-cont-desc">
+            <p class="personal__form-text">Описание</p>
+            <textarea id="editor" name="text" class="form-control">
+        <!-- <?= $text ?> -->
+      </textarea>
+          </div>
+
           <div class="personal__line personal__line-bottom"></div>
 
           <div class="select-custom-acc">
