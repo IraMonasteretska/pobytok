@@ -722,9 +722,11 @@
   }
 
   &__real-col-number, &__real-col-numb {
+  width: 5%;
     flex: 0 0 5%;
   }
   &__real-col-name, &__real-col-nam {
+    width: 25%;
     flex: 0 0 25%;
   }
   &__real-col-name, &__real-col-cat{
@@ -733,14 +735,17 @@
   }
 
   &__real-col-id,  &__real-col-i {
+    width: 5%;
     flex: 0 0 5%;
   }
 
   &__real-col-cat, &__real-col-ca{
     flex: 0 0 25%;
+    width: 25%;
   }
   &__real-col-date, &__real-col-dat{
     text-align: center;
+    width: 15%;
     flex: 0 0 15%;
   }
 
