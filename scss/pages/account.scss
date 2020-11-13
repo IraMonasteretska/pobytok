@@ -1282,6 +1282,10 @@ transition: all .3s ease-out;
     &__img-stick-main-bunner.active, &__img-stick-main-desc.active{
       display: block;
     }
+
+    &__cont-img-stick-marg{
+padding-top: 20px;
+    }
 }
 
 .add-link-check{
