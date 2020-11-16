@@ -96,7 +96,7 @@ margin-bottom: 50px;
     font-size: 30px;
   }
   &__welcome--pink {
-    font-family: "Khula-Bold";
+    font-family: "Khula-Bold", "Arial", sans-serif;
     color: #00b0f3;
   }
 
@@ -113,7 +113,7 @@ margin-bottom: 50px;
   }
 
   &__your-name {
-    font-family: "Khula-Bold";
+    font-family: "Khula-Bold", "Arial", sans-serif;
     margin-top: 15px;
   }
   &__frame-cont {
@@ -1519,14 +1519,80 @@ position: relative;
     padding-left: 75px;
   }
 
-  &__add-bunner-check {
+&__pay-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
+  width: 100%;
+align-items: center;
+margin-right: 20px;
+margin-left: auto ;
+}
+  &__pay-price-cont {
+    display: flex;
+    justify-content: space-between;
+    max-width: 110px;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
   }
 
-  &__add-bunner-label {
+  &__pay-price {
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-size: 30px;
+color: #063453;
+  }
+
+  &__pay-btn {
+    background: #00AB5B;
+border-radius: 8px;
+max-width: 174px;
+width: 100%;
+height: 48px;
+font-size: 18px;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Cuprum-Bold";
+transition: all 0.3s ease-out;
+margin-left: 20px;
+&:hover{
+ color: #063453;
+}
   }
 }
 
 
 .label-radio-state{
   margin-left: -220px !important;
+}
+
+
+
+.personal__frame_archive{
+
+  .personal{
+  &__real-col-number, &__real-col-numb {
+    width: 5%;
+      flex: 0 0 5%;
+    }
+    &__real-col-name, &__real-col-nam {
+      width: 25%;
+      flex: 0 0 25%;
+    }
+    &__real-col-cat, &__real-col-ca{
+      flex: 0 0 30%;
+      width: 30%;
+    }
+    &__real-col-date, &__real-col-dat{
+      width: 15%;
+      flex: 0 0 15%;
+    }
+  
+    &__real-col-edit, &__real-col-edi {
+      flex: 0 0 25%;
+  width: 165px;
+}
+  }
 }

@@ -1,4 +1,15 @@
 @media (max-width: 1440px) {
+
+  .typical-page {
+    &__container {
+      margin-top: -100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: -40px;
+    }
+  }
+
+
 .messages {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -572,6 +583,30 @@ font-size: 15px ;
 }
 
 @media (max-width: 776px) {
+
+
+  .typical-page {
+    &__big-title {
+  font-size: 25px;
+  line-height: 30px;
+    }
+  
+    &__title {
+      font-size: 20px;
+  line-height: 28px;
+    }
+  
+    &__list {
+  line-height: 27px;
+    }
+  
+    &__text {
+  line-height: 26px;
+    }
+  
+  }
+
+
   .personal__welcome {
     font-size: 20px;
   }
@@ -836,6 +871,9 @@ top: 30px;
     order: 5;
     }
 }
+
+
+
 
 .www-on-link{
   width: 70px;

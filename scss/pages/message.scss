@@ -438,3 +438,53 @@ color: #464646;
 }
 
 }
+
+.typical-page {
+  &__container {
+    margin-top: -40px;
+  }
+
+  &__big-title {
+    font-family: "Khula-Bold", "Arial", sans-serif;
+font-size: 30px;
+color: #263238;
+line-height: 44px;
+  }
+
+  &__title {
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-size: 24px;
+line-height: 36px;
+color: #263238;
+  }
+
+  &__ol {
+    margin-left: -20px;
+  }
+
+  &__list {
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-size: 16px;
+line-height: 30px;
+color: #263238;
+margin-bottom: -8px;
+  }
+
+  &__text {
+    font-family: "Khula-Regular", "Arial", sans-serif;
+    color: #263238;
+    font-size: 16px;
+line-height: 30px;
+  }
+
+  &__small-title {
+    font-family: "Khula-Bold", "Arial", sans-serif;
+    font-size: 16px;
+color: #263238;
+margin-bottom: -8px;
+  }
+
+  &__text-list{
+    margin-left: -20px;
+  }
+}
