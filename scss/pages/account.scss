@@ -1503,4 +1503,30 @@ position: relative;
   display: none;
 }
 
+.select-wrap.is-active .select__body {
+  top: 58px;
+}
+
+
+
+  &__check-two {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  &__check-two-item:nth-child(2) {
+    padding-left: 75px;
+  }
+
+  &__add-bunner-check {
+  }
+
+  &__add-bunner-label {
+  }
+}
+
+
+.label-radio-state{
+  margin-left: -220px !important;
 }

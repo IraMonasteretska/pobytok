@@ -105,6 +105,13 @@ margin-left: 15px;
 }
 
 @media (max-width: 1250px) {
+.personal__all-radio-cont-notice label{
+  width: 50% ;
+}
+
+  .label-radio-state{
+    margin-left: 50px !important;
+  }
   .messages__frame-coll-text, .messages__frame-your-text{
 padding-right: 70px;
 max-width: 50%;
