@@ -1476,11 +1476,31 @@ position: relative;
     .filter__all-regions-desktop-wrap {
       max-width: 370px;
       width: 100%;
+      display: none;
   }
 
   .main__search__city-input{
     background: #F2F4F5;
     box-shadow: none;
   }
+
+  .main__search {
+    position: relative;
+   max-width: 370px;
+   width: 100%;
+    display: block;
+    margin-left: 0;
+}
+
+.filter__all-regions-tablet-wrap{
+  display: block;
+}
+.filter__city-input-wrap{
+  display: block;
+  margin-top: 20px;
+}
+.tablet-point{
+  display: none;
+}
 
 }
