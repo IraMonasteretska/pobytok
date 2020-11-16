@@ -557,9 +557,10 @@ position: relative;
 }
 
 &__sticer-cont-nic{
-  min-width: 137px;
+  min-width: 167px;
   min-height: 42px;
-  background: url(../img/svg/sticker-4.svg);
+  background: url(../img/svg/sticker-4.svg) no-repeat;
+  background-size: cover;
 }
 
   &__sticer-cont-promocja{
