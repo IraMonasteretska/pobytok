@@ -1,4 +1,8 @@
 @media (max-width: 1440px) {
+.messages {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
   .personal {
     &__bot-fixed-taxa {
@@ -101,6 +105,11 @@ margin-left: 15px;
 }
 
 @media (max-width: 1250px) {
+  .messages__frame-coll-text, .messages__frame-your-text{
+padding-right: 70px;
+max-width: 50%;
+width: max-content;
+}
 
 .personal__add-select-cont{
   display: block;
@@ -466,10 +475,6 @@ padding-right: 7px;
     }
 }
 
-
-
-
-
   .account-img-main {
     margin-top: -50px;
     width: 70%;
@@ -499,14 +504,6 @@ padding-right: 7px;
       margin-bottom: 20px;
     }
 
-    // &__img-cont {
-    //   margin-top: 36px;
-
-    //   width: 100%;
-    //   padding-left: 10px;
-    //   padding-right: 10px;
-    // }
-
     &__container {
       width: 100%;
       padding-right: 0px;
@@ -535,14 +532,7 @@ padding-right: 7px;
       box-shadow: none;
       padding-bottom: 0px;
     }
-    // &__register-status {
-    //   margin-top: 0;
-    // }
-    // &__welcome {
-    //   margin-top: -25px;
-    // }
   }
-
 
   .personal {
     &__bot-fixed-taxa {
@@ -552,12 +542,16 @@ padding-right: 7px;
   }
 }
 
-
 @media (max-width: 880px) {
+
+  .messages__adver-name {
+font-size: 16px;
+}
+
+
   .account-main-i {
     height: 130px;
   }
-
 
 	.personal__type-advert-b {
 font-size: 15px ;
@@ -593,17 +587,58 @@ font-size: 15px ;
   }
 }
 
-// @media (max-width: 690px) {
-// .personal__radio-right-part label{
-//   padding-left: 30px !important;
-// }
-// }
-
-
 @media (max-width: 650px) {
 
-  .personal {
+.messages{
+  &__frame-coll-text, &__frame-your-text{
+padding: 20px;
+padding-right: 20px;
+max-width: 85%;
+line-height: 24px;
+}
 
+&__img{
+  width: 100%;
+}
+&__container {
+  padding: 0px 15px;
+}
+
+&__send {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+&__advert-img-cont {
+display: none;
+}
+
+&__adver-see-link {
+  line-height: 22px;
+  }
+
+  &__advert-name-cont {
+    padding-left: 0px;
+}
+&__advert-cont {
+  padding: 0px 15px;
+}
+
+
+&__adver-price {
+font-size: 16px;
+margin-bottom: -10px;
+margin-top: -5px;
+}
+
+&__textarea {
+  height: 170px;
+}
+
+}
+
+
+  .personal {
 		&__real-table-cont {
       width: 100%;
       overflow: scroll;
@@ -613,8 +648,6 @@ font-size: 15px ;
       width: 600px;
 		}
 }
-
-
 
   .personal__form-title {
     font-size: 20px;
@@ -735,6 +768,39 @@ top: 30px;
 }
 
 @media (max-width: 550px) {
+
+
+  .messages{
+    &__frame-coll-text, &__frame-your-text{
+  max-width: 92%;
+  }
+  &__file {
+  font-size: 14px;
+}
+
+&__btn {
+  font-size: 14px;
+  max-width: 180px;
+}
+
+&__advert-cont {
+      flex-direction: column-reverse;
+}
+
+&__adver-name {
+  max-width: 100%;
+  width: 100%;
+}
+&__advert-name-cont {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+&__adver-date {
+ margin-left: 38px;
+  }
+}
 
 .www-on-link{
   width: 70px;
