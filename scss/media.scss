@@ -604,6 +604,11 @@ font-size: 15px ;
 
 @media (max-width: 650px) {
 
+
+  .personal__cont-img-stick {
+    width: 100%;
+}
+
 .messages{
   &__frame-coll-text, &__frame-your-text{
 padding: 20px;
@@ -625,15 +630,23 @@ line-height: 24px;
 }
 
 &__advert-img-cont {
-display: none;
+margin-top: 10px;
+order: 5;
+margin-left: 10px;
 }
+
+&__adver-date {
+  order: 5;
+  }
 
 &__adver-see-link {
   line-height: 22px;
+  order: 2;
   }
 
   &__advert-name-cont {
     padding-left: 0px;
+
 }
 &__advert-cont {
   padding: 0px 15px;

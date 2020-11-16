@@ -287,7 +287,12 @@ position: relative;
     padding: 20px;
     font-family: "Khula-Regular", "Arial", sans-serif;
     font-weight: 400;
+    transition: all .3s ease-out;
+    &:focus{
+      background: #F2F4F4;
     }
+    }
+
 
     &__send {
         display: flex;
