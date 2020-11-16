@@ -1464,4 +1464,23 @@ align-items: center;
     &__frame-cont-re{
 position: relative;
     }
+
+
+    &__select-ul{
+      margin-top: 0px;
+     
+    }
+
+
+
+    .filter__all-regions-desktop-wrap {
+      max-width: 370px;
+      width: 100%;
+  }
+
+  .main__search__city-input{
+    background: #F2F4F5;
+    box-shadow: none;
+  }
+
 }
