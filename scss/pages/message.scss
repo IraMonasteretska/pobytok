@@ -391,7 +391,7 @@ left: -20px;
     }
 
     &__advent-cont {
-        width: 50%;
+        width: 70%;
     }
 
     &__advent-name {
@@ -410,6 +410,11 @@ color: #464646;
     &__advent-text{
         font-family: "Khula-Regular", "Arial", sans-serif;
         color: #263238;
+      white-space: nowrap;
+      overflow: hidden; 
+      text-overflow: ellipsis;
+      
+      height: 20px;
     }
 
 
