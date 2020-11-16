@@ -630,18 +630,13 @@ line-height: 24px;
 }
 
 &__advert-img-cont {
-margin-top: 10px;
-order: 5;
-margin-left: 10px;
+padding-right: 20px;
 }
 
-&__adver-date {
-  order: 5;
-  }
+
 
 &__adver-see-link {
   line-height: 22px;
-  order: 2;
   }
 
   &__advert-name-cont {
@@ -815,6 +810,13 @@ top: 30px;
       flex-direction: column-reverse;
 }
 
+&__advert-img-cont {
+  margin-top: 10px;
+  margin-left: 10px;
+  order: 4;
+  }
+  
+
 &__adver-name {
   max-width: 100%;
   width: 100%;
@@ -827,7 +829,12 @@ top: 30px;
 
 &__adver-date {
  margin-left: 38px;
+ order: 5;
   }
+
+  &__adver-date {
+    order: 5;
+    }
 }
 
 .www-on-link{
