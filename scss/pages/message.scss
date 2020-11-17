@@ -339,7 +339,9 @@ left: -20px;
     background: #E5E5E5;
     padding-top: 80px;
     padding-bottom: 40px;
-
+label{
+  cursor: pointer;
+}
 
     &__container {
         background: #FFFFFF;
@@ -391,7 +393,7 @@ left: -20px;
     &__checkbox {
         font-size: 17px;
         color: #464646;
-        cursor: pointer;
+        cursor: pointer ;
     }
 
     &__advent-cont {

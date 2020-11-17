@@ -1,3 +1,50 @@
+if (document.querySelector(".personal__select-ul")) {
+  let filterWojewodstwoI = document.querySelectorAll(
+    ".filter__wojewodstwo-tablet"
+  );
+  let filterCityI = document.querySelector(".filter__city-input-wrap");
+  filterCityI.style.display = "none";
+  for (let i = 0; i < filterWojewodstwoI.length; i++) {
+    filterWojewodstwoI[i].addEventListener("click", getCityBlock);
+    function getCityBlock() {
+      filterCityI.style.display = "block";
+      if (this.innerHTML == "Cała Polska") {
+        filterCityI.style.display = "none";
+      }
+    }
+  }
+
+  let filterRegionsI = document.querySelector(
+    ".filter__all-regions-tablet-wrap"
+  );
+
+  let selectIconI = document.querySelectorAll(".select__icon");
+  document.addEventListener("click", function (event) {
+    let target = event.target;
+    if (
+      target.classList.contains("regions-tablet-input") ||
+      target.classList.contains("select__icon")
+    ) {
+      return;
+    }
+    filterRegionsI.classList.remove("is-active");
+    selectIconI[0].classList.remove("arrow-up");
+  });
+
+  let selectfilterSityI = document.querySelector(".filter__city-input-wrap");
+  document.addEventListener("click", function (event) {
+    let target = event.target;
+    if (
+      target.classList.contains("filter__city-input") ||
+      target.classList.contains("select__icon")
+    ) {
+      return;
+    }
+    selectfilterSityI.classList.remove("is-active");
+    selectIconI[1].classList.remove("arrow-up");
+  });
+}
+
 let backgrountOpacityAll = document.querySelector(".backgrount-opacity-all");
 let accountMobileMenu = document.querySelector(".personal__mobile-menu");
 let accountMobileMenuPanel = document.querySelector(".personal__panel");
@@ -15,18 +62,16 @@ function closeMobileMenuAcc() {
 }
 
 if (document.querySelector(".personal__real-icon-play")) {
-
   let iconPlay = document.querySelectorAll(".personal__real-icon-play");
   let realColPlay = document.querySelectorAll(".personal__real-col-play ");
   let realColPause = document.querySelectorAll(".personal__real-col-pause");
 
   for (let i = 0; i < iconPlay.length; i++) {
-   iconPlay[i].addEventListener("click", function () {
-    realColPlay[i].classList.toggle("block");
-    realColPause[i].classList.toggle("block");
-  });
+    iconPlay[i].addEventListener("click", function () {
+      realColPlay[i].classList.toggle("block");
+      realColPause[i].classList.toggle("block");
+    });
   }
-
 }
 
 document.addEventListener("DOMContentLoaded", createSelect, false);
@@ -122,34 +167,37 @@ function createSelect() {
       );
       element.parentNode.classList.toggle("active");
 
-      if(element.parentNode.previousSibling.previousSibling.classList.contains('selectCityPolish')){
-      let cityPolish = document.querySelectorAll(".select-custom-acc-v");
-      for (i = 0; i < cityPolish.length; i++) {
-        cityPolish[i].classList.remove("active");
-        
-      }
-      for (i = 0; i < cityPolish.length; i++) {
-        if (element.getAttribute("data-value") == i + 2) {
-          cityPolish[i].classList.add("active");
-          break;
+      if (
+        element.parentNode.previousSibling.previousSibling.classList.contains(
+          "selectCityPolish"
+        )
+      ) {
+        let cityPolish = document.querySelectorAll(".select-custom-acc-v");
+        for (i = 0; i < cityPolish.length; i++) {
+          cityPolish[i].classList.remove("active");
+        }
+        for (i = 0; i < cityPolish.length; i++) {
+          if (element.getAttribute("data-value") == i + 2) {
+            cityPolish[i].classList.add("active");
+            break;
+          }
         }
       }
-    }
 
-    if(element.parentNode.classList.contains('select-dropdown__list--0')){
-      let catPolish = document.querySelectorAll(".select-custom-acc-cat");
-      for (i = 0; i <  catPolish.length; i++) {
-        catPolish[i].classList.remove("active");
-      }
-      for (i = 0; i <  catPolish.length; i++) {
-        console.log(catPolish[i] + i);
+      if (element.parentNode.classList.contains("select-dropdown__list--0")) {
+        let catPolish = document.querySelectorAll(".select-custom-acc-cat");
+        for (i = 0; i < catPolish.length; i++) {
+          catPolish[i].classList.remove("active");
+        }
+        for (i = 0; i < catPolish.length; i++) {
+          console.log(catPolish[i] + i);
 
-        if (element.getAttribute("data-value") == i + 1) {
-          catPolish[i].classList.add("active");
-          break;
+          if (element.getAttribute("data-value") == i + 1) {
+            catPolish[i].classList.add("active");
+            break;
+          }
         }
       }
-    }
       element.parentNode.parentNode.children[1].classList.toggle("active");
       element.parentNode.parentNode.children[1].style.color = "#464646";
       elementParentSpan[0].textContent = element.textContent;
@@ -192,7 +240,7 @@ bunnerLabel.addEventListener("click", getBunnerBlock);
 function getBunnerBlock() {
   leadBunner.classList.toggle("active");
   bunnerLabel.classList.toggle("active");
-  if( typeAdvertBunner.classList.contains('active')){
+  if (typeAdvertBunner.classList.contains("active")) {
     visualEditor.classList.toggle("active");
   }
 }
@@ -225,47 +273,43 @@ let addStickKarta = document.querySelector(".add-stick-karta");
 let adventP = document.querySelector(".sticer-advent-p");
 let addStickPromocija = document.querySelector(".add-stick-promocija");
 let adventPr = document.querySelector(".sticer-advent-pr");
-addStickRabat.click()
+addStickRabat.click();
 addStickRabat.addEventListener("click", getAddStickRabat);
 function getAddStickRabat() {
-  adventPr.classList.remove("active")
-  adventP.classList.remove("active")
-  adventN.classList.remove("active")
+  adventPr.classList.remove("active");
+  adventP.classList.remove("active");
+  adventN.classList.remove("active");
   adventR.classList.add("active");
 }
 
 addStickPromocija.addEventListener("click", getAddStickPromocija);
 function getAddStickPromocija() {
-  adventPr.classList.add("active")
-  adventP.classList.remove("active")
-  adventN.classList.remove("active")
+  adventPr.classList.add("active");
+  adventP.classList.remove("active");
+  adventN.classList.remove("active");
   adventR.classList.remove("active");
 }
 
 addStickKarta.addEventListener("click", getAddStickKarta);
 function getAddStickKarta() {
-  adventPr.classList.remove("active")
-  adventN.classList.remove("active")
+  adventPr.classList.remove("active");
+  adventN.classList.remove("active");
   adventR.classList.remove("active");
   adventP.classList.add("active");
 }
 
 addStickNic.addEventListener("click", getAddStickNic);
 function getAddStickNic() {
-  adventPr.classList.remove("active")
+  adventPr.classList.remove("active");
   adventR.classList.remove("active");
   adventP.classList.remove("active");
   adventN.classList.add("active");
 }
 
-
-
-
-
 let addGalaryLabel = document.querySelector(".personal__add-galary-label");
 let adventDesc = document.querySelector(".bunner-advent-desc");
-let adventDescWithaut= document.querySelector(".bunner-advent-desc-withaut");
-let adventDescGalary= document.querySelector(".personal__add-galary-descc");
+let adventDescWithaut = document.querySelector(".bunner-advent-desc-withaut");
+let adventDescGalary = document.querySelector(".personal__add-galary-descc");
 
 addGalaryLabel.addEventListener("click", getGalaryLabel);
 function getGalaryLabel() {
@@ -274,23 +318,23 @@ function getGalaryLabel() {
   adventDescGalary.classList.toggle("active");
 }
 
+let uploadWrapper = document.querySelector(".input-cont-upload-wrapper");
+let uploadBanner = document.querySelector(".input-cont-upload-banner");
 
-
-
-
-
-let uploadWrapper= document.querySelector(".input-cont-upload-wrapper");
-let uploadBanner= document.querySelector(".input-cont-upload-banner");
-
-let typeAdvertDescImg= document.querySelector(".personal__img-stick-main-desc");
-let typeAdvertBunnerImg= document.querySelector(".personal__img-stick-main-bunner");
-let typeAdvertDescIm= document.querySelector(".personal__img-stick-main-des");
-let typeAdvertBunnerIm= document.querySelector(".personal__img-stick-main-bunne");
-let typeAdvertDesc= document.querySelector(".personal__type-advert-desc");
-let typeAdvertBunner= document.querySelector(".personal__type-advert-bunner");
-let typeAdvertB= document.querySelector(".personal__type-advert-b");
-let visualEditor= document.querySelector(".visual-editor-cont-desc");
-
+let typeAdvertDescImg = document.querySelector(
+  ".personal__img-stick-main-desc"
+);
+let typeAdvertBunnerImg = document.querySelector(
+  ".personal__img-stick-main-bunner"
+);
+let typeAdvertDescIm = document.querySelector(".personal__img-stick-main-des");
+let typeAdvertBunnerIm = document.querySelector(
+  ".personal__img-stick-main-bunne"
+);
+let typeAdvertDesc = document.querySelector(".personal__type-advert-desc");
+let typeAdvertBunner = document.querySelector(".personal__type-advert-bunner");
+let typeAdvertB = document.querySelector(".personal__type-advert-b");
+let visualEditor = document.querySelector(".visual-editor-cont-desc");
 
 typeAdvertBunner.addEventListener("click", getTypeAdvertBunner);
 function getTypeAdvertBunner() {
@@ -303,7 +347,7 @@ function getTypeAdvertBunner() {
   typeAdvertBunnerImg.classList.remove("active");
   typeAdvertDescIm.classList.add("active");
   typeAdvertBunnerIm.classList.remove("active");
-  if(bunnerLabel.classList.contains('active')){
+  if (bunnerLabel.classList.contains("active")) {
     visualEditor.classList.add("active");
   }
 }
@@ -320,5 +364,3 @@ function getTypeAdvertDesc() {
   typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
 }
-
-
