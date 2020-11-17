@@ -98,6 +98,16 @@ function createSelect() {
 		}
 }
 
+
+
+let messageListInput = document.querySelectorAll('.message__list-label-inp')
+let messageListLabel = document.querySelectorAll('.message__list-label')
+for(let i = 0; i < messageListInput.length; i++){
+  messageListInput[i].id = 'messageListInpt' + [i]
+  messageListLabel[i].htmlFor = 'messageListInpt' + [i]
+}
+
+
 let messageCheck = document.querySelector('.messages-check')
 let messageCheckLeft = document.querySelector('.vacancy__resume--text--left')
 let messageCheckRight = document.querySelector('.vacancy__resume--text--right')
@@ -108,3 +118,6 @@ function getActiveCheck(){
     messageCheckRight.classList.toggle('active') 
     messageCheckLeft.classList.toggle('active') 
 }
+
+
+
