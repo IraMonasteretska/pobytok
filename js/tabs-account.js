@@ -1,3 +1,18 @@
+
+let addPhoto = document.querySelector('.add-photo')
+let fileePhoto = document.querySelector('#filePhoto')
+
+
+addPhoto.addEventListener('click', updPhoto)
+
+function updPhoto(){
+  console.log(addPhoto);
+  console.log(fileePhoto.getAsDataURL());
+}
+
+
+
+
 if (document.querySelector(".personal__select-ul")) {
   let filterWojewodstwoI = document.querySelectorAll(
     ".filter__wojewodstwo-tablet"
@@ -365,3 +380,8 @@ function getTypeAdvertDesc() {
   typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
 }
+
+
+
+
+
