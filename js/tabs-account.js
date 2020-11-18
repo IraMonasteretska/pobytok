@@ -1,16 +1,4 @@
 
-let addPhoto = document.querySelector('.add-photo')
-let fileePhoto = document.querySelector('#filePhoto')
-
-
-addPhoto.addEventListener('click', updPhoto)
-
-function updPhoto(){
-  console.log(addPhoto);
-  console.log(fileePhoto.getAsDataURL());
-}
-
-
 
 
 if (document.querySelector(".personal__select-ul")) {
