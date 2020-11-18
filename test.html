@@ -7,14 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-  <form id="form1" runat="server">
+  <!-- <form id="form1" runat="server"> -->
     <input type='file' id="imgInp" />
     <img id="blah" src="#" alt="your image" />
-</form>
-<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+<!-- </form> -->
 
 <script>
   function readURL(input) {
@@ -22,9 +18,9 @@
         var reader = new FileReader();
         
         reader.onload = function (e) {
-            $('#blah').attr('src', e.target.result);
-            // let blah = document.querySelector('#blah')
-            // blah.getAttribute('src', e.target.result)
+            let blah = document.querySelector('#blah')
+            console.log(blah);
+            blah.setAttribute('src', e.target.result)
         }
         
         reader.readAsDataURL(input.files[0]);

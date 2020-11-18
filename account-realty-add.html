@@ -889,7 +889,7 @@
       </textarea>
     </div>
 
-  
+<!--   
     <div class="personal__add-bunner-container">
       <input type="checkbox" class="personal__add-bunner-check" id="addBannerCheck">
      <label for="addBannerCheck" class="personal__add-bunner-label">
@@ -897,7 +897,7 @@
      </label>
 
 
-    </div>
+    </div> -->
 
 
 <div class="personal__lead-bunner-add personal__lead-bunner">
@@ -922,13 +922,15 @@
       <div class="personal__bunner-example-cont">
     <img src="img/svg/bunner-example.svg " class="personal__bunner-example-img" alt="">
     </div>
-        <input type="button" class="personal__lead-bunner-inputt add-photo" value="Загрузить фотографии" onclick="document.getElementById('filePhoto').click();" />
-        <input type="file"   multiple  style="display:none;" id="filePhoto" name="filePhoto"/>
+        <input type="button" class="personal__lead-bunner-inputt add-photo" value="Загрузить фотографии" onclick="document.getElementById('imgInp').click();" />
+        <!-- <input type="file"   multiple  style="display:none;" id="filePhoto" name="filePhoto"/> -->
         
+        <input type='file' id="imgInp"  style="display:none;"/>
+       
         <div class="personal__bunner-item-con">
-        <div class="personal__bunner-item">
-          <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
-          <span class="personal__close-bunner"> </span>
+        <div class="personal__bunner-item personal__bunner-item-upl">
+          <img id="blah" src="#" alt="your image" class="uplouds-photo personal__bunner-item-img personal__bunner-img-img" />
+          <span class="personal__close-bunner personal__close-bunner1"> </span>
           <input
           type="radio"
           id="photoIdUload1"
@@ -938,7 +940,7 @@
         />
         <label for="photoIdUload1" class="personal__photo-label">Главное фото</label>
         </div>
-        <div class="personal__bunner-item">
+        <!-- <div class="personal__bunner-item">
           <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
           <span class="personal__close-bunner"> </span>
           <input
@@ -961,9 +963,48 @@
           class="personal__radio-btn"
         />
         <label for="photoIdUload3" class="personal__photo-label">Главное фото</label>
-        </div>
+        </div> -->
       </div>
       </div>
+              
+
+      <script>
+        
+        let itemUpl = document.querySelector('.personal__bunner-item-upl')
+        let itemClose = document.querySelector('.personal__close-bunner1')
+
+        itemUpl.style.display = 'none'
+        function readURL(input) { 
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              
+              reader.onload = function (e) {
+                  let blah = document.querySelector('#blah')
+                  blah.setAttribute('src', e.target.result)
+              }
+              itemUpl.style.display = 'block'
+              reader.readAsDataURL(input.files[0]);
+        
+          }
+        }
+        
+      
+      let imgInp = document.querySelector('#imgInp')
+      imgInp.addEventListener('change', getGunct)
+      function getGunct(){
+        readURL(this);
+      }
+
+      itemClose.addEventListener('click', getCloseImg)
+      function getCloseImg(){
+        console.log('asd');
+        itemUpl.style.display = 'none'
+        console.log('asd');
+      }
+      
+        </script>
+
+
     <div class="personal__line personal__line-bottom"></div>
   
      
