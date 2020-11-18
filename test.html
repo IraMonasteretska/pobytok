@@ -23,6 +23,8 @@
         
         reader.onload = function (e) {
             $('#blah').attr('src', e.target.result);
+            // let blah = document.querySelector('#blah')
+            // blah.getAttribute('src', e.target.result)
         }
         
         reader.readAsDataURL(input.files[0]);
@@ -30,12 +32,15 @@
   }
   
 
-  $("#imgInp").change(function(){
-    readURL(this);
-  });
+let imgInp = document.querySelector('#imgInp')
+imgInp.addEventListener('change', getGunct)
+function getGunct(){
+  readURL(this);
+}
+
   </script>
 </body>
 </html>
 
-
+ 
 
