@@ -372,7 +372,6 @@ bottom: auto;
 }
 }
 
-
 .sarch-container--select{
 margin-top: -100px;
   .main__search{
@@ -411,10 +410,26 @@ margin-top: -100px;
     }
 }
 
-
 @media (max-width: 1025px) {
 .vacancy__head-animal{
   position: relative;
   z-index: 2;
 }
+}
+
+
+.typical-page--main.greetings__container--onload{
+background: url(../../img/svg/ok-typical-page.svg) no-repeat, url(../../img/svg/elipse-bg-typical.svg) no-repeat, linear-gradient(180deg, #CFD5DC 0%, #D7DDE4 45.81%, #D7DCE2 97.21%);
+background-position: 35% center ;
+animation-duration: 2.5s;
+animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 -500px, 0 500px, center;
+  }
+  to {
+    background-position: 35% center ;
+  }
 }
