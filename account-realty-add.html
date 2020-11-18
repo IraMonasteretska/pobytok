@@ -922,13 +922,18 @@
       <div class="personal__bunner-example-cont">
     <img src="img/svg/bunner-example.svg " class="personal__bunner-example-img" alt="">
     </div>
-        <input type="button" class="personal__lead-bunner-inputt add-photo" value="Загрузить фотографии" onclick="document.getElementById('imgInp').click();" />
+      
+    
+    
+    <input type="button" class="personal__lead-bunner-inputt add-photo" value="Загрузить фотографии" onclick="document.getElementById('files').click();" />
         <!-- <input type="file"   multiple  style="display:none;" id="filePhoto" name="filePhoto"/> -->
-        
-        <input type='file' id="imgInp"  style="display:none;"/>
+        <input type="file" id="files" name="files[]" style="display:none" multiple />
+       
+        <!-- <input type='file' id="imgInp"  style="display:none;"/> -->
        
         <div class="personal__bunner-item-con">
-        <div class="personal__bunner-item personal__bunner-item-upl">
+          <output id="list"></output>
+        <!-- <div class="personal__bunner-item personal__bunner-item-upl">
           <img id="blah" src="#" alt="your image" class="uplouds-photo personal__bunner-item-img personal__bunner-img-img" />
           <span class="personal__close-bunner personal__close-bunner1"> </span>
           <input
@@ -939,7 +944,7 @@
           class="personal__radio-btn"
         />
         <label for="photoIdUload1" class="personal__photo-label">Главное фото</label>
-        </div>
+        </div> -->
         <!-- <div class="personal__bunner-item">
           <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
           <span class="personal__close-bunner"> </span>
@@ -967,42 +972,51 @@
       </div>
       </div>
               
-
       <script>
-        
-        let itemUpl = document.querySelector('.personal__bunner-item-upl')
-        let itemClose = document.querySelector('.personal__close-bunner1')
-
-        itemUpl.style.display = 'none'
-        function readURL(input) { 
-          if (input.files && input.files[0]) {
-              var reader = new FileReader();
-              
-              reader.onload = function (e) {
-                  let blah = document.querySelector('#blah')
-                  blah.setAttribute('src', e.target.result)
-              }
-              itemUpl.style.display = 'block'
-              reader.readAsDataURL(input.files[0]);
-        
+        function handleFileSelect(evt) {
+          var files = evt.target.files; 
+      
+          for (var i = 0, f; f = files[i]; i++) {
+      
+            if (!f.type.match('image.*')) {
+              continue;
+            }
+      
+            var reader = new FileReader();
+      
+            reader.onload = (function(theFile) {
+              return function(e) {
+                var span = document.createElement('span');
+                span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                  '" title="', theFile.name, '"/>'].join('');
+                document.getElementById('list').insertBefore(span, null);
+              };
+            })(f);
+      
+            reader.readAsDataURL(f);
           }
         }
-        
       
-      let imgInp = document.querySelector('#imgInp')
-      imgInp.addEventListener('change', getGunct)
-      function getGunct(){
-        readURL(this);
+      document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+function sayHi(){
+      let photoMulti = document.querySelectorAll('#list span img')
+
+      for(let i = 0; i < photoMulti.length; i++){
+  photoMulti[i].addEventListener('click', getDelate)
+      function getDelate(){
+   this.remove()
+      }
+     
       }
 
-      itemClose.addEventListener('click', getCloseImg)
-      function getCloseImg(){
-        console.log('asd');
-        itemUpl.style.display = 'none'
-        console.log('asd');
-      }
-      
-        </script>
+
+     
+
+    }
+      setInterval(sayHi, 1000); 
+      </script>
+     
 
 
     <div class="personal__line personal__line-bottom"></div>

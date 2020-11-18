@@ -1096,7 +1096,7 @@ margin-top: 25px;
 position: absolute;
 width: 20px;
 height: 20px;
-background: url(../img/svg/close-bunner-img.svg) no-repeat;
+background: url(..`/img/svg/close-bunner-img.svg) no-repeat;
 margin-left: 10px;
 cursor: pointer;
 z-index: 2;
@@ -1604,4 +1604,12 @@ margin-top: 40px;
 .uplouds-photo{
   width: 154px;
   height: 100px;
+}
+
+
+#list span img{
+width: 150px;
+height: 100px;
+margin: 20px;
+border: 1px solid;
 }

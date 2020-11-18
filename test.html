@@ -7,36 +7,46 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <form id="form1" runat="server"> -->
-    <input type='file' id="imgInp" />
-    <img id="blah" src="#" alt="your image" />
-<!-- </form> -->
-
-<script>
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        
-        reader.onload = function (e) {
-            let blah = document.querySelector('#blah')
-            console.log(blah);
-            blah.setAttribute('src', e.target.result)
-        }
-        
-        reader.readAsDataURL(input.files[0]);
-    }
-  }
-  
-
-let imgInp = document.querySelector('#imgInp')
-imgInp.addEventListener('change', getGunct)
-function getGunct(){
-  readURL(this);
-}
-
-  </script>
-</body>
-</html>
-
  
 
+  <style>
+    .thumb {
+      height: 75px;
+      border: 1px solid #000;
+      margin: 10px 5px 0 0;
+    }
+  </style>
+  
+  <input type="file" id="files" name="files[]" multiple />
+  <output id="list"></output>
+  
+  <script>
+    function handleFileSelect(evt) {
+      var files = evt.target.files; 
+  
+      for (var i = 0, f; f = files[i]; i++) {
+  
+        if (!f.type.match('image.*')) {
+          continue;
+        }
+  
+        var reader = new FileReader();
+  
+        reader.onload = (function(theFile) {
+          return function(e) {
+            var span = document.createElement('span');
+            span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                              '" title="', theFile.name, '"/>'].join('');
+            document.getElementById('list').insertBefore(span, null);
+          };
+        })(f);
+  
+        reader.readAsDataURL(f);
+      }
+    }
+  
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+  </script>
+ 
+</body>
+</html>
