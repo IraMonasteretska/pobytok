@@ -184,7 +184,8 @@ function createSelect() {
         }
       }
 
-      if (element.parentNode.classList.contains("select-dropdown__list--0")) {
+      if (element.parentNode.previousSibling.previousSibling.classList.contains(
+        "select-category-notice-acc")) {
         let catPolish = document.querySelectorAll(".select-custom-acc-cat");
         for (i = 0; i < catPolish.length; i++) {
           catPolish[i].classList.remove("active");
