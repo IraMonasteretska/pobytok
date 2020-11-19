@@ -9,43 +9,26 @@
 <body>
  
 
-  <style>
-    .thumb {
-      height: 75px;
-      border: 1px solid #000;
-      margin: 10px 5px 0 0;
-    }
-  </style>
-  
-  <input type="file" id="files" name="files[]" multiple />
-  <output id="list"></output>
-  
+  <input type="file" multiple id="input">
+
+
   <script>
-    function handleFileSelect(evt) {
-      var files = evt.target.files; 
+      const dt = new DataTransfer()
+  dt.items.add(new File([], 'a.txt'))
+  input.files = dt.files
   
-      for (var i = 0, f; f = files[i]; i++) {
+  // This will remove the fist item when selecting many files
+  input.onchange = () => {
+    const dt = new DataTransfer()
   
-        if (!f.type.match('image.*')) {
-          continue;
-        }
+    for (let file of input.files)
+      if (file !== input.files[0]) 
+        dt.items.add(file)
   
-        var reader = new FileReader();
-  
-        reader.onload = (function(theFile) {
-          return function(e) {
-            var span = document.createElement('span');
-            span.innerHTML = ['<img class="thumb" src="', e.target.result,
-                              '" title="', theFile.name, '"/>'].join('');
-            document.getElementById('list').insertBefore(span, null);
-          };
-        })(f);
-  
-        reader.readAsDataURL(f);
-      }
-    }
-  
-  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+    input.onchange = null // remove event listener
+    input.files = dt.files // this will trigger a change event
+  }
+  </script>
   </script>
  
 </body>

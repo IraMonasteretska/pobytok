@@ -462,53 +462,34 @@
 
             <div class="select-custom-acc">
               <p class="personal__form-text">Категория:</p>
-              <select id="select-category" placeholder-text="Категория::" class="select-category-notice-acc">
-                <option value="Motoryzacja" class="select-dropdown__list-item">
-                  Motoryzacja
+              <select id="select-category" placeholder-text="Категория:" class="select-category">
+                <option value="Mieszkania" class="select-dropdown__list-item">
+                  Mieszkania
                 </option>
-                <option value="Dom i Ogród" class="select-dropdown__list-item">
-                  Dom i Ogród
+                <option value="Domy" class="select-dropdown__list-item">
+                  Domy
                 </option>
-                <option value="Elektronika" class="select-dropdown__list-item">
-                  Elektronika
+                <option value="Działki" class="select-dropdown__list-item">
+                  Działki
                 </option>
-                <option value="Moda" class="select-dropdown__list-item">
-                  Moda
+                <option value="Biura i Lokale" class="select-dropdown__list-item">
+                  Biura i Lokale
                 </option>
-                <option value="Rolnictwo" class="select-dropdown__list-item">
-                  Rolnictwo
+                <option value="Garaże i Parkingi" class="select-dropdown__list-item">
+                  Garaże i Parkingi
                 </option>
-                <option value="Zwierzęta" class="select-dropdown__list-item">
-                  Zwierzęta
+                <option value="Noclegi" class="select-dropdown__list-item">
+                  Noclegi
                 </option>
-                <option value="Dla Dzieci" class="select-dropdown__list-item">
-                  Dla Dzieci
+                <option value="Stancje i Pokoje" class="select-dropdown__list-item">
+                  Stancje i Pokoje
                 </option>
-                <option value="Sport i Hobby" class="select-dropdown__list-item">
-                  Sport i Hobby
+                <option value="Hale i Magazyny" class="select-dropdown__list-item">
+                  Hale i Magazyny
                 </option>
-                <option value="Muzyka i Edukacja" class="select-dropdown__list-item">
-                  Muzyka i Edukacja
+                <option value="Pozostałe nieruchomości" class="select-dropdown__list-item">
+                  Pozostałe nieruchomości
                 </option>
-                <option value="Usługi i Firmy" class="select-dropdown__list-item">
-                  Usługi i Firmy
-                </option>
-                <option value="Ślub i Wesele" class="select-dropdown__list-item">
-                  Ślub i Wesele
-                </option>
-                <option value="Oddam za darmo" class="select-dropdown__list-item">
-                  Oddam za darmo
-                </option>
-                <option value="Zamienię" class="select-dropdown__list-item">
-                  Zamienię
-                </option>
-                <option value="Zadbaj o Ogród" class="select-dropdown__list-item">
-                  Zadbaj o Ogród
-                </option>
-                <option value="Inne" class="select-dropdown__list-item">
-                  Inne
-                </option>
-           
               </select>
             </div>
 
@@ -889,7 +870,7 @@
       </textarea>
     </div>
 
-<!--   
+  
     <div class="personal__add-bunner-container">
       <input type="checkbox" class="personal__add-bunner-check" id="addBannerCheck">
      <label for="addBannerCheck" class="personal__add-bunner-label">
@@ -897,7 +878,7 @@
      </label>
 
 
-    </div> -->
+    </div>
 
 
 <div class="personal__lead-bunner-add personal__lead-bunner">
@@ -972,53 +953,6 @@
       </div>
       </div>
               
-      <script>
-        function handleFileSelect(evt) {
-          var files = evt.target.files; 
-      
-          for (var i = 0, f; f = files[i]; i++) {
-      
-            if (!f.type.match('image.*')) {
-              continue;
-            }
-      
-            var reader = new FileReader();
-      
-            reader.onload = (function(theFile) {
-              return function(e) {
-                var span = document.createElement('span');
-                span.innerHTML = ['<img class="thumb" src="', e.target.result,
-                                  '" title="', theFile.name, '"/>'].join('');
-                document.getElementById('list').insertBefore(span, null);
-              };
-            })(f);
-      
-            reader.readAsDataURL(f);
-          }
-        }
-      
-      document.getElementById('files').addEventListener('change', handleFileSelect, false);
-
-function sayHi(){
-      let photoMulti = document.querySelectorAll('#list span img')
-
-      for(let i = 0; i < photoMulti.length; i++){
-  photoMulti[i].addEventListener('click', getDelate)
-      function getDelate(){
-   this.remove()
-      }
-     
-      }
-
-
-     
-
-    }
-      setInterval(sayHi, 1000); 
-      </script>
-     
-
-
     <div class="personal__line personal__line-bottom"></div>
   
      

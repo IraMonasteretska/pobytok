@@ -1,6 +1,3 @@
-
-
-
 if (document.querySelector(".personal__select-ul")) {
   let filterWojewodstwoI = document.querySelectorAll(
     ".filter__wojewodstwo-tablet"
@@ -187,8 +184,11 @@ function createSelect() {
         }
       }
 
-      if (element.parentNode.previousSibling.previousSibling.classList.contains(
-        "select-category-notice-acc")) {
+      if (
+        element.parentNode.previousSibling.previousSibling.classList.contains(
+          "select-category-notice-acc"
+        )
+      ) {
         let catPolish = document.querySelectorAll(".select-custom-acc-cat");
         for (i = 0; i < catPolish.length; i++) {
           catPolish[i].classList.remove("active");
@@ -200,6 +200,45 @@ function createSelect() {
             catPolish[i].classList.add("active");
             break;
           }
+        }
+      }
+
+      if (
+        element.parentNode.previousSibling.previousSibling.classList.contains(
+          "select-category-notice-subCat"
+        )
+      ) {
+        let catPolish = document.querySelectorAll(".select-custom-acc-cat");
+        for (i = 0; i < catPolish.length; i++) {
+          catPolish[i].classList.remove("active");
+        }
+        console.log(element);
+        // console.log(catPolish[8]);
+
+        if (element.getAttribute("data-value") == "Motoryzacja") {
+          catPolish[0].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Dom i Ogród") {
+          catPolish[1].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Elektronika") {
+          catPolish[2].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Moda") {
+          catPolish[3].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Rolnictwo") {
+          catPolish[4].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Zwierzęta") {
+          catPolish[5].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Dla Dzieci") {
+          catPolish[6].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Sport i Hobby") {
+          catPolish[7].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Muzyka i Edukacja") {
+          catPolish[8].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Usługi i Firmy") {
+          catPolish[9].classList.add("active");
+        } else if (element.getAttribute("data-value") == "Ślub i Wesele") {
+          catPolish[10].classList.add("active");
+        } else {
+          return;
         }
       }
       element.parentNode.parentNode.children[1].classList.toggle("active");
@@ -368,8 +407,3 @@ function getTypeAdvertDesc() {
   typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
 }
-
-
-
-
-
