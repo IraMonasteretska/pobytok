@@ -86,7 +86,6 @@ function createSelect() {
     elementParentSpan;
 
   for (var select_i = 0, len = select.length; select_i < len; select_i++) {
-    //console.log('selects init');
 
     select[select_i].style.display = "none";
     wrapElement(
@@ -194,7 +193,7 @@ function createSelect() {
           catPolish[i].classList.remove("active");
         }
         for (i = 0; i < catPolish.length; i++) {
-          console.log(catPolish[i] + i);
+       
 
           if (element.getAttribute("data-value") == i + 1) {
             catPolish[i].classList.add("active");
@@ -212,8 +211,7 @@ function createSelect() {
         for (i = 0; i < catPolish.length; i++) {
           catPolish[i].classList.remove("active");
         }
-        console.log(element);
-        // console.log(catPolish[8]);
+   
 
         if (element.getAttribute("data-value") == "Motoryzacja") {
           catPolish[0].classList.add("active");
@@ -237,9 +235,7 @@ function createSelect() {
           catPolish[9].classList.add("active");
         } else if (element.getAttribute("data-value") == "Ślub i Wesele") {
           catPolish[10].classList.add("active");
-        } else {
-          return;
-        }
+        } 
       }
       element.parentNode.parentNode.children[1].classList.toggle("active");
       element.parentNode.parentNode.children[1].style.color = "#464646";
