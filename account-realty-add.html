@@ -882,15 +882,21 @@
 
 
 <div class="personal__lead-bunner-add personal__lead-bunner">
-  <div class="personal__bunner-example-cont">
-<img src="img/svg/bunner-example.svg " class="personal__bunner-example-img" alt="">
-</div>
-    <input type="button"  class="personal__lead-bunner-inputt " value="Загрузить баннер" onclick="document.getElementById('fileBunner').click();" />
-    <input type="file"   style="display:none;" id="fileBunner" name="fileBunner"/>
-    <div class="personal__bunner-item">
-      <img src="img/png/uploud-bunner.png" alt="" class="personal__bunner-item-img">
-      <span class="personal__close-bunner"> </span>
-    </div>
+  <div class="personal__container-simple-photo">
+    <button type="button" onclick="document.getElementById('files7').click();" class="photo-button-upload bunner-button-upload" id="filesBtn7"  >
+       <div id="output7" class="photo-uplods-wrap">
+       <img class='editPhotoPersonal'id='editPhotoPersonal7' src="img/svg/editPhotoIcob.svg" alt="">
+       <img class='delatePhotoPersonal' id="delatePhotoPersonal7" src="img/svg/delatePhotoIcon.svg" alt="">
+       </div>
+       <img src="img/svg/addBunnerText.svg" id="outputSvg7" class="outputSvgIcon" alt="">
+      </button>
+    <input 
+      type="file"
+      id="files7"
+      name="files"
+      style="display: none"
+    />       
+  </div>
   </div>
 
     <div class="personal__add-photo-container">
@@ -907,6 +913,7 @@
            <div id="output1" class="photo-uplods-wrap">
            <img class='editPhotoPersonal'id='editPhotoPersonal1' src="img/svg/editPhotoIcob.svg" alt="">
            <img class='delatePhotoPersonal' id="delatePhotoPersonal1" src="img/svg/delatePhotoIcon.svg" alt="">
+           <p class="main-photo-label">Главное фото</p>
            </div>
            <img src="img/svg/clickForPhoto.svg" id="outputSvg1" class="outputSvgIcon" alt="">
           </button>
@@ -916,7 +923,7 @@
           name="files"
           style="display: none"
         />       
-        <p class="main-photo-label">Главное фото</p>
+      
       </div>
 
       <div class="personal__container-simple-photo">

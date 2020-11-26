@@ -754,6 +754,22 @@ font-size: 15px ;
 
 @media (max-width: 650px) {
 
+  .bunner-button-upload{
+    width: 281px;
+    height: 80px;
+    background: #EDF5FA;
+  }
+  
+  .bunner-button-upload .photo-uplods-wrap span img{
+    width: 281px;
+    height: 80px;
+  }
+  
+  .bunner-button-upload .photo-uplods-wrap {
+    width: 281px;
+    height: 80px;
+  }
+
 
   .personal__cont-img-stick {
     width: 100%;

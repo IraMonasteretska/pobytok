@@ -1713,5 +1713,21 @@ font-family: "Cuprum-Bold";
 display: flex;
 justify-content: center;
 align-items: center;
-display: none;
+
+}
+
+
+.bunner-button-upload{
+  width: 581px;
+  background: #EDF5FA;
+}
+
+.bunner-button-upload .photo-uplods-wrap span img{
+  width: 581px;
+  height: 160px;
+}
+
+.bunner-button-upload .photo-uplods-wrap {
+  width: 581px;
+  height: 160px;
 }
