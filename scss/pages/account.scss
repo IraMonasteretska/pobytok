@@ -1118,9 +1118,7 @@ z-index: 2;
   margin-left: 45px;
 }
 
-&__lead-bunner-add{
-  margin-left: 105px;
-}
+
 }
 .select-custom-acc-checkbox{
  margin-top: 50px;
@@ -1612,4 +1610,108 @@ width: 150px;
 height: 100px;
 margin: 20px;
 border: 1px solid;
+}
+
+
+
+.photo-button-upload{
+  width: 234px;
+  height: 160px;
+  background: #F2F4F5;
+  border-radius: 8px;
+  transition: all .4s ease-out;
+  &:hover{
+    background: #EEEFF0;
+    opacity: 0.8;
+  }
+  &:hover .editPhotoPersonal{
+opacity: 1;
+  }
+  &:hover .delatePhotoPersonal{
+    opacity: 1;
+      }
+      &:hover #output1 span img{
+        background: #063453;
+opacity: 0.8;
+      }
+}
+
+.photo-button-upload-main{
+  background: #E4EFF5;
+
+}
+
+.photo-uplods-wrap{
+  width: 234px;
+  height: 160px;
+  border-radius: 8px;
+ 
+}
+
+.photo-uplods-wrap span img{
+  width: 234px;
+  height: 160px;
+  border-radius: 8px;
+  transition: all .4s ease-out;
+  margin-left: -7px;
+  z-index: 10;
+}
+.photo-uplods-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-uplods-wrap span{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+
+.editPhotoPersonal, .delatePhotoPersonal{
+  position: relative;
+  z-index: 10;
+padding: 10px;
+cursor: pointer;
+opacity: 0;  
+transition: all .3s ease-out;
+}
+
+.outputSvgIcon{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.personal__lead-photoJS{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.personal__container-simple-photo{
+  margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.main-photo-label{
+  background: #000;
+  z-index: 10;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 106px;
+height: 29px;
+background: #00B0F3;
+border-radius: 8px;
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+font-family: "Cuprum-Bold";
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
 }
