@@ -86,8 +86,16 @@ function createSelect() {
     elementParentSpan;
 
   for (var select_i = 0, len = select.length; select_i < len; select_i++) {
-
-    select[select_i].style.display = "none";
+    for(let i = 0; i< select[select_i].parentNode.children[1].children.length; i++){
+      if(select[select_i].parentNode.children[1].children[i].getAttribute('selected')){
+           select[select_i].setAttribute('placeholder-text', select[select_i].parentNode.children[1].children[i].textContent)
+           break
+      }
+    }
+  }
+   
+    for (var select_i = 0, len = select.length; select_i < len; select_i++) {
+      select[select_i].style.display = "none";
     wrapElement(
       document.getElementById(select[select_i].id),
       document.createElement("div"),
@@ -95,6 +103,7 @@ function createSelect() {
       select[select_i].getAttribute("placeholder-text")
     );
 
+     
     for (var i = 0; i < select[select_i].options.length; i++) {
       liElement = document.createElement("li");
       optionValue = select[select_i].options[i].value;
@@ -132,6 +141,7 @@ function createSelect() {
     iElement = document.createElement("i");
     ulElement = document.createElement("ul");
 
+  
     wrapper.className = "select-dropdown select-dropdown--" + i;
     buttonElement.className =
       "select-dropdown__button select-dropdown__button--" + i;
@@ -165,6 +175,11 @@ function createSelect() {
         "span"
       );
       element.parentNode.classList.toggle("active");
+
+
+
+
+       console.log(element.parentNode.previousSibling.previousSibling);
 
       if (
         element.parentNode.previousSibling.previousSibling.classList.contains(
@@ -239,6 +254,7 @@ function createSelect() {
       }
       element.parentNode.parentNode.children[1].classList.toggle("active");
       element.parentNode.parentNode.children[1].style.color = "#464646";
+     
       elementParentSpan[0].textContent = element.textContent;
       elementParentSpan[0].parentNode.setAttribute(
         "data-value",
@@ -264,6 +280,12 @@ function createSelect() {
     );
   }
 }
+
+
+
+
+
+
 
 let photoLabel = document.querySelector(".personal__add-photo-label");
 let bunnerLabel = document.querySelector(".personal__add-bunner-label");
