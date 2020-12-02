@@ -44,6 +44,12 @@ files.addEventListener("change", handleFileSelect, false);
 let outputs = document.getElementById("output"  + [i]);
 outputs.style.display = "none";
 let filesBtn = document.getElementById("filesBtn" + [i])
+
+if(document.querySelector('.editingImgLoad' + [i])){
+  document.getElementById("output" + [i]).style.display = "flex";
+  document.getElementById("outputSvg" + [i]).style.display = "none";
+  document.getElementById("filesBtn" + [i]).disabled = true;
+}
 document.getElementById("delatePhotoPersonal" + [i]).addEventListener("click", delateDataImg);
 function delateDataImg() {
   filesBtn.disabled = true
