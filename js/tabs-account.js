@@ -1,3 +1,232 @@
+
+
+
+function getbotTooltipePopup(){
+  document.querySelector('.mandatory-registration-popup-bot-tooltipe').classList.remove('visually-hidden')
+}
+function getTopTooltipePopup(){
+  document.querySelector('.mandatory-registration-popup-top-tooltipe').classList.remove('visually-hidden')
+}
+
+function getBotTooltipe(){
+  document.querySelector('.tooltip-help-answer-bot').classList.add('active')
+}
+function closeBotTooltipe(){
+  document.querySelector('.tooltip-help-answer-bot').classList.remove('active')
+}
+
+function getTopTooltipe(){
+  document.querySelector('.tooltip-help-answer-top').classList.add('active')
+}
+function closeTopTooltipe(){
+  document.querySelector('.tooltip-help-answer-top').classList.remove('active')
+}
+
+if (document.querySelector(".mandatory-registration-popup-bot-tooltipe")) {
+let closeBtnPopup = document.querySelectorAll('.sign-wrap__btn')
+let mainTooltipePopup = document.querySelectorAll('.mandatory-registration-popup')
+for(let i = 0;  i < closeBtnPopup.length; i++){
+  closeBtnPopup[i].addEventListener('click', function(){
+    mainTooltipePopup[i].classList.add('visually-hidden')
+  })
+}
+
+
+// cheked all checkbox
+let mandatoryCheckboxItem = document.querySelectorAll('.mandatory-checkbox-item')
+
+function getCheckAll() {
+  for(let i = 0;  i < mandatoryCheckboxItem.length; i++){
+if(mandatoryCheckboxItem[i].checked){
+continue
+}
+    mandatoryCheckboxItem[i].click()
+  }
+ }
+
+
+ for(let i = 0;  i < mandatoryCheckboxItem.length; i++){
+  mandatoryCheckboxItem[i].addEventListener('click', getCountChecked )
+ }
+
+ function getCountChecked(){
+ let countChecked = 0
+    for(let i = 0;  i < mandatoryCheckboxItem.length; i++){
+      if(mandatoryCheckboxItem[i].checked){
+        countChecked++
+     }
+    }
+    document.querySelector('.mandatory_result-calc').textContent = countChecked
+}
+
+}
+
+if (document.querySelector(".company-data")) {
+  function getPopapChangeCompany(){
+    document.querySelector('.popup-change-name-company').classList.remove('visually-hidden')
+  }
+ 
+  let exampleWorkerEmail = document.querySelector('.example-add-worker-email')
+  let addWorkerEmailForm = document.querySelector('.add-worker-email')
+  let btnAddWorkerEmail = document.querySelector('.service-add-worker-email')
+
+function removeParentEmail(){
+  let target = event.target;
+target.parentNode.parentNode.remove(target.parentNode.parentNode)
+ if(addWorkerEmailForm.childElementCount == 0){
+  document.querySelector('.service-button-gray').classList.add('unactive')
+ }
+}
+
+ btnAddWorkerEmail.addEventListener('click', function () {
+  addWorkerEmailForm.innerHTML += exampleWorkerEmail.innerHTML
+document.querySelector('.service-button-gray').classList.remove('unactive')
+ });
+}
+
+if (document.querySelector(".personal__panel-servicesJS")) {
+let serviceOpenContainer = document.querySelectorAll('.service__open-container') 
+let serviceOpenCheckJS = document.querySelectorAll('.serviceOpenCheckJS') 
+let serviceOnvisualText = document.querySelectorAll('.service__onvisual-text') 
+let serviceHideText = document.querySelectorAll('.service__hide-text') 
+let firstRadio = document.querySelectorAll('.firstRadio') 
+
+for(let i = 0; i < serviceOpenCheckJS.length; i++ ){
+  serviceOpenCheckJS[i].addEventListener('click', function(){
+  
+    if(serviceOnvisualText[i].classList.contains('active')){
+      serviceOnvisualText[i].classList.remove('active')
+      renderServicePrice()
+      return
+    }
+    serviceOpenContainer[i].classList.toggle('active')
+    firstRadio[i].click()
+    renderServicePrice()
+  })
+
+  serviceHideText[i].addEventListener('click', function(){
+    
+    serviceOnvisualText[i].classList.add('active')
+    serviceOpenContainer[i].classList.remove('active')
+  })
+
+  serviceOnvisualText[i].addEventListener('click', function(){
+    serviceOnvisualText[i].classList.remove('active')
+    serviceOpenContainer[i].classList.add('active')
+  })
+}
+
+let servicePriceNumber = document.querySelector('.service__finish-price-number')
+
+let openAutshorsing = document.querySelector('.open-container-autshorsing')
+let openLising = document.querySelector('.open-container-lising')
+let openWorking = document.querySelector('.open-container-working')
+let openSelecting = document.querySelector('.open-container-selecting')
+let openСooperation = document.querySelector('.open-container-cooperation')
+let lisingShow = document.querySelector('.lisingShow')
+let autshorsingShow = document.querySelector('.autshorsing-show-more')
+let workingShow = document.querySelector('.working-show-more')
+let selectingShow = document.querySelector('.selecting-show-more')
+let cooperationShow = document.querySelector('.cooperation-show-more')
+let lisingPrice = 0,
+    autshorsingPrice = 0,
+    workingPrice = 0,
+    selectingPrice = 0,
+    cooperationPrice = 0
+
+renderServicePrice()
+document.querySelector('#serviceLising1').addEventListener('click', function(){
+  lisingPrice = 250
+   renderServicePrice()
+ })
+document.querySelector('#serviceLising2').addEventListener('click', function(){
+  lisingPrice = 650
+   renderServicePrice()
+ })
+document.querySelector('#serviceLising3').addEventListener('click', function(){
+  lisingPrice = 1200
+   renderServicePrice()
+ })
+
+document.querySelector('#serviceAutshorsing1').addEventListener('click', function(){
+  autshorsingPrice = 250
+  renderServicePrice()
+})
+document.querySelector('#serviceAutshorsing2').addEventListener('click', function(){
+  autshorsingPrice = 650
+   renderServicePrice()
+ })
+document.querySelector('#serviceAutshorsing3').addEventListener('click', function(){
+  autshorsingPrice = 1200
+   renderServicePrice()
+ })
+
+ document.querySelector('#serviceWorking1').addEventListener('click', function(){
+  workingPrice = 250
+  renderServicePrice()
+})
+document.querySelector('#serviceWorking2').addEventListener('click', function(){
+  workingPrice = 650
+   renderServicePrice()
+ })
+document.querySelector('#serviceWorking3').addEventListener('click', function(){
+  workingPrice = 1200
+   renderServicePrice()
+ })
+
+ document.querySelector('#serviceSelecting1').addEventListener('click', function(){
+  selectingPrice = 250
+  renderServicePrice()
+})
+document.querySelector('#serviceSelecting2').addEventListener('click', function(){
+  selectingPrice = 650
+   renderServicePrice()
+ })
+document.querySelector('#serviceSelecting3').addEventListener('click', function(){
+  selectingPrice = 1200
+   renderServicePrice()
+ })
+
+ document.querySelector('#serviceСooperation1').addEventListener('click', function(){
+  cooperationPrice = 250
+  renderServicePrice()
+})
+document.querySelector('#serviceСooperation2').addEventListener('click', function(){
+  cooperationPrice = 650
+   renderServicePrice()
+ })
+document.querySelector('#serviceСooperation3').addEventListener('click', function(){
+  cooperationPrice = 1200
+   renderServicePrice()
+ })
+
+
+ function  renderServicePrice(){ 
+   if(openAutshorsing.classList.contains('active')){} else { 
+     if(autshorsingShow.classList.contains('active')){} else {autshorsingPrice = 0}
+   }
+   if(openLising.classList.contains('active')){} else { 
+     if(lisingShow.classList.contains('active')){} else {lisingPrice = 0}
+   }
+   if(openWorking.classList.contains('active')){} else { 
+     if(workingShow.classList.contains('active')){} else {workingPrice = 0}
+   }
+
+   if(openSelecting.classList.contains('active')){} else { 
+     if(selectingShow.classList.contains('active')){} else {selectingPrice = 0}
+   }
+
+   if(openСooperation.classList.contains('active')){} else { 
+     if(cooperationShow.classList.contains('active')){} else {cooperationPrice = 0}
+   }
+
+servicePriceNumber.textContent = lisingPrice +  autshorsingPrice + workingPrice + selectingPrice + cooperationPrice
+}
+
+}
+
+
+
 if (document.querySelector(".personal__select-ul")) {
   let filterWojewodstwoI = document.querySelectorAll(
     ".filter__wojewodstwo-tablet"
@@ -176,10 +405,6 @@ function createSelect() {
       );
       element.parentNode.classList.toggle("active");
 
-
-
-
-       console.log(element.parentNode.previousSibling.previousSibling);
 
       if (
         element.parentNode.previousSibling.previousSibling.classList.contains(
@@ -425,3 +650,7 @@ function getTypeAdvertDesc() {
   typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
 }
+
+
+
+

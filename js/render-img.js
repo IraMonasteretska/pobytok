@@ -1,3 +1,16 @@
+
+ if(document.querySelector('.vacancion_add-container')){
+  let bunnerLabel = document.querySelector(".personal__add-bunner-label");
+  let leadBunner = document.querySelector(".personal__lead-bunner");
+
+
+  bunnerLabel.addEventListener("click", getBunnerBlock);
+  function getBunnerBlock() {
+    leadBunner.classList.toggle("active");
+    bunnerLabel.classList.toggle("active");
+  }
+}
+
 for(let i = 1; i <= 7; i++){
 function handleFileSelect(evt) {
   var file = evt.target.files;
@@ -45,5 +58,7 @@ document.getElementById("editPhotoPersonal"  + [i]).addEventListener("click", ed
 function editDataImg() {
   filesBtn.disabled = false
 }
- 
   }
+
+
+ 

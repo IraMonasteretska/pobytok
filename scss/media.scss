@@ -106,6 +106,85 @@ padding-right: 15px;
 }
 @media (max-width: 1350px) {
 
+  .mandatory-registration-popup__bottom-block {
+    .mandatory-selection-flex-cont {
+      padding: 0px 15px 0px 15px;
+    }
+    .mandatory-check-all {
+    font-size: 16px;
+    }
+    .mandatory-bold-text {
+      font-size: 16px;
+    }
+    
+    .mandatory-items-cont {
+      width: calc(100% - 15px);
+      height: 220px;
+    }
+    
+    .mandatory_item {
+      margin: 7px 0;    
+    }
+    
+    .mandatory-label{
+    margin: 20px -10px 0 15px;
+    }
+    .mandatory_item-img {
+    width: 100%;
+    }
+    
+    .mandatory_item-img-cont {
+      width: 84px;
+      height: 84px;
+      padding-left: 4px;
+      padding-right: 4px;
+      border-right: 1px solid #DDDDDD;
+    }
+    
+    .mandatory_item-cont{
+      margin-right: 15px;
+      padding-right: 0px;
+    }
+    .mandatory_item-body {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    .mandatory_item-title {
+      font-size: 17px;
+    line-height: 18px;
+ margin-top: 7px;
+ margin-bottom: -0px;
+    }
+    
+    .mandatory_item-text {
+      font-size: 15px;
+    line-height: 21px;
+    height: 37px;
+    overflow: hidden; 
+    }
+    
+    .mandatory_item-number {
+      font-size: 15px;
+    line-height: 22px;
+   margin-top: 5px;
+    }
+    
+    .mandatory_text-border {
+    width: calc(100% - 30px);
+      padding: 10px;
+      margin: 15px auto;
+    line-height: 22px;
+    }
+    
+    .mandatory_button-calc{
+      height: 50px;
+      font-size: 16px;
+    } 
+    }
+    
+
+
 
   .personal__stick-cont{
     flex-direction: column;
@@ -191,6 +270,20 @@ margin-left: -100px;
 }
 .personal__radio-btn-three label{
   margin-top: 20px;
+}
+
+.personal__frame-service-data{
+  .select-custom-acc  {
+   margin-top: 5px;
+}
+.select-custom-acc-home-marg{
+  margin-top: 23px;
+}
+}
+.tooltip-help-answer{
+  right: auto;
+  margin-left: auto;
+  left: 150px;
 }
 }
 
@@ -754,6 +847,15 @@ font-size: 15px ;
 
 @media (max-width: 650px) {
 
+  .service__wrapper-radio {
+display: block;
+  }
+
+  .service__cont-radio{
+    margin-top: 20px;
+  }
+
+  
   .bunner-button-upload{
     width: 281px;
     height: 80px;
@@ -964,7 +1066,20 @@ top: 30px;
 
 @media (max-width: 550px) {
 
+.service__checkbox-container-flex{
+  display: block;
+}
 
+.service__checkbox-container{
+  margin-left: 0;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.service__onvisual-text{
+  margin-left: 40px;
+  margin-top: -10px;
+}
   .messages{
     &__frame-coll-text, &__frame-your-text{
   max-width: 92%;
@@ -1158,9 +1273,121 @@ bottom: 10px;
       font-size: 16px;
     }
   }
+
+
+  .remove-worker-email-svg{
+   position: absolute;
+   top: 42px;
+   right: 40px;
+  }
+
+  .mandatory-registration-popup__bottom-block {
+    .mandatory-selection-flex-cont {
+      flex-direction: column-reverse ;
+      justify-content: flex-start;
+      padding: 0px;
+    }
+    .mandatory-check-all {
+      margin-left: 10px;
+      margin-right: auto;
+    font-size: 15px;
+    }
+    .mandatory-bold-text {
+      font-size: 15px;
+      margin: 10px auto -10px 10px;
+    }
+    
+    .mandatory-items-cont {
+      width: calc(100% - 10px);
+      height: 150px;
+    }
+    
+  
+    .mandatory-label{
+    margin: 20px -15px 0 10px;
+    }
+    
+    .mandatory_item-img-cont {
+      width: 74px;
+      height: 74px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    
+    .mandatory_item-cont{
+      margin-right: 10px;
+    }
+    .mandatory_item-body {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    
+    .mandatory_item-title {
+      font-size: 11px;
+    line-height: 16px;
+ margin-bottom: -2px;
+    }
+    
+    .mandatory_item-text {
+      font-size: 14px;
+    line-height: 18px;
+    height: 32px;
+    }
+    
+    .mandatory_item-number {
+      font-size: 14px;
+    line-height: 22px;
+   margin-top: 2px;
+    }
+    
+    .mandatory_text-border {
+    width: calc(100% - 20px);
+      padding: 5px;
+      margin: 10px auto;
+    line-height: 18px;
+    font-size: 14px;
+    height: 70px;
+
+    }
+    
+    .mandatory_button-calc{
+      height: 40px;
+      font-size: 15px;
+    } 
+    }
+
 }
 
+@media (max-width: 465px) {
+ .personal__frame-service-data{
+    .select-custom-acc{
+      position: relative;
+    }
+    .tooltip{
+      position: absolute;
+      right: 20px;
+       top: 43px;
+    }
+    .personal__select-ul{
+      margin-top: 27px;
+    }
+  }
+
+  .container-flex-brutto{
+  display: block;
+  }
+}
+
+
 @media (max-width: 380px) {
+  .container-flex-brutto{
+    input{
+      padding: 10px;
+    }
+  }
+  .remove-worker-email-svg{
+    right: 20px;
+   }
 
   .www-on-link{
     width: 50px;
@@ -1175,5 +1402,17 @@ bottom: 10px;
 
   .finance__category {
     justify-content: space-between;
+  }
+
+  .mandatory-registration-popup-top-tooltipe{
+     button:nth-child(2){
+     margin-top: 25px;
+    }
+    .popup-button-flex-cont{
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
