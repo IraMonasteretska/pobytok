@@ -285,6 +285,11 @@ margin-left: -100px;
   margin-left: auto;
   left: 150px;
 }
+
+
+.personal__add-select-cont-age{
+  margin-top: -30px;
+}
 }
 
 @media (max-width: 1100px) {
@@ -384,6 +389,20 @@ margin-left: -100px;
       }
     }
 
+.personal__real-add-new-worker {
+  max-width: 257px;
+  display: flex;
+  justify-content: center;
+}
+
+.personal__real-add-new-text-worker {
+  line-height: 21px;
+  margin: 0;
+text-align: center;
+  text-transform: none;
+  font-size: 15px;
+  padding: 0;
+}
 }
 
 
@@ -717,7 +736,6 @@ padding-right: 7px;
     }
   }
 
-
   .message-list {
     .finance {
       &__nav {
@@ -727,6 +745,10 @@ padding-right: 7px;
   }
   }
 
+  .personal__real-add-new-worker {
+height: 50px;
+max-width: 240px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1376,6 +1398,17 @@ bottom: 10px;
   .container-flex-brutto{
   display: block;
   }
+
+  .work-time-item-cont{
+    margin-top: 10px;
+    display: block;
+    max-width: 120px;
+    .select-dropdown__button{
+margin-top: 13px;
+    }
+
+  }  
+
 }
 
 
