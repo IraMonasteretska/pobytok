@@ -450,10 +450,11 @@
                 <div class="personal__mobile-menu-inner"></div>
               </div>
             </div>
-            <h3 class="personal__form-title">Добавить вакансию</h3>
+            <h3 class="personal__form-title">Рекрутация персонала            </h3>
 
             <div class="personal__line"></div>
-            <p class="personal__less-title">Внешний вид / описание</p>
+            <p class="personal__less-title">Требования
+            </p>
 
             <div class="select-custom-acc">
               <p class="personal__form-text">Категория:</p>
@@ -621,28 +622,24 @@
               </select>
             </div>
             <div class="personal__add-select-cont">
-            <div class="select-custom-acc">
-              <p class="personal__form-text">Пол:</p>
-              <select
-                id="select-vacancy-sex"
-                placeholder-text="Пол:"
-                class="select-category"
-              >
-                <option
-                  value="   Wszystkie"
-                  class="select-dropdown__list-item"
+              <div class="select-custom-acc">
+                <p class="personal__form-text">Пол:</p>
+                <select
+                  id="select-vacancy-sex"
+                  placeholder-text="Пол:"
+                  class="select-category"
                 >
-                Wszystkie
-                </option>
-                <option
-                  value="Mężczyzna"
-                  class="select-dropdown__list-item"
-                >
-                Mężczyzna
-                </option>
-                
-              </select>
-            </div>
+                  <option
+                    value="   Wszystkie"
+                    class="select-dropdown__list-item"
+                  >
+                    Wszystkie
+                  </option>
+                  <option value="Mężczyzna" class="select-dropdown__list-item">
+                    Mężczyzna
+                  </option>
+                </select>
+              </div>
             </div>
 
             <p class="personal__form-text personal__form-text-withaut-cont">
@@ -685,16 +682,13 @@
                   class="select-category"
                 >
                   <option value="Podstawowe" class="select-dropdown__list-item">
-                  Podstawowe
+                    Podstawowe
                   </option>
                   <option value=" Średnie" class="select-dropdown__list-item">
                     Średnie
                   </option>
-                  <option
-                    value="Wyższe"
-                    class="select-dropdown__list-item"
-                  >
-                  Wyższe
+                  <option value="Wyższe" class="select-dropdown__list-item">
+                    Wyższe
                   </option>
                 </select>
               </div>
@@ -714,8 +708,7 @@
 
             <div class="personal__add-select-cont">
               <div class="select-custom-acc">
-                <p class="personal__form-text">Дополнительные требования:
-                </p>
+                <p class="personal__form-text">Дополнительные требования:</p>
                 <input
                   type="text"
                   name=""
@@ -727,8 +720,7 @@
 
             <div class="personal__add-select-cont">
               <div class="select-custom-acc">
-                <p class="personal__form-text">Разрешения/Сертифкаты:
-                </p>
+                <p class="personal__form-text">Разрешения/Сертифкаты:</p>
                 <input
                   type="text"
                   name=""
@@ -738,124 +730,1180 @@
               </div>
             </div>
 
-            <div class="personal__add-select-cont">
-          <div class="work-time-item-cont">
-            <input type="checkbox" class="personal__add-bunner-check" id="dayWork1">
-            <label for="dayWork1" >
-              Понедельник
-            </label>
-            <select
-            id="select-time-work-1"
-            placeholder-text="Пол:"
-            class="select-category">
-            <option value="00:00" class="select-dropdown__list-item">
-            00:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              01:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              02:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              03:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              04:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              05:00
-            </option>
-            <option value="00:00" class="select-dropdown__list-item">
-              06:00
-              </option>
-              <option value="00:00" class="select-dropdown__list-item">
-                07:00
-                </option>
-                <option value="00:00" class="select-dropdown__list-item">
-                  08:00
+        
+
+            <p class="personal__form-text personal__form-text-work-time">График работы:</p>
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork1"
+                />
+                <label for="dayWork1"> Понедельник </label>
+                <select
+                  id="select-time-work-1"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
                   </option>
                   <option value="00:00" class="select-dropdown__list-item">
                     09:00
-                    </option>
-                    <option value="00:00" class="select-dropdown__list-item">
-                      10:00
-                      </option>
-                      <option value="00:00" class="select-dropdown__list-item">
-                      11:00
-                        </option>
-                        <option value="00:00" class="select-dropdown__list-item">
-                          12:00
-                          </option>
-                          <option value="00:00" class="select-dropdown__list-item">
-                            13:00
-                            </option>
-                            <option value="00:00" class="select-dropdown__list-item">
-                              14:00
-                              </option>
-                              <option value="00:00" class="select-dropdown__list-item">
-                                15:00
-                                </option>
-                                <option value="00:00" class="select-dropdown__list-item">
-                                  16:00
-                                  </option>
-                                  <option value="00:00" class="select-dropdown__list-item">
-                                    17:00
-                                    </option>
-                                    <option value="00:00" class="select-dropdown__list-item">
-                                      18:00
-                                      </option>
-                                      <option value="00:00" class="select-dropdown__list-item">
-                                        19:00
-                                        </option>
-                                        <option value="00:00" class="select-dropdown__list-item">
-                                          20:00
-                                          </option>
-                                          <option value="00:00" class="select-dropdown__list-item">
-                                            21:00
-                                            </option>
-                                            <option value="00:00" class="select-dropdown__list-item">
-                                              22:00
-                                              </option>
-                                              <option value="00:00" class="select-dropdown__list-item">
-                                                23:00
-                                                </option>
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-2"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork2"
+                />
+                <label for="dayWork2"> Вторник </label>
+                <select
+                  id="select-time-work-3"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-4"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork3"
+                />
+                <label for="dayWork3"> Среда </label>
+                <select
+                  id="select-time-work-5"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-6"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork4"
+                />
+                <label for="dayWork4"> Четверг </label>
+                <select
+                  id="select-time-work-7"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-8"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork5"
+                />
+                <label for="dayWork5"> Пятница </label>
+                <select
+                  id="select-time-work-9"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-10"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork6"
+                />
+                <label for="dayWork6"> Субота </label>
+                <select
+                  id="select-time-work-11"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-12"
+                placeholder-text="17:00"
+                class="select-category"
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
+              <div class="work-time-item-cont">
+                <input
+                  type="checkbox"
+                  class="personal__add-bunner-check"
+                  id="dayWork7"
+                  
+                />
+                <label for="dayWork7"> Воскресенье </label>
+                <select
+                  id="select-time-work-13"
+                  placeholder-text="07:00"
+                  class="select-category selected"
+                >
+                  <option value="00:00" class="select-dropdown__list-item">
+                    00:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item" "> 
+                    01:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    02:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    03:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    04:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    05:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    06:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    07:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    08:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    09:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    10:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    11:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    12:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    13:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    14:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    15:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    16:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    17:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    18:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    19:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    20:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    21:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    22:00
+                  </option>
+                  <option value="00:00" class="select-dropdown__list-item">
+                    23:00
+                  </option>
+                </select>
+                <select
+                id="select-time-work-14"
+                placeholder-text="17:00"
+                class="select-category"
 
-          </select>
+              >
+                <option value="00:00" class="select-dropdown__list-item">
+                  00:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  01:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  02:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  03:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  04:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  05:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  06:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  07:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  08:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  09:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  10:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  11:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  12:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  13:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  14:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  15:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  16:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  17:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  18:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  19:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  20:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  21:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  22:00
+                </option>
+                <option value="00:00" class="select-dropdown__list-item">
+                  23:00
+                </option>
+              </select>
+              </div>
 
-          </div>
-
-
-
-            </div>
-
-
-
-        
-
-        
 
           
-
-
-
-
-
 
             <div class="personal__line personal__line-bottom"></div>
 
             <div class="select-custom-acc">
               <p class="personal__less-title">Место работы</p>
             </div>
-
             <div class="main__search personal__select-ul  personal__select-ul-mb">
         
+
+
+
+              
               <div class="select-wrap filter__all-regions-tablet-wrap">
                 <div class="select__header">
                   <svg class="tablet-point" width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1917,13 +2965,17 @@
               </div>
             </div>
 
+            <div class="select-custom-acc  service__select-custom-acc">
+              <p class="personal__form-text">Дополнительная информация</p>
+              <textarea class="service__textarea" >  </textarea>
+            </div>
             <div
               class="personal__radio-two-container personal__radio-two-container-big"
             >
               <div
                 class="personal__radio-ledt-part personal__radio-ledt-part-big"
               >
-                Передоставление жилья для сотрудника
+              Жильё:
               </div>
 
               <div
@@ -1936,7 +2988,7 @@
                   value="sale"
                   class="personal__radio-btn"
                 />
-                <label for="YesRadio1" onclick="closeTopTooltipe()">Да</label>
+                <label for="YesRadio1" ">Да</label>
 
                 <input
                   type="radio"
@@ -1944,27 +2996,10 @@
                   name="typeSale1"
                   value="burter"
                   class="personal__radio-btn"
-                  onclick="getTopTooltipe()"
+                 
                 />
-                <label for="YesRadio2" onclick="getTopTooltipe()">Нет </label>
-                <div class="tooltip-help-answer tooltip-help-answer-top">
-                  <span class="tooltiptext"
-                    >Если хотите найти жильё для своих сотрудников
-                    <span
-                      href="#"
-                      class="link-tooltipe"
-                      onclick="getTopTooltipePopup()"
-                    >
-                      Нажимите здесь</span
-                    >
-                  </span>
-                  <img
-                    src="img/svg/close-tooltipe.svg"
-                    alt=""
-                    class="close-tooltipe"
-                    onclick="closeTopTooltipe()"
-                  />
-                </div>
+                <label for="YesRadio2">Нет </label>
+         
               </div>
             </div>
 
@@ -1974,7 +3009,8 @@
               <div
                 class="personal__radio-ledt-part personal__radio-ledt-part-big"
               >
-                Ви знаете, как нанять иностранца?
+              Дополнительная информация:
+
               </div>
 
               <div
@@ -1987,7 +3023,7 @@
                   value="sale"
                   class="personal__radio-btn"
                 />
-                <label for="YesRadio3" onclick="closeBotTooltipe()">Да</label>
+                <label for="YesRadio3" >Да</label>
 
                 <input
                   type="radio"
@@ -1995,28 +3031,10 @@
                   name="typeSale2"
                   value="burter"
                   class="personal__radio-btn"
-                  onclick="getBotTooltipe()"
+               
                 />
                 <label for="YesRadio4">Нет </label>
 
-                <div class="tooltip-help-answer tooltip-help-answer-bot">
-                  <span class="tooltiptext"
-                    >Если хотите получить информацию о трудоустройстве
-                    <span
-                      href="#"
-                      class="link-tooltipe"
-                      onclick="getbotTooltipePopup()"
-                    >
-                      Нажимите здесь</span
-                    >
-                  </span>
-                  <img
-                    src="img/svg/close-tooltipe.svg"
-                    alt=""
-                    class="close-tooltipe"
-                    onclick="closeBotTooltipe()"
-                  />
-                </div>
               </div>
             </div>
 
@@ -2316,7 +3334,6 @@
         © 2020 PobytOK. Все права защищены.
       </div>
     </footer>
-   
 
     <section
       class="overlay mandatory-registration-popup mandatory-registration-popup-top-tooltipe visually-hidden"
@@ -2360,77 +3377,120 @@
 
         <div>
           <div class="mandatory-registration-popup__top-block">
-            <p class="popup-worker-text">
-              Виберите агенство
-            </p>
+            <p class="popup-worker-text">Виберите агенство</p>
           </div>
           <div class="mandatory-registration-popup__bottom-block">
-          <div class="mandatory-selection-flex-cont">
-            <p class="mandatory-check-all" onclick="getCheckAll()" >Выбать все</p>
-            <a href="#" class="mandatory-bold-text">Информация для работодателя</a>
-          </div>
-          <div class="mandatory-items-cont">
-            <div class="mandatory_item-cont">
-            <div class="mandatory-items-check">
-              <input
-              type="checkbox"
-              class="mandatory-checkbox-item"
-              id="madatoryCheck1"
-            />
-            <label for="madatoryCheck1" class="mandatory-label"></label>
+            <div class="mandatory-selection-flex-cont">
+              <p class="mandatory-check-all" onclick="getCheckAll()">
+                Выбать все
+              </p>
+              <a href="#" class="mandatory-bold-text"
+                >Информация для работодателя</a
+              >
             </div>
-            <div class="mandatory_item">
-              <div class="mandatory_item-img-cont"> <img src="img/jpg/image1.jpg" alt="" class="mandatory_item-img"></div> 
-              <div class="mandatory_item-body">
-               <a href=""> <h3 class="mandatory_item-title">Dayton Pride Agensy</h3></a>
-                <p class="mandatory_item-text">Совокупность инструментов для решения типичных сложностей, возникающих с рядом направлений жизнедеятельности...</p>
-            <p class="mandatory_item-number">+4 900 555 777</p>
-              </div>
-          </div>
-            </div>
-            <div class="mandatory_item-cont">
-              <div class="mandatory-items-check">
-                <input
-                type="checkbox"
-                class="mandatory-checkbox-item"
-                id="madatoryCheck2"
-              />
-              <label for="madatoryCheck2" class="mandatory-label"></label>
-              </div>
-              <div class="mandatory_item">
-                <div class="mandatory_item-img-cont"> <img src="img/jpg/image1.jpg" alt="" class="mandatory_item-img"></div> 
-                <div class="mandatory_item-body">
-                 <a href=""> <h3 class="mandatory_item-title">Dayton Pride Agensy</h3></a>
-                  <p class="mandatory_item-text">Совокупность инструментов для решения типичных сложностей, возникающих с рядом направлений жизнедеятельности...</p>
-              <p class="mandatory_item-number">+4 900 555 777</p>
+            <div class="mandatory-items-cont">
+              <div class="mandatory_item-cont">
+                <div class="mandatory-items-check">
+                  <input
+                    type="checkbox"
+                    class="mandatory-checkbox-item"
+                    id="madatoryCheck1"
+                  />
+                  <label for="madatoryCheck1" class="mandatory-label"></label>
                 </div>
-            </div>
+                <div class="mandatory_item">
+                  <div class="mandatory_item-img-cont">
+                    <img
+                      src="img/jpg/image1.jpg"
+                      alt=""
+                      class="mandatory_item-img"
+                    />
+                  </div>
+                  <div class="mandatory_item-body">
+                    <a href="">
+                      <h3 class="mandatory_item-title">
+                        Dayton Pride Agensy
+                      </h3></a
+                    >
+                    <p class="mandatory_item-text">
+                      Совокупность инструментов для решения типичных сложностей,
+                      возникающих с рядом направлений жизнедеятельности...
+                    </p>
+                    <p class="mandatory_item-number">+4 900 555 777</p>
+                  </div>
+                </div>
               </div>
               <div class="mandatory_item-cont">
                 <div class="mandatory-items-check">
                   <input
-                  type="checkbox"
-                  class="mandatory-checkbox-item"
-                  id="madatoryCheck3"
-                />
-                <label for="madatoryCheck3" class="mandatory-label"></label>
+                    type="checkbox"
+                    class="mandatory-checkbox-item"
+                    id="madatoryCheck2"
+                  />
+                  <label for="madatoryCheck2" class="mandatory-label"></label>
                 </div>
                 <div class="mandatory_item">
-                  <div class="mandatory_item-img-cont"> <img src="img/jpg/image1.jpg" alt="" class="mandatory_item-img"></div> 
-                  <div class="mandatory_item-body">
-                   <a href=""> <h3 class="mandatory_item-title">Dayton Pride Agensy</h3></a>
-                    <p class="mandatory_item-text">Совокупность инструментов для решения типичных сложностей, возникающих с рядом направлений жизнедеятельности...</p>
-                <p class="mandatory_item-number">+4 900 555 777</p>
+                  <div class="mandatory_item-img-cont">
+                    <img
+                      src="img/jpg/image1.jpg"
+                      alt=""
+                      class="mandatory_item-img"
+                    />
                   </div>
-              </div>
+                  <div class="mandatory_item-body">
+                    <a href="">
+                      <h3 class="mandatory_item-title">
+                        Dayton Pride Agensy
+                      </h3></a
+                    >
+                    <p class="mandatory_item-text">
+                      Совокупность инструментов для решения типичных сложностей,
+                      возникающих с рядом направлений жизнедеятельности...
+                    </p>
+                    <p class="mandatory_item-number">+4 900 555 777</p>
+                  </div>
                 </div>
-          </div>
-       <div class="mandatory_text-and-button">
-         <textarea class="mandatory_text-border" >Фирме DEV TEST требуется помощь в трудоустройстве работника на должность. Просьба отправить предложение на адрес e-mail: test-employer@test.com. Контактный номер телефона: +48000000000.</textarea>
-       <button class="mandatory_button-calc"> (<span class="mandatory_result-calc" >
-0
-       </span>) Отправить </button>
-        </div>
+              </div>
+              <div class="mandatory_item-cont">
+                <div class="mandatory-items-check">
+                  <input
+                    type="checkbox"
+                    class="mandatory-checkbox-item"
+                    id="madatoryCheck3"
+                  />
+                  <label for="madatoryCheck3" class="mandatory-label"></label>
+                </div>
+                <div class="mandatory_item">
+                  <div class="mandatory_item-img-cont">
+                    <img
+                      src="img/jpg/image1.jpg"
+                      alt=""
+                      class="mandatory_item-img"
+                    />
+                  </div>
+                  <div class="mandatory_item-body">
+                    <a href="">
+                      <h3 class="mandatory_item-title">
+                        Dayton Pride Agensy
+                      </h3></a
+                    >
+                    <p class="mandatory_item-text">
+                      Совокупность инструментов для решения типичных сложностей,
+                      возникающих с рядом направлений жизнедеятельности...
+                    </p>
+                    <p class="mandatory_item-number">+4 900 555 777</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mandatory_text-and-button">
+              <textarea class="mandatory_text-border">
+Фирме DEV TEST требуется помощь в трудоустройстве работника на должность. Просьба отправить предложение на адрес e-mail: test-employer@test.com. Контактный номер телефона: +48000000000.</textarea
+              >
+              <button class="mandatory_button-calc">
+                (<span class="mandatory_result-calc"> 0 </span>) Отправить
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -2438,47 +3498,49 @@
 
     <!-- visually-hidden -->
     <section
-    class="overlay mandatory-registration-popup mandatory-registration-popup-pay-accept visually-hidden"
-  >
-    <div class="mandatory-registration-popup__wrap">
-      <button class="sign-wrap__btn">Закрыть</button>
+      class="overlay mandatory-registration-popup mandatory-registration-popup-pay-accept visually-hidden"
+    >
+      <div class="mandatory-registration-popup__wrap">
+        <button class="sign-wrap__btn">Закрыть</button>
 
-      <div>
-        <div class="mandatory-registration-popup__top-block">
-          <p class="search-home-work-title">Оплата</p>
-        </div>
-        <div class="mandatory-registration-popup__bottom-block">
-           <h4>Детали счета</h4>
-           <div class="select-custom-acc">
-            <p class="personal__form-text">Страна:</p>
-            <select id="select-category" placeholder-text="Страна:" class="select-category">
-              <option value="Mieszkania" class="select-dropdown__list-item">
-                Polska
-              </option>
-              <option value="Domy" class="select-dropdown__list-item">
-                Unia Europejska
-              </option>
-              <option value="Działki" class="select-dropdown__list-item">
-                Poza Unią Europejską
-              </option>
-            </select>
+        <div>
+          <div class="mandatory-registration-popup__top-block">
+            <p class="search-home-work-title">Оплата</p>
           </div>
+          <div class="mandatory-registration-popup__bottom-block">
+            <h4>Детали счета</h4>
+            <div class="select-custom-acc">
+              <p class="personal__form-text">Страна:</p>
+              <select
+                id="select-category"
+                placeholder-text="Страна:"
+                class="select-category"
+              >
+                <option value="Mieszkania" class="select-dropdown__list-item">
+                  Polska
+                </option>
+                <option value="Domy" class="select-dropdown__list-item">
+                  Unia Europejska
+                </option>
+                <option value="Działki" class="select-dropdown__list-item">
+                  Poza Unią Europejską
+                </option>
+              </select>
+            </div>
 
-
-     
-          <div class="select-custom-acc">
-            <p class="personal__form-text">Фамилия </p>
-            <input
-              type="text"
-              name=""
-              class="personal__input"
-              placeholder="Фамилия"
-            />
+            <div class="select-custom-acc">
+              <p class="personal__form-text">Фамилия</p>
+              <input
+                type="text"
+                name=""
+                class="personal__input"
+                placeholder="Фамилия"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <script src="js/mandatory-reg.js"></script>
     <script src="js/select.js"></script>
