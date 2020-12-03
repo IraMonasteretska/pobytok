@@ -1,5 +1,46 @@
 
+if (document.querySelector(".rent-worker-calc")) {
+ 
+  
+  let workerValue= document.querySelector('.input-calc-worker')
 
+  document.querySelector('.calc-button1').addEventListener('click', function(){
+    if(workerValue.value == 0){
+      return
+    }
+    workerValue.value--
+  })
+  document.querySelector('.calc-button2').addEventListener('click', function(){
+    workerValue.value++
+  })
+
+
+
+}
+
+
+if (document.querySelector(".mandatory-registration-popup-pay-accept")) {
+  document.querySelector('.personal__button-add-vacancy').addEventListener('click', function(){
+    document.querySelector('.mandatory-registration-popup-pay-accept').classList.remove('visually-hidden')
+  })
+
+let mandatoryPersonal = document.querySelector('.mandatory_radio-for-personal')
+let mandatoryCompany = document.querySelector('.mandatory_radio-for-company')
+document.querySelector('#mandatoryRadio1').addEventListener('change', function(){
+  mandatoryCompany.classList.add('active')
+  mandatoryPersonal.classList.remove('active')
+})
+
+document.querySelector('#mandatoryRadio2').addEventListener('change', function(){
+  mandatoryCompany.classList.remove('active')
+  mandatoryPersonal.classList.add('active')
+})
+}
+
+function getContractPopup(){
+  document.querySelector('.mandatory-contract-popup').classList.remove('visually-hidden')
+
+}
 
 function getbotTooltipePopup(){
   document.querySelector('.mandatory-registration-popup-bot-tooltipe').classList.remove('visually-hidden')
@@ -404,8 +445,26 @@ function createSelect() {
         "span"
       );
       element.parentNode.classList.toggle("active");
-
-
+      if (document.querySelector(".mandatory-registration-popup-pay-accept")) {
+        let otherCantryVis = document.querySelector('.mandatory_other-cantry-vis')
+        let polishCantryVis = document.querySelector('.mandatory_polish-cantry-vis')
+        if(element.textContent == 'Polska'){
+          polishCantryVis.classList.add('active')
+          otherCantryVis.classList.remove('active')
+        } else if (element.textContent == 'Poza Unią Europejską' || element.textContent == 'Unia Europejska')  {
+          polishCantryVis.classList.remove('active')
+          otherCantryVis.classList.add('active')
+        }
+     
+      }
+      if (document.querySelector(".select-category-home-for-worker")) {
+        if(element.textContent == 'Inne'){
+          document.querySelector('.service__textarea-home-for-worker').classList.add('active')
+        }else if (element.textContent == 'Zapewnia pracodawca' || element.textContent == 'Zapewnia agencja') {
+        document.querySelector('.service__textarea-home-for-worker').classList.remove('active')
+      }
+    }
+    
       if (
         element.parentNode.previousSibling.previousSibling.classList.contains(
           "selectCityPolish"
@@ -505,12 +564,6 @@ function createSelect() {
     );
   }
 }
-
-
-
-
-
-
 
 let photoLabel = document.querySelector(".personal__add-photo-label");
 let bunnerLabel = document.querySelector(".personal__add-bunner-label");

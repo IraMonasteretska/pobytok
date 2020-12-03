@@ -380,64 +380,66 @@
           class="backgrount-opacity-all"
           style="transition: all 0.3s ease-out"
         ></div>
-        <div
-          class="personal__panel personal__panel-z"
-          style="transition: all 0.4s ease-out"
-        >
-          <ul class="personal__panel-ul">
+        <div class="personal__panel personal__panel-services" style="transition: all .4s ease-out">
+     
+          <ul class="personal__panel-ul ">
             <a href="#" class="filter__back close-mobile-acc">
               НАЗАД
               <span>
-                <svg
-                  width="8"
-                  height="18"
-                  viewBox="0 0 8 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.422336 9.58521C0.170182 9.23581 0.170182 8.76419 0.422335 8.41479L5.68911 1.11693C6.25697 0.330091 7.5 0.731792 7.5 1.70214L7.5 16.2979C7.5 17.2682 6.25697 17.6699 5.68911 16.8831L0.422336 9.58521Z"
-                    fill="white"
-                  />
+                    fill="white"/>
                 </svg>
               </span>
             </a>
-
+    
             <a href="#">
-              <li class="personal__list">Данные</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list active">Недвижимость</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list">Доска объявлений</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list">Рекламный сервис</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list">Ценник</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list">Дополнительные сервисы</li>
-            </a>
-
-            <a href="#">
-              <li class="personal__list">Форум</li>
+              <li class="personal__list personal__list-1">Данные</li>
             </a>
             <a href="#">
-              <li class="personal__list">Управление аккаунтом</li>
+              <li class="personal__list personal__list-13 active">Вакансии</li>
             </a>
             <a href="#">
-              <li class="personal__list">Мои заказы</li>
+              <li class="personal__list personal__list-15 ">Аренда персонала</li>
             </a>
             <a href="#">
-              <li class="personal__list">Мои платежи</li>
+              <li class="personal__list personal__list-14 ">Рекрутация персонала</li>
+            </a>
+            <a href="#">
+              <li class="personal__list personal__list-2">Недвижимость</li>
+            </a>
+    
+            <a href="#">
+              <li class="personal__list personal__list-3">Доска объявлений</li>
+            </a>
+    
+            <a href="#">
+              <li class="personal__list personal__list-4">Рекламный сервис</li>
+            </a>
+    
+            <!-- <a href="#">
+              <li class="personal__list personal__list-12 active">Услуги фирмы</li>
+            </a> -->
+            
+            <a href="#">
+              <li class="personal__list personal__list-5">Ценник</li>
+            </a>
+    
+            <a href="#">
+              <li class="personal__list personal__list-6">Дополнительные сервисы</li>
+            </a>
+    
+            <a href="#">
+              <li class="personal__list personal__list-7">Форум</li>
+            </a>
+            <a href="#">
+              <li class="personal__list personal__list-8">Управление аккаунтом</li>
+            </a>
+            <a href="#">
+            <li class="personal__list personal__list-9">Мои заказы</li></a>
+            <a href="#">
+              <li class="personal__list personal__list-10">Мои платежи</li>
             </a>
           </ul>
         </div>
@@ -466,10 +468,10 @@
             />
 
             <div class="select-custom-acc">
-              <p class="personal__form-text">Категория:</p>
+              <p class="personal__form-text">Категория</p>
               <select
                 id="select-vacancy1"
-                placeholder-text="Категория:"
+                placeholder-text="Категория"
                 class="select-category"
               >
                 <option
@@ -2116,7 +2118,7 @@
               type="button"
               value="Оплатить"
               name=""
-              class="personal__button personal__button-add-realty"
+              class="personal__button personal__button-add-realty personal__button-add-vacancy"
             />
             <input
               type="button"
@@ -2472,7 +2474,7 @@
        <div class="mandatory_text-and-button">
          <textarea class="mandatory_text-border" >Фирме DEV TEST требуется помощь в трудоустройстве работника на должность. Просьба отправить предложение на адрес e-mail: test-employer@test.com. Контактный номер телефона: +48000000000.</textarea>
        <button class="mandatory_button-calc"> (<span class="mandatory_result-calc" >
-0
+               0
        </span>) Отправить </button>
         </div>
           </div>
@@ -2491,27 +2493,149 @@
         <div class="mandatory-registration-popup__top-block">
           <p class="search-home-work-title">Оплата</p>
         </div>
+        <form action="">
         <div class="mandatory-registration-popup__bottom-block">
-           <h4>Детали счета</h4>
-           <div class="select-custom-acc">
-            <p class="personal__form-text">Страна:</p>
-            <select id="select-category" placeholder-text="Страна:" class="select-category">
-              <option value="Mieszkania" class="select-dropdown__list-item">
+           <h4 class="mandatory_pay-title">Детали счета</h4>
+           <div class="select-custom-acc select-custom-acc-select-mandatory">
+            <p class="personal__form-text">Страна</p>
+            <select id="select-category" placeholder-text="Polska" class="select-category_mandatory">
+              <option value="Mieszkania" class="select-dropdown__list-item select-dropdown__list-item_mandatory">
                 Polska
               </option>
-              <option value="Domy" class="select-dropdown__list-item">
+              <option value="Domy" class="select-dropdown__list-item select-dropdown__list-item_mandatory">
                 Unia Europejska
               </option>
-              <option value="Działki" class="select-dropdown__list-item">
+              <option value="Działki" class="select-dropdown__list-item select-dropdown__list-item_mandatory">
                 Poza Unią Europejską
               </option>
             </select>
           </div>
+          <div class="mandatory_polish-cantry-vis active">
+      
+            <div class="mandatory_cont-for-radio">
+              <input
+              type="radio"
+              id="mandatoryRadio1"
+              name="mandatoryRadio"
+              value="sale"
+              class="personal__radio-btn"
+              checked
+            />
+            <label for="mandatoryRadio1" class="mandatory_radio-label mandatory_radio-label-company" >
+              <p class="mandatory_label-1">Компания</p>
+              <p class="mandatory_label-2" >Я покупаю для бизнеса</p>
+            </label>
 
+            <input
+            type="radio"
+            id="mandatoryRadio2"
+            name="mandatoryRadio"
+            value="sale"
+            class="personal__radio-btn"
+          />
+          <label for="mandatoryRadio2" class="mandatory_radio-label mandatory_radio-label-personal" >
+            <p class="mandatory_label-1">Частное лицо</p>
+            <p class="mandatory_label-2" >Я покупаю для личного пользования</p>
+          </label>
 
-     
+         
+            </div>
+     <div class="mandatory_radio-for-company active">
+
           <div class="select-custom-acc">
-            <p class="personal__form-text">Фамилия </p>
+            <p class="personal__form-text">Название компании</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Название компании"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Воеводство</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Воеводство"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Город</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Город"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Улица</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Улица"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Номер дома</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Номер дома"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Номер офиса</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Номер офиса"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Почтовый индекс</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Почтовый индекс"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">NIP</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="NIP"
+            />
+          </div>
+        </div>
+        <div class="mandatory_radio-for-personal">
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Имя</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Имя"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Фамилия</p>
             <input
               type="text"
               name=""
@@ -2519,7 +2643,79 @@
               placeholder="Фамилия"
             />
           </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Воеводство</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Воеводство"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Город</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Город"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Улица</p>
+            <input
+              type="text"
+              name=""
+              class="personal__input"
+              placeholder="Улица"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Номер дома</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Номер дома"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Номер офиса</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Номер офиса"
+            />
+          </div>
+
+          <div class="select-custom-acc">
+            <p class="personal__form-text">Почтовый индекс</p>
+            <input
+              type="number"
+              name=""
+              class="personal__input"
+              placeholder="Почтовый индекс"
+            />
+          </div>
         </div>
+        <input
+        type="button"
+        value="Подтвердить и оплатить"
+        name=""
+        class="personal__button personal__button-add-realty"
+      />
+        </div>
+        <div class="mandatory_other-cantry-vis ">
+          На данном этапе этот раздел находится на стадии разработки
+        </div>
+        </div>
+      </form>
       </div>
     </div>
   </section>

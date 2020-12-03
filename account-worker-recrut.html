@@ -401,10 +401,10 @@
               <li class="personal__list personal__list-13 ">Вакансии</li>
             </a>
             <a href="#">
-              <li class="personal__list personal__list-15 active">Аренда персонала</li>
+              <li class="personal__list personal__list-15 ">Аренда персонала</li>
             </a>
             <a href="#">
-              <li class="personal__list personal__list-14 ">Рекрутация персонала</li>
+              <li class="personal__list personal__list-14 active">Рекрутация персонала</li>
             </a>
             <a href="#">
               <li class="personal__list personal__list-2">Недвижимость</li>
@@ -453,7 +453,7 @@
                 <div class="personal__mobile-menu-inner"></div>
               </div>
             </div>
-            <h3 class="personal__form-title">Аренда персонала</h3>
+            <h3 class="personal__form-title">Рекрутация персонала            </h3>
 
             <div class="personal__line"></div>
             <p href="" class="personal__real-add-new personal__real-add-new-worker" onclick="getContractPopup()" >
@@ -638,10 +638,10 @@
                   class="select-category"
                 >
                   <option
-                    value="Kobieta"
+                    value="   Wszystkie"
                     class="select-dropdown__list-item"
                   >
-                  Kobieta
+                    Wszystkie
                   </option>
                   <option value="Mężczyzna" class="select-dropdown__list-item">
                     Mężczyzna
@@ -1951,7 +1951,6 @@
                   </li>
                 </ul>
               </div>
-              
               <div class="select-wrap filter__city-input-wrap">
                 <div class="select__header cities-tablet-input-wrap">
                   <svg class="tablet-point" width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2984,132 +2983,73 @@
               <p class="personal__form-text">Дополнительная информация</p>
               <textarea class="service__textarea" >  </textarea>
             </div>
-
-            <div class="personal__line personal__line-bottom"></div>
             <div
-            class="select-custom-acc select-custom-acc-checkbox select-custom-acc-checkbox-national"
-          >
-          <p class="personal__less-title">   Условия сотрудничества с Агентом</p>
-            <p class="personal__form-text">Тип сотрудничества</p>
+              class="personal__radio-two-container personal__radio-two-container-big"
+            >
+              <div
+                class="personal__radio-ledt-part personal__radio-ledt-part-big"
+              >
+              Жильё:
+              </div>
+
+              <div
+                class="personal__radio-right-part personal__radio-right-part-rel"
+              >
+                <input
+                  type="radio"
+                  id="YesRadio1"
+                  name="typeSale1"
+                  value="sale"
+                  class="personal__radio-btn"
+                />
+                <label for="YesRadio1" ">Да</label>
+
+                <input
+                  type="radio"
+                  id="YesRadio2"
+                  name="typeSale1"
+                  value="burter"
+                  class="personal__radio-btn"
+                 
+                />
+                <label for="YesRadio2">Нет </label>
+         
+              </div>
+            </div>
+
             <div
-              class="personal__radio-btn-two personal__radio-btn-two-cantry"
+              class="personal__radio-two-container personal__radio-two-container-big"
             >
-              <input
-                type="checkbox"
-                id="cantry"
-                name="cantry"
-                value="rent"
-                class="personal__radio-btn checkbox-add-rel-inp"
-              />
-              <label for="cantry" class="checkbox-add-rel">Лизинг сотрудников </label>
+              <div
+                class="personal__radio-ledt-part personal__radio-ledt-part-big">
+              Рабочая одежда:
+              </div>
 
-              <input
-                type="checkbox"
-                id="cantry1"
-                name="cantry"
-                value="sale"
-                class="personal__radio-btn"
-              />
-              <label
-                for="cantry1"
-                class="checkbox-add-rel checkbox-add-rel-inp"
-                >Аутсорсинг сотрудников </label
+              <div
+                class="personal__radio-right-part personal__radio-right-part-rel"
               >
+                <input
+                  type="radio"
+                  id="YesRadio3"
+                  name="typeSale2"
+                  value="sale"
+                  class="personal__radio-btn"
+                />
+                <label for="YesRadio3" >Да</label>
+
+                <input
+                  type="radio"
+                  id="YesRadio4"
+                  name="typeSale2"
+                  value="burter"
+                  class="personal__radio-btn"
+               
+                />
+                <label for="YesRadio4">Нет </label>
+
+              </div>
             </div>
-          </div>
 
-          <p class="personal__form-text personal__form-text-withaut-cont-date">
-            Период сотрудничества
-          </p>
-          <div class="container-flex-worker-time date">
-            <input
-              type="text"
-              name=""
-              class="personal__input personal__input-date"
-              placeholder="От"
-              onfocus="(this.type='date')"
-            />
-
-            <input
-            type="text"
-            name=""
-            class="personal__input personal__input-date"
-            placeholder="До"
-            onfocus="(this.type='date')" 
-          />
-          </div>
-
-          <div class="personal__add-select-cont personal__add-select-cont-home">
-            <div class="select-custom-acc">
-              <p class="personal__form-text personal__form-text-home">Жильё</p>
-              <select
-                id="select-vacancy20"
-                placeholder-text="Жильё"
-                class="select-category select-category-home-for-worker"
-              >
-                <option value="Podstawowe" class="select-dropdown__list-item">
-                  Zapewnia agencja
-                </option>
-                <option value=" Średnie" class="select-dropdown__list-item">
-                  Zapewnia pracodawca
-                </option>
-                <option value="Wyższe" class="select-dropdown__list-item">
-                  Inne
-                </option>
-              </select>
-            </div>
-          </div>
-
-          <div class="select-custom-acc  service__select-custom-acc">
-            <textarea class="service__textarea service__textarea-home-for-worker" >  </textarea>
-          </div>
-
-
-          <div
-          class="select-custom-acc select-custom-acc-checkbox select-custom-acc-checkbox-clothes"
-        >
-          <p class="personal__form-text">Робочая одежда</p>
-          <div
-            class="personal__radio-btn-two personal__radio-btn-two-cantry"
-          >
-            <input
-              type="radio"
-              id="clothes1"
-              name="clothes"
-              value="rent"
-              class="personal__radio-btn checkbox-add-rel-inp"
-            />
-            <label for="clothes1" class="checkbox-add-rel">Предоставляется агентством</label>
-
-            <input
-              type="radio"
-              id="clothes2"
-              name="clothes"
-              value="sale"
-              class="personal__radio-btn"
-            />
-            <label
-              for="clothes2"
-              class="checkbox-add-rel checkbox-add-rel-inp"
-              >Предоставляется работодателем</label
-            >
-          </div>
-        </div>
-
-
-      <div class="rent-worker-calc">
-        <div class="calc-button1"  ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="8" width="16" height="2" rx="1" fill="#CCD2DB"/>
-          </svg>
-          </div  >
-        <input type="text" readonly value='1' class="input-calc-worker" >
-<div class='calc-button2' > <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="1" y="8" width="16" height="2" rx="1" fill="#00B0F3"/>
-  <rect x="10" y="1" width="16" height="2" rx="1" transform="rotate(90 10 1)" fill="#00B0F3"/>
-  </svg>
-  
-  </div>
-      </div>
             <div class="personal__line personal__line-bottom"></div>
 
             <p class="personal__less-title personal__less-title-bottom">

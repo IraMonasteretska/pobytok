@@ -562,6 +562,38 @@ margin-bottom: 50px;
     }
   }
 
+  .personal__list-14 {
+    &:before {
+      background: url(../img/svg/account-mune-icon-14.svg);
+    }
+    &:hover {
+      &:before {
+        background: url(../img/svg/account-mune-icon-14-hov.svg);
+      }
+    }
+  }
+  .personal__list-14.active { 
+    &:before {
+      background: url(../img/svg/account-mune-icon-14-hov.svg);
+    }
+  }
+
+  .personal__list-15 {
+    &:before {
+      background: url(../img/svg/account-mune-icon-15.svg);
+    }
+    &:hover {
+      &:before {
+        background: url(../img/svg/account-mune-icon-15-hov.svg);
+      }
+    }
+  }
+  .personal__list-15.active { 
+    &:before {
+      background: url(../img/svg/account-mune-icon-15-hov.svg);
+    }
+  }
+
 }
 
 .account-img-main {
@@ -1644,7 +1676,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 &:hover .personal__real-add-new-text{
-  color:#063453;
+  color:#ADD9F4;
 }
     }
     

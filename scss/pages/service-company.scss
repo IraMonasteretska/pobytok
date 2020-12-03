@@ -677,3 +677,270 @@ top: -20px;
   text-transform: none;
   font-size: 17px;
 }
+
+.frame-company-dat{
+.personal__form-text{
+  margin-left: 18px;
+}
+
+}
+
+.requare-star{
+  color: red;
+}
+
+
+
+
+.mandatory-contract-popup {
+  z-index: 51;
+
+.popup-worker-text {
+padding: 20px;
+
+}
+
+.mandatory_contract-with-work{
+padding: 30px;
+max-width: 580px;
+width: 100%;
+margin: 0 auto;
+
+input{
+  max-width: 580px;
+}
+
+.container-flex-worker-time {
+max-width: 580px;
+}
+} 
+
+.mandatory_orang-text {
+  color: green;
+  text-align: center;
+max-width: 380px;
+margin: 0 auto;
+}
+
+.personal__form-text {
+  margin-top: 15px;
+margin-left: 20px;
+}
+
+.personal__form-text-withaut-cont-age {
+margin-top: 18px;
+}
+
+.personal__button {
+border: none;
+}
+}
+
+
+
+
+.mandatory-registration-popup-pay-accept {
+  display: block;
+  z-index: 40;
+
+.search-home-work-title{
+font-size: 22px;
+padding: 20px;
+font-family: "Cuprum-Bold";
+}
+
+.personal__form-text {
+  margin-left: 20px;
+}
+
+.select-custom-acc-select-mandatory{
+  width: 100%;
+  max-width: 80%;
+  display: block;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.mandatory_polish-cantry-vis {
+  max-width: 80%;
+  width: 100%;
+  display: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.mandatory_other-cantry-vis{
+  font-family: "Cuprum-Bold";
+  font-size: 24px;
+  color: #063453;
+  text-align: center;
+  display: none;
+}
+
+.mandatory_polish-cantry-vis.active {
+display: block;
+}
+
+.mandatory_other-cantry-vis.active{
+  display: block;
+}
+.mandatory_pay-title{
+  font-family: "Cuprum-Bold";
+  font-size: 24px;
+  color: #063453;
+  text-align: center;
+}
+
+.mandatory_cont-for-radio {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  .mandatory_radio-label {
+&:before{
+  margin-top: 14px;
+}
+  }
+
+  .mandatory_label-1 {
+    font-family: "Cuprum-Bold";
+    font-size: 18px;
+line-height: 15px;
+color: #063453;
+  }
+
+.mandatory_label-2 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #464646;
+}
+}
+
+.mandatory_radio-for-company {
+  display: none;
+}
+
+.mandatory_radio-for-personal {
+  display: none;
+}
+
+
+.mandatory_radio-for-company.active {
+  display: block;
+}
+
+.mandatory_radio-for-personal.active {
+  display: block;
+}
+
+.personal__button {
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+}
+
+
+.select-custom-acc-checkbox-national{
+  max-width: 500px;
+
+  label{
+    max-width: 230px;
+    width: 100%;
+  }
+
+  .personal__radio-btn-two-cantry{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .personal__form-text{
+margin-left: 40px;
+  }
+}
+
+.personal__form-text-withaut-cont-date{
+  margin-top: 40px;
+  transform: translateX(22px);
+}
+
+.service__textarea-home-for-worker{
+  display: none;
+}
+
+.service__textarea-home-for-worker.active{
+display: block;
+}
+
+.personal__form-text-home{
+  margin-top: 15px;
+  transform: translateX(22px);
+}
+
+.personal__add-select-cont-home{
+
+  .select-custom-acc{
+    max-width: 1900px;
+    width: 100%;
+    .select-dropdown__button{
+      max-width: 420px;
+    }
+  }
+
+}
+
+.personal__input-date{
+  width: 200px;
+  margin-bottom: 0 !important;
+}
+
+
+.select-custom-acc-checkbox-clothes{
+  max-width: 600px;
+  label{
+    max-width: 270px;
+    width: 100%;
+  }
+}
+
+.rent-worker-calc{
+margin-top: 30px;
+display: flex;
+justify-content: flex-start;
+
+  .calc-button1, .calc-button2{
+    background: #F2F4F5;
+height: 58px;
+width: 58px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: all .3s ease-out;
+&:hover{
+  background: #DFE5EC;;
+}
+  }
+  input{
+    height: 58px;
+    border-radius: 0;
+text-align: center;
+  }
+ 
+  .calc-button1{
+    border-radius:8px 0 0 8px  ;
+    margin-right: 3px;
+  }
+  .calc-button2{
+    border-radius:0 8px 8px 0  ;
+    margin-left: 3px;
+  }
+
+
+}
