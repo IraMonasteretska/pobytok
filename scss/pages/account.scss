@@ -594,6 +594,54 @@ margin-bottom: 50px;
     }
   }
 
+  .personal__list-16 {
+    &:before {
+      background: url(../img/svg/account-mune-icon-16.svg);
+    }
+    &:hover {
+      &:before {
+        background: url(../img/svg/account-mune-icon-16-hov.svg);
+      }
+    }
+  }
+  .personal__list-16.active { 
+    &:before {
+      background: url(../img/svg/account-mune-icon-16-hov.svg);
+    }
+  }
+
+  .personal__list-17 {
+    &:before {
+      background: url(../img/svg/account-mune-icon-17.svg);
+    }
+    &:hover {
+      &:before {
+        background: url(../img/svg/account-mune-icon-17-hov.svg);
+      }
+    }
+  }
+  .personal__list-17.active { 
+    &:before {
+      background: url(../img/svg/account-mune-icon-17-hov.svg);
+    }
+  }
+  
+  .personal__list-18 {
+    &:before {
+      background: url(../img/svg/account-mune-icon-18.svg);
+    }
+    &:hover {
+      &:before {
+        background: url(../img/svg/account-mune-icon-18-hov.svg);
+      }
+    }
+  }
+  .personal__list-18.active { 
+    &:before {
+      background: url(../img/svg/account-mune-icon-18-hov.svg);
+    }
+  }
+
 }
 
 .account-img-main {

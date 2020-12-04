@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
-
 <body class="page-with-table company-data">
   <header class="page-header" id="header">
 
@@ -1427,6 +1426,7 @@
             name=""
             class="personal__input"
             placeholder="Улица*"
+            required
           />
         </div>
 
@@ -1439,6 +1439,7 @@
             name=""
             class="personal__input"
             placeholder="Номер дома*"
+            required
           />
         </div>
 
@@ -1449,19 +1450,23 @@
             name=""
             class="personal__input"
             placeholder="Номер офиса"
+            required
           />
         </div>
 
         <div class="select-custom-acc">
           <p class="personal__form-text">Почтовый индекс <span class="requare-star">*</span></p>
           <input
-            type="number"
+            type="text"
             name=""
             class="personal__input"
             placeholder="Почтовый индекс"
+            required
+            id="postNumber"
+            onkeyup="mask('postNumber', '00-000', event);"
           />
         </div>
-
+        
         <div class="select-custom-acc">
           <p class="personal__form-text">Сертификат KRAZ № <span class="requare-star">*</span></p>
           <input
@@ -1484,6 +1489,7 @@
             name=""
             class="personal__input"
             placeholder="Имя"
+            required
           />
         </div>
 
@@ -1494,23 +1500,29 @@
             name=""
             class="personal__input"
             placeholder="Фамилия"
+            required
           />
         </div>
 
         <div class="select-custom-acc">
           <p class="personal__form-text">Номер телефона <span class="requare-star">*</span></p>
           <input
-            type="number"
+            type="text"
             name=""
-            class="personal__input"
+            class="personal__input phone_mask-inp"
             placeholder="Номер телефона"
+            id="phoneNumber"
+            onkeyup="mask('phoneNumber', '+48(000)000-00-00', event);"
+            required
           />
         </div>
 
+  
+         
 
         <div class="select-custom-acc  service__select-custom-acc">
           <p class="personal__form-text">Описание деятельности *</p>
-          <textarea class="service__textarea" >  </textarea>
+          <textarea class="service__textarea"   required>  </textarea>
         </div>
 
         <input type="button" value="COXРАНИТЬ" name="" class="personal__button service-button">
@@ -1568,7 +1580,7 @@
   </div>
   </div>
 </div>
-<!-- visually-hidden -->
+
 <section class="overlay mandatory-registration-popup  popup-change-name-company visually-hidden">
   <div class="mandatory-registration-popup__wrap">
     <button class="sign-wrap__btn">Закрыть</button>
@@ -1699,6 +1711,7 @@
   </footer>
 
 
+  <script src="js/validation-form.js"></script>
   <script src="js/mandatory-reg.js"></script>
   <script src="js/select.js"></script>
   <script src="js/tablet-filter-city.js"></script>

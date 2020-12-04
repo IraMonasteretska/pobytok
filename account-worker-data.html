@@ -1460,10 +1460,12 @@
         <div class="select-custom-acc">
           <p class="personal__form-text">Почтовый индекс <span class="requare-star">*</span></p>
           <input
-            type="number"
+            type="text"
             name=""
             class="personal__input"
             placeholder="Почтовый индекс"
+            id="postNumber"
+            onkeyup="mask('postNumber', '00-000', event);"
           />
         </div>
   
@@ -1490,9 +1492,11 @@
         <div class="select-custom-acc">
           <p class="personal__form-text">Номер телефона <span class="requare-star">*</span></p>
           <input
-            type="number"
+            type="text"
             name=""
             class="personal__input"
+            id="phoneNumber"
+            onkeyup="mask('phoneNumber', '+48(000)000-00-00', event);"
             placeholder="Номер телефона"
           />
         </div>
@@ -1643,6 +1647,7 @@
   </footer>
 
 
+  <script src="js/validation-form.js"></script>
   <script src="js/mandatory-reg.js"></script>
   <script src="js/select.js"></script>
   <script src="js/tablet-filter-city.js"></script>

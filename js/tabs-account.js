@@ -1,9 +1,15 @@
 
-if (document.querySelector(".rent-worker-calc")) {
- 
-  
-  let workerValue= document.querySelector('.input-calc-worker')
+if (document.querySelector(".personal__add-select-cont-rent-home")) {
+document.querySelector('#timeRentHome1').addEventListener('change', function(){
+  document.querySelector('.personal__add-select-cont-rent-home').classList.add('active')
+})
 
+document.querySelector('#timeRentHome2').addEventListener('change', function(){
+  document.querySelector('.personal__add-select-cont-rent-home').classList.remove('active')
+})
+}
+if (document.querySelector(".rent-worker-calc")) {
+  let workerValue= document.querySelector('.input-calc-worker')
   document.querySelector('.calc-button1').addEventListener('click', function(){
     if(workerValue.value == 0){
       return
@@ -13,11 +19,7 @@ if (document.querySelector(".rent-worker-calc")) {
   document.querySelector('.calc-button2').addEventListener('click', function(){
     workerValue.value++
   })
-
-
-
 }
-
 
 if (document.querySelector(".mandatory-registration-popup-pay-accept")) {
   document.querySelector('.personal__button-add-vacancy').addEventListener('click', function(){
@@ -500,7 +502,117 @@ function createSelect() {
           }
         }
       }
+     
 
+      
+      
+if(document.querySelector('.exp-work-сontainer')){
+  let  expWorkContainer = document.querySelector(".exp-work-сontainer-default");
+if(element.textContent == 'Mam doświadczenie'){
+  expWorkContainer.classList.add('active')
+  document.querySelector(".exp-work-container-main").style.display = 'block'
+} else if(element.textContent == 'Brak doświadczenia zawodowego'){
+  expWorkContainer.classList.remove('active')
+  document.querySelector(".exp-work-container-main").style.display = 'none'
+}
+
+let  expWorkContainerFirst = document.querySelector(".exp-work-сontainer-add1");
+let  expWorkContainerTwo = document.querySelector(".exp-work-сontainer-add2");
+
+let validationWokPlace_1 = document.querySelectorAll(".validation-work-place-1");
+let validationWokPlace_2 = document.querySelectorAll(".validation-work-place-2");
+
+document.querySelector(".add-exp-work-1").addEventListener('click', function(){
+  for( let inp of validationWokPlace_1) {
+    if(inp.value == ''){
+      return
+    }
+  }
+  expWorkContainerFirst.classList.add('active')
+})
+document.querySelector(".remove-this-work-place-1").addEventListener('click', function(){
+  expWorkContainerFirst.classList.remove('active')
+})
+
+document.querySelector(".add-exp-work-2").addEventListener('click', function(){
+  for( let inp of validationWokPlace_2) {
+    if(inp.value == ''){
+      return
+    }
+  }
+  expWorkContainerTwo.classList.add('active')
+})
+document.querySelector(".remove-this-work-place-2").addEventListener('click', function(){
+  expWorkContainerTwo.classList.remove('active')
+})
+
+let  educationWorkContainer = document.querySelector(".education-work-сontainer-default");
+if(element.textContent == 'Высшее'|| element.textContent == 'Неполное высшее' || element.textContent == 'Среднее специальное'){
+  educationWorkContainer.classList.add('active')
+  document.querySelector(".education-work-container-main").style.display = 'block'
+} else if(element.textContent == 'Среднее'){
+  educationWorkContainer.classList.remove('active')
+  document.querySelector(".education-work-container-main").style.display = 'none'
+}
+
+let  educationWorkContainerFirst = document.querySelector(".education-work-сontainer-add1");
+let  educationWorkContainerTwo = document.querySelector(".education-work-сontainer-add2");
+let validationWokEdPlace_1 = document.querySelectorAll(".validation-work-place-ed-1");
+let validationWokEdPlace_2 = document.querySelectorAll(".validation-work-place-ed-2");
+
+document.querySelector(".add-education-work-1").addEventListener('click', function(){
+  for( let inp of validationWokEdPlace_1) {
+  console.log(inp);
+    if(inp.value == ''){
+      return
+    }
+  }
+  educationWorkContainerFirst.classList.add('active')
+})
+
+document.querySelector(".add-education-work-2").addEventListener('click', function(){
+  for( let inp of validationWokEdPlace_2) {
+  console.log(inp);
+    if(inp.value == ''){
+      return
+    }
+  }
+  educationWorkContainerTwo.classList.add('active')
+})
+
+document.querySelector(".remove-this-education-place-1").addEventListener('click', function(){
+  educationWorkContainerFirst.classList.remove('active')
+})
+
+document.querySelector(".remove-this-education-place-2").addEventListener('click', function(){
+  educationWorkContainerTwo.classList.remove('active')
+})
+
+
+
+let addNewLeng1 = document.querySelector('.add-new-leng-work1')
+let addNewLeng2 = document.querySelector('.add-new-leng-work2')
+
+      if(document.getElementById('select-vacancy41').getAttribute('selected')){
+        addNewLeng1.classList.add('active')
+      }
+
+      addNewLeng1.addEventListener('click', function(){
+        addNewLeng1.classList.add('hidden')
+        document.querySelector('.lang-container-1-work').classList.add('active')
+      })
+
+      if(document.getElementById('select-vacancy411').getAttribute('selected')){
+        addNewLeng2.classList.add('active')
+      }
+
+      addNewLeng2.addEventListener('click', function(){
+        addNewLeng2.classList.add('hidden')
+        document.querySelector('.lang-container-2-work').classList.add('active')
+      })
+
+}
+      
       if (
         element.parentNode.previousSibling.previousSibling.classList.contains(
           "select-category-notice-subCat"
@@ -564,6 +676,10 @@ function createSelect() {
     );
   }
 }
+
+
+
+
 
 let photoLabel = document.querySelector(".personal__add-photo-label");
 let bunnerLabel = document.querySelector(".personal__add-bunner-label");

@@ -1,5 +1,8 @@
 @media (max-width: 1440px) {
 
+
+  
+
   .message-list {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -105,6 +108,13 @@ padding-right: 15px;
   }
 }
 @media (max-width: 1350px) {
+
+
+  .personal__frame-cv{
+    .select-custom-acc-flex{
+      margin-left: 45px;
+    }
+  }
 
   .mandatory-registration-popup__bottom-block {
     .mandatory-selection-flex-cont {
@@ -213,6 +223,19 @@ margin-left: 15px;
 }
 
 @media (max-width: 1250px) {
+
+ 
+.personal__frame-cv{
+  .select-custom-acc-flex{
+    margin-top: -8px;
+    margin-left: 10px;
+    .personal__radio-two-container{
+      border: none;
+    }
+  }
+}
+
+
 .personal__all-radio-cont-notice label{
   width: 50% ;
 }
@@ -298,7 +321,19 @@ margin-top: 0;
 
 }
 
+.exp-work-сontainer{
+  .select-custom-acc{
+margin-top: 0;
+  }
 }
+.personal__frame-cv{
+  .service__select-custom-acc{
+  margin-top: 30px;
+  }
+  }
+}
+
+
 
 @media (max-width: 1100px) {
 
@@ -868,12 +903,12 @@ font-size: 15px ;
       width: 15px;
         }
   }
+  }
 
+  .personal__select-ul-cv{
+    margin-top: 70px;
   }
 }
-
-
-
 
 @media (max-width: 650px) {
 
@@ -885,7 +920,6 @@ display: block;
     margin-top: 20px;
   }
 
-  
   .bunner-button-upload{
     width: 281px;
     height: 80px;
@@ -1092,7 +1126,31 @@ top: 30px;
 .st-ct{
   top: 17px;
 }
+
+.aad-place-work-cv{
+  font-size: 16px;
+  span{
+    margin-top: 3px;
+  }
 }
+
+.select-custom-acc-lang{
+  .aad-place-work-cv{
+    span{
+      margin-top: 30px;
+    }
+  }
+}
+
+.remove-this-education-place-1{
+  top: -5px;
+}
+
+.remove-this-work-place-1{
+  top: 10px;
+}
+}
+
 
 @media (max-width: 550px) {
 
