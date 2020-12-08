@@ -928,6 +928,28 @@ font-size: 15px ;
   .personal__select-ul-cv{
     margin-top: 70px;
   }
+
+
+  
+.documents__add-new-file {
+  padding-bottom: 50px;
+  .df-cont{
+    display: block;
+  }
+
+  .personal__input {
+  margin-right: 0px;
+  }
+  
+  .personal__button {
+  margin-top: 30px;
+  }
+    
+  .personal__button-add-white {
+    max-width: 370px;
+  }
+  }
+  
 }
 
 @media (max-width: 650px) {
@@ -1173,7 +1195,21 @@ top: 30px;
 
 
 @media (max-width: 550px) {
-
+  .document {
+    &__button-container {
+ display: block;
+    }
+  
+    &__button-start {
+      margin: 15px auto;
+    }
+  
+    &__button-text {
+  font-size: 16px;
+    }
+  
+  }
+  
 .service__checkbox-container-flex{
   display: block;
 }

@@ -574,55 +574,139 @@
               <img src="img/svg/bunner-example.svg" class="personal__bunner-example-img  bunner-advent-desc" alt="" />
               <img src="img/svg/bunner-withaut-photo.svg" class="personal__bunner-example-img  bunner-advent-desc-withaut active" alt="" />
             </div>
-            <input type="button" class="personal__lead-bunner-inputt" value="Загрузить баннер"
-              onclick="document.getElementById('fileBunner').click();" />
-            <input type="file" style="display: none" id="fileBunner" name="fileBunner" />
-            <div class="personal__bunner-item">
-              <img src="img/png/uploud-bunner.png" alt="" class="personal__bunner-item-img" />
-              <span class="personal__close-bunner"> </span>
+            <div class="personal__container-simple-photo">
+              <button type="button" onclick="document.getElementById('files7').click();" class="photo-button-upload bunner-button-upload" id="filesBtn7"  >
+                 <div id="output7" class="photo-uplods-wrap">
+                 <img class='editPhotoPersonal'id='editPhotoPersonal7' src="img/svg/editPhotoIcob.svg" alt="">
+                 <img class='delatePhotoPersonal' id="delatePhotoPersonal7" src="img/svg/delatePhotoIcon.svg" alt="">
+                 
+                 </div>
+                 <img src="img/svg/addBunnerText.svg" id="outputSvg7" class="outputSvgIcon" alt="">
+                </button>
+              <input 
+                type="file"
+                id="files7"
+                name="files"
+                style="display: none"
+              />       
             </div>
 
      <div class="personal__add-galary-descc">
-            <input type="button" class="personal__lead-bunner-inputt" value="Загрузить фотографии" onclick="document.getElementById('filePhoto').click();" />
-            <input type="file"   multiple  style="display:none;" id="filePhoto" name="filePhoto"/>
-            
+          
             <div class="personal__bunner-item-con">
-            <div class="personal__bunner-item">
-              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
-              <span class="personal__close-bunner"> </span>
-              <input
-              type="radio"
-              id="photoIdUload1"
-              name="typeSale4"
-              value="sale"
-              class="personal__radio-btn"
-            />
-            <label for="photoIdUload1" class="personal__photo-label">Главное фото</label>
-            </div>
-            <div class="personal__bunner-item">
-              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
-              <span class="personal__close-bunner"> </span>
-              <input
-              type="radio"
-              id="photoIdUload2"
-              name="typeSale4"
-              value="sale"
-              class="personal__radio-btn"
-            />
-            <label for="photoIdUload2" class="personal__photo-label">Главное фото</label>
-            </div>
-            <div class="personal__bunner-item">
-              <img src="img/png/uploud-photo.png" alt="" class="personal__bunner-item-img personal__bunner-img-img">
-              <span class="personal__close-bunner"> </span>
-              <input
-              type="radio"
-              id="photoIdUload3"
-              name="typeSale4"
-              value="sale"
-              class="personal__radio-btn"
-            />
-            <label for="photoIdUload3" class="personal__photo-label">Главное фото</label>
-            </div>
+              <div class="personal__lead-photoJS personal__lead-photoJS-adver">
+                <div class="personal__container-simple-photo">
+          
+                  <button type="button" onclick="document.getElementById('files1').click();" class="photo-button-upload photo-button-upload-main" id="filesBtn1"  >
+                     <div id="output1" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal1' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal1" src="img/svg/delatePhotoIcon.svg" alt="">
+                   
+                     <p class="main-photo-label">Главное фото</p>
+                     </div>
+                     <img src="img/svg/clickForPhoto.svg" id="outputSvg1" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files1"
+                    name="files"
+                    style="display: none"
+                  />       
+                
+                </div>
+          
+                <div class="personal__container-simple-photo">
+                  <button type="button" onclick="document.getElementById('files2').click();" class="photo-button-upload" id="filesBtn2"  >
+                     <div id="output2" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal2' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal2" src="img/svg/delatePhotoIcon.svg" alt="">
+                   
+                     </div>
+                     <img src="img/svg/imgForPhoto.svg" id="outputSvg2" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files2"
+                    name="files"
+                    style="display: none"
+                  />       
+                </div>
+          
+                <div class="personal__container-simple-photo">
+                  <button type="button" onclick="document.getElementById('files3').click();" class="photo-button-upload" id="filesBtn3"  >
+                     <div id="output3" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal3' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal3" src="img/svg/delatePhotoIcon.svg" alt="">
+                     <span class="editingImgLoad3">
+                      <img src="img/jpg/home.jpg" alt="" class="thumb">
+                    </span>
+                     </div>
+                     <img src="img/svg/imgForPhoto.svg" id="outputSvg3" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files3"
+                    name="files"
+                    style="display: none"
+                  />       
+                </div>
+                
+                <div class="personal__container-simple-photo">
+                  <button type="button" onclick="document.getElementById('files4').click();" class="photo-button-upload" id="filesBtn4"  >
+                     <div id="output4" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal4' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal4" src="img/svg/delatePhotoIcon.svg" alt="">
+                     <span class="editingImgLoad4">
+                      <img src="img/jpg/home.jpg" alt="" class="thumb">
+                    </span>
+                     </div>
+                     <img src="img/svg/imgForPhoto.svg" id="outputSvg4" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files4"
+                    name="files"
+                    style="display: none"
+                  />       
+                </div>
+          
+                <div class="personal__container-simple-photo">
+                  <button type="button" onclick="document.getElementById('files5').click();" class="photo-button-upload" id="filesBtn5"  >
+                     <div id="output5" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal5' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal5" src="img/svg/delatePhotoIcon.svg" alt="">
+                     <span class="editingImgLoad5">
+                      <img src="img/jpg/home.jpg" alt="" class="thumb">
+                    </span>
+                     </div>
+                     <img src="img/svg/imgForPhoto.svg" id="outputSvg5" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files5"
+                    name="files"
+                    style="display: none"
+                  />       
+                </div>
+                <div class="personal__container-simple-photo">
+                  <button type="button" onclick="document.getElementById('files6').click()" class="photo-button-upload" id="filesBtn6"  >
+                     <div id="output6" class="photo-uplods-wrap">
+                     <img class='editPhotoPersonal'id='editPhotoPersonal6' src="img/svg/editPhotoIcob.svg" alt="">
+                     <img class='delatePhotoPersonal' id="delatePhotoPersonal6" src="img/svg/delatePhotoIcon.svg" alt="">
+                     <span class="editingImgLoad6">
+                      <img src="img/jpg/home.jpg" alt="" class="thumb">
+                    </span>
+                     </div>
+                     <img src="img/svg/imgForPhoto.svg" id="outputSvg6" class="outputSvgIcon" alt="">
+                    </button>
+                  <input 
+                    type="file"
+                    id="files6"
+                    name="files"
+                    style="display: none"
+                  />       
+                </div>
+              </div>
           </div>
         </div>
             <div class="select-custom-acc">
@@ -2900,6 +2984,7 @@
     </div>
   </div>
 
+  <script src="js/render-img.js"></script>
   <script src="js/select.js"></script>
   <script src="js/tablet-filter-city.js"></script>
   <script src="js/accordion.js"></script>

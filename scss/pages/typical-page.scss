@@ -4,7 +4,7 @@
   }
   .vacancy__background {
     left: 10%;
-    bottom: 0px;
+    bottom: 25px;
     height: 560px;
     width: 1415px;
     right: 0vw;
@@ -39,6 +39,10 @@ svg{
 }
 
 @media (max-width: 1025px) {
+
+  .vacancy__background {
+    bottom: -50px;
+}
   .vacancy__header--ttl{
     h1{
      margin-top: 0px;
@@ -151,7 +155,7 @@ svg{
   .vacancy__background {
     left: auto;
     bottom: 0px;
-    height: 500px;
+    height: 570px;
     width: 850px;
     right: 0%;
 }
@@ -202,7 +206,9 @@ svg{
    }
 
    .vacancy__background {
-    right: -20%;
+    right: -15%;
+      height: 470px;
+      width: 680px;
 }
 }
 
@@ -297,6 +303,21 @@ top: 59%;
     left: -150px;
     }
   }
+
+
+  @media (max-width: 580px) {
+    .vacancy__background {
+      top: 160px;
+      right: 0%;
+      left: -150px;
+      overflow: hidden;
+      }
+  }
+  @media (max-width: 320px){
+     .greetings-background-wrap {
+          bottom: 0px;
+    }
+      }
 }
 
 .typical-page-animals{
@@ -420,7 +441,7 @@ margin-top: -100px;
 @media (max-width: 1025px) {
 .vacancy__head-animal{
   position: relative;
-  z-index: 2;
+  z-index: 0
 }
 }
 
@@ -439,4 +460,18 @@ animation-name: slidein;
   to {
     background-position: 35% center ;
   }
+}
+
+.typical-page-transport{
+  .legalization__greetings-icon{
+    width: 50%;
+  }
+
+  @media (max-width: 1025px) {
+    .legalization__greetings-icon{
+      width: 100%;
+    }
+}
+
+
 }

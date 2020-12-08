@@ -1,0 +1,123 @@
+.personal__container-document{
+  .personal__real-table-cont{
+    margin-top: 30px;
+  }
+
+  .personal__real-col-edi,.personal__real-col-edit{
+    flex: 0 0 20%;
+  }
+  .personal__real-col-nam, .personal__real-col-name{
+    flex: 0 0 45%;
+  }
+  .personal__real-col-ca, .personal__real-col-cat{
+    flex: 0 0 30%;
+  }
+}
+
+.document {
+  &__button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  &__button-start {
+    margin: 10px;
+    max-width: 433px;
+    width: 100%;
+background: #063453;
+border-radius: 8px;
+height: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover .document__button-text{
+  color: #77CCF9;
+}
+&:hover  svg path{
+  fill: #77CCF9;
+}
+  }
+
+  &__button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 18px;
+font-family: "Cuprum-Bold";
+color: #FFFFFF;
+transition: all .3s ease-out;
+  }
+
+  &__button-svg {
+    margin-right: 20px;
+    svg path{
+      transition: all .3s ease-out;
+      fill: #FFF;
+    }
+  }
+}
+
+
+
+.personal__container-doc-generation{
+  .legalization-documents {
+background: #fff;
+.container{
+  width: 100%;
+  padding: 50px 0;
+
+}
+  }
+  .legalization-documents__list{
+    width: 100%;
+  }
+}
+
+
+
+.documents__add-new-file {
+.df-cont{
+  display: flex;
+  align-items: center;
+}
+.personal__form-text {
+  max-width: 370px;
+}
+
+.personal__input {
+margin-bottom: 0;
+margin-right: 20px;
+}
+
+.personal__button {
+margin-top: 0px;
+}
+
+.personal__button-last {
+  margin-top: 30px;
+  }
+
+.personal__button-add-white {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      margin-right: 10px;
+    }
+  }
+  svg path{
+    transition: all .3s ease-out;
+    fill: #FFF;
+  }
+  &:hover svg path{
+    fill: #063453;
+  }
+}
+}
