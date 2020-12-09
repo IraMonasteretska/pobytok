@@ -11,7 +11,7 @@
   }
 }
 
-for(let i = 1; i <= 7; i++){
+for(let i = 1; i <= 9; i++){
 function handleFileSelect(evt) {
   var file = evt.target.files;
   var f = file[0];

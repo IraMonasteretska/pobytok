@@ -467,14 +467,40 @@
             <img src="img/svg/www-bunner.svg" class="www-on-link" alt="">
           </div>
           <div class="input-cont-upload-banner active">
-          <input type="button" class="personal__lead-bunner-inputt personal__lead-bunner-inputtt" value="Загрузить баннер"
-          onclick="document.getElementById('fileBunner1').click();" />
-        <input type="file" style="display: none" id="fileBunner1" name="fileBunner1" />
+            <div class="personal__container-simple-photo">
+              <button type="button" onclick="document.getElementById('files9').click();" class="photo-button-upload bunner-button-upload" id="filesBtn9"  >
+                 <div id="output9" class="photo-uplods-wrap">
+                 <img class='editPhotoPersonal'id='editPhotoPersonal9' src="img/svg/editPhotoIcob.svg" alt="">
+                 <img class='delatePhotoPersonal' id="delatePhotoPersonal9" src="img/svg/delatePhotoIcon.svg" alt="">
+                 
+                 </div>
+                 <img src="img/svg/addBunnerText.svg" id="outputSvg9" class="outputSvgIcon" alt="">
+                </button>
+              <input 
+                type="file"
+                id="files9"
+                name="files"
+                style="display: none"
+              />       
+            </div>
       </div>
       <div class="input-cont-upload-wrapper">
-        <input type="button" class="personal__lead-bunner-inputt personal__lead-bunner-inputtt" value="Загрузить обложку к объявлению"
-        onclick="document.getElementById('fileBunner1').click();" />
-      <input type="file" style="display: none" id="fileBunner1" name="fileBunner1" />
+        <div class="personal__container-simple-photo">
+          <button type="button" onclick="document.getElementById('files8').click();" class="photo-button-upload" id="filesBtn8"  >
+             <div id="output8" class="photo-uplods-wrap">
+             <img class='editPhotoPersonal'id='editPhotoPersonal8' src="img/svg/editPhotoIcob.svg" alt="">
+             <img class='delatePhotoPersonal' id="delatePhotoPersonal8" src="img/svg/delatePhotoIcon.svg" alt="">
+          
+             </div>
+             <img src="img/svg/imgForPhoto.svg" id="outputSvg8" class="outputSvgIcon" alt="">
+            </button>
+          <input 
+            type="file"
+            id="files8"
+            name="files"
+            style="display: none"
+          />       
+        </div>
     </div>
 
 
@@ -2956,33 +2982,34 @@
       <div class="personal__bot-radio-item">
         <input type="radio" id="radioTaxa1" name="radioTaxa" value="sale" class="personal__radio-taxa" />
         <label for="radioTaxa1" class="personal__radio-day">7 дней</label>
-        <p class="personal__radio-price">125 PLN</p>
+        <p class="personal__radio-price price-7-day">125 PLN</p>
       </div>
       <div class="personal__bot-radio-item">
         <input type="radio" id="radioTaxa2" name="radioTaxa" value="sale" class="personal__radio-taxa" />
         <label for="radioTaxa2" class="personal__radio-day">14 дней</label>
-        <p class="personal__radio-price">250 PLN</p>
+        <p class="personal__radio-price price-14-day">250 PLN</p>
       </div>
       <div class="personal__bot-radio-item">
         <input type="radio" id="radioTaxa3" name="radioTaxa" value="sale" class="personal__radio-taxa" />
         <label for="radioTaxa3" class="personal__radio-day">30 дней</label>
-        <div class="personal__price-item-old">500 PLN</div>
-        <p class="personal__radio-price">500 PLN</p>
+        <div class="personal__price-item-old price-30-day-old">500 PLN</div>
+        <p class="personal__radio-price price-30-day">500 PLN</p>
       </div>
       <div class="personal__bot-radio-item">
         <input type="radio" id="radioTaxa4" name="radioTaxa" value="sale" class="personal__radio-taxa" />
         <label for="radioTaxa4" class="personal__radio-day">60 дней</label>
-        <div class="personal__price-item-old">1000 PLN</div>
-        <p class="personal__radio-price">900 PLN</p>
+        <div class="personal__price-item-old price-60-day-old">1000 PLN</div>
+        <p class="personal__radio-price price-60-day">900 PLN</p>
       </div>
       <div class="personal__bot-radio-item">
         <input type="radio" id="radioTaxa5" name="radioTaxa" value="sale" class="personal__radio-taxa" />
         <label for="radioTaxa5" class="personal__radio-day">90 дней</label>
-        <div class="personal__price-item-old">1500 PLN</div>
-        <p class="personal__radio-price">1275 PLN</p>
+        <div class="personal__price-item-old price-90-day-old">1500 PLN</div>
+        <p class="personal__radio-price price-90-day">1275 PLN</p>
       </div>
     </div>
   </div>
+
 
   <script src="js/render-img.js"></script>
   <script src="js/select.js"></script>
@@ -2993,7 +3020,7 @@
   <script src="js/tabs-account.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/trumbowyg.js"></script>
-
+  <script src="js/calc-taxa.js"></script>
   <script>
     $(function () {
       $("#editor").trumbowyg({
