@@ -38,11 +38,18 @@ keypressSlider_desc.noUiSlider.on("update", function (values, handle) {
   inputs_desc[handle].value = values[handle];
 });
 
+let inputNumber_desc_0 = document.querySelector('.input-with-keypress-0-desc');
+let inputNumber_desc_1 = document.querySelector('.input-with-keypress-1-desc');
+
+inputNumber_desc_0.addEventListener('change', function () {
+  keypressSlider_desc.noUiSlider.set([ this.value, null]);
+});
+inputNumber_desc_1.addEventListener('change', function () {
+  keypressSlider_desc.noUiSlider.set([null, this.value]);
+});
 
 
-
-
-
+ 
 
 
 
@@ -73,11 +80,21 @@ noUiSlider.create(keypressSlider, {
 /* begin Inputs  */
 
 /* end Inputs  */
+
 var tooltip = document.querySelector(".noUi-tooltip");
 
 keypressSlider.noUiSlider.on("update", function (values, handle) {
   inputs[handle].value = values[handle];
 });
 
+let inputNumber_0 = document.querySelector('.input-with-keypress-0');
+let inputNumber_1 = document.querySelector('.input-with-keypress-1');
+
+inputNumber_0.addEventListener('change', function () {
+  keypressSlider.noUiSlider.set([ this.value, null]);
+});
+inputNumber_1.addEventListener('change', function () {
+  keypressSlider.noUiSlider.set([null, this.value]);
+});
 
 
