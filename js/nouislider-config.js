@@ -2,10 +2,16 @@
 "use strict";
 
 
+
+
+
+
 var keypressSlider_desc = document.querySelector(".slider-keypress-desc");
 var input0_desc = document.querySelector(".input-with-keypress-0-desc");
 var input1_desc = document.querySelector(".input-with-keypress-1-desc");
 var inputs_desc = [input0_desc, input1_desc];
+
+
 
 noUiSlider.create(keypressSlider_desc, {
   start: [0, 600],
@@ -27,10 +33,13 @@ noUiSlider.create(keypressSlider_desc, {
 });
 
 
+
 keypressSlider_desc.noUiSlider.on("update", function (values, handle) {
   inputs_desc[handle].value = values[handle];
-
 });
+
+
+
 
 
 
