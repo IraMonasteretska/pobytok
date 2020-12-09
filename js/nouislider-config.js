@@ -10,17 +10,16 @@ var keypressSlider_desc = document.querySelector(".slider-keypress-desc");
 var input0_desc = document.querySelector(".input-with-keypress-0-desc");
 var input1_desc = document.querySelector(".input-with-keypress-1-desc");
 var inputs_desc = [input0_desc, input1_desc];
-
-
+console.log(parseInt(input1_desc.value));
 
 noUiSlider.create(keypressSlider_desc, {
-  start: [0, 600],
+  start: [input0_desc.value, input1_desc.value],
   connect: true,
   tooltips: [false, true],
   step: 1,
   range: {
-    min: [0],
-    max: [1000]
+    min: [parseInt(input0_desc.value)],
+    max: [parseInt(input1_desc.value)]
   },
   format: {
     from: function (value) {
@@ -33,15 +32,17 @@ noUiSlider.create(keypressSlider_desc, {
 });
 
 
-
-keypressSlider_desc.noUiSlider.on("update", function (values, handle) {
-  inputs_desc[handle].value = values[handle];
-});
-
 let inputNumber_desc_0 = document.querySelector('.input-with-keypress-0-desc');
 let inputNumber_desc_1 = document.querySelector('.input-with-keypress-1-desc');
 
+keypressSlider_desc.noUiSlider.on("update", function (values, handle) {
+ 
+  inputs_desc[handle].value = values[handle];
+});
+
+
 inputNumber_desc_0.addEventListener('change', function () {
+  
   keypressSlider_desc.noUiSlider.set([ this.value, null]);
 });
 inputNumber_desc_1.addEventListener('change', function () {
