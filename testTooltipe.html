@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <div id="obj" style="position : relative; left : 11px; top : 1000px;"></div>
+
+
+
+  <style>
+    #obj {
+      margin-top: 200px;
+      width: 30px;
+      height: 50px;
+      background: gray;
+      transition: all 1s ease-out;
+  }
+  </style>
+  
+    <script>
+  window.addEventListener('load', function () { 
+      var O = document.getElementById('obj'),
+          X = 0,
+          Y = 0,mouseY=0; 
+      window.addEventListener('click', function (ev) {
+          ev = window.event || ev; 
+        
+          Y=ev.pageY;
+      });
+  
+      function move() { 
+          var p = 'px';
+          console.log(Y);
+          O.style.top = Y + p;
+          
+          setTimeout(move, 100);
+      }
+      move();
+  
+  });
+    </script>
+</body>
+</html>

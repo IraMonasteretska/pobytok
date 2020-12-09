@@ -13,8 +13,19 @@
   <link rel="stylesheet" href="css/style.min.css">
    <link rel="stylesheet" href="css/range.css">
   <link href="css/nouislider.css" rel="stylesheet">
+  <style>
+    #obj {
+      width: 30px;
+      height: 30px;
+      background: gray;
+      transition: all 1s ease-out;
+      margin-left: 570px;
+      z-index: 500;
+      display: none;
+  }
+  </style>
 </head>
-
+<div id="obj" style="position : absolute; left : 1px; top: 111px; ;"></div>
 <body>
 <header class="page-header" id="header">
   <h1 class="visually-hidden">Pobytok - Сервис для мигрантов в Польше</h1>
@@ -2505,8 +2516,9 @@
       </div>
     </div>
   </div>
-
+ 
   <section class="offers-block container vacancy-container">
+    
     <h2 class="visually-hidden">Недвижимость</h2>
     <div class="offers-block__filter">
 
@@ -3785,5 +3797,41 @@
 <script src="js/nouislider.js"></script>
 <script src="js/nouislider-config.js"></script>
 
+
+<script>
+  window.addEventListener('load', function () { 
+      var O = document.getElementById('obj'),
+          X = 0,
+          Y = 0,mouseX=0,mouseY=0; 
+      window.addEventListener('click', function (ev) {
+          ev = window.event || ev; 
+        
+          Y=ev.pageY;
+      });
+  
+      function move() { 
+          var p = 'px';
+          console.log(X,Y);
+          O.style.left = X + p;
+          O.style.top = Y + p;
+          
+          setTimeout(move, 100);
+      }
+      move();
+  
+  });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
