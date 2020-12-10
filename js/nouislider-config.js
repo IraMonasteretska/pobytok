@@ -2,10 +2,6 @@
 "use strict";
 
 
-
-
-
-
 var keypressSlider_desc = document.querySelector(".slider-keypress-desc");
 var input0_desc = document.querySelector(".input-with-keypress-0-desc");
 var input1_desc = document.querySelector(".input-with-keypress-1-desc");
@@ -96,7 +92,6 @@ inputNumber_0.addEventListener('change', function () {
 inputNumber_1.addEventListener('change', function () {
   keypressSlider.noUiSlider.set([null, this.value]);
 });
-
 
 
 
