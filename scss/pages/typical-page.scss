@@ -1067,3 +1067,49 @@ transform: translateY(-170px) !important;
   }
 }
 }
+
+// custom tooltipe style
+  #custom-tooltipe {
+  transition: all .5s ease-out;
+  margin-left:28.5%;
+  z-index: 500;
+
+  left: 28px;
+width: 263px;
+height: 58px;
+background: #dce8f1;
+border-radius: 8px;
+color: #7b8a99;
+display: -webkit-box;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+position: absolute;
+transform: translateY(-30px);
+font-size: 18px;
+line-height: 30px;
+font-family: "Cuprum-Bold","Arial",sans-serif;
+opacity: 0;
+}
+
+#custom-tooltipe:before{
+  content: '';
+position: absolute;
+margin: 0 auto;
+width: 0;
+height: 0;
+top: 22px;
+left: -15px;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #dce8f1;
+-webkit-transform: rotate(-90deg);
+transform: rotate(-90deg);
+}
+@media (max-width: 1440px) {
+  #custom-tooltipe {
+    margin-left:34.5%;
+}
+}

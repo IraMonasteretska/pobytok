@@ -10,12 +10,11 @@ var keypressSlider_desc = document.querySelector(".slider-keypress-desc");
 var input0_desc = document.querySelector(".input-with-keypress-0-desc");
 var input1_desc = document.querySelector(".input-with-keypress-1-desc");
 var inputs_desc = [input0_desc, input1_desc];
-console.log(parseInt(input1_desc.value));
 
 noUiSlider.create(keypressSlider_desc, {
   start: [input0_desc.value, input1_desc.value],
   connect: true,
-  tooltips: [false, true],
+  tooltips: [false, false],
   step: 1,
   range: {
     min: [parseInt(input0_desc.value)],
@@ -99,3 +98,45 @@ inputNumber_1.addEventListener('change', function () {
 });
 
 
+
+// custom tooltipe
+
+
+
+const salerOrigin = document.querySelector('#saler-origin')
+const stateOrigin = document.querySelector('#state-origin')
+const scoreOrigin = document.querySelector('#score-origin')
+const deliveryOrigin = document.querySelector('#delivery-origin')
+
+window.addEventListener('load', function () { 
+    let O = document.getElementById('custom-tooltipe'),
+        Y = 0
+
+salerOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = salerOrigin.getBoundingClientRect().top + pageYOffset + (salerOrigin.clientHeight/2); 
+    });
+
+    stateOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = stateOrigin.getBoundingClientRect().top + pageYOffset + (stateOrigin.clientHeight/2); 
+    });
+
+    scoreOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = scoreOrigin.getBoundingClientRect().top + pageYOffset + (scoreOrigin.clientHeight/2); 
+    });
+    
+    deliveryOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = deliveryOrigin.getBoundingClientRect().top + pageYOffset + (deliveryOrigin.clientHeight/2); 
+    });
+
+    function move() { 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+        let p = 'px';
+        O.style.top = Y + p;
+        setTimeout(move, 100);
+    }
+    move();
+
+});
