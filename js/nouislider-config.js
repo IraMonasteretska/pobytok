@@ -99,10 +99,125 @@ inputNumber_1.addEventListener('change', function () {
 
 
 
-// custom tooltipe
 
 
 
+
+
+
+
+
+// custom tooltipe property
+if(document.querySelector('.offers-block-property')){
+
+const offerOrigin = document.querySelector('#offer-origin')
+const offerType = document.querySelector('#offer-type')
+const levelOrigin = document.querySelector('#level')
+const roomsOrigin = document.querySelector('#rooms')
+const furnitureOrigin = document.querySelector('#furniture')
+const animalsOrigin = document.querySelector('#animals')
+const childrenOrigin = document.querySelector('#children')
+const foreignerOrigin = document.querySelector('#foreigner')
+const smokersOrigin = document.querySelector('#smokers')
+
+window.addEventListener('load', function () { 
+    let O = document.getElementById('custom-tooltipe'),
+        Y = 0
+        offerOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = offerOrigin.getBoundingClientRect().top + pageYOffset + (offerOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
+    });
+
+    offerType.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = offerType.getBoundingClientRect().top + pageYOffset + (offerType.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
+    });
+
+    levelOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = levelOrigin.getBoundingClientRect().top + pageYOffset + (levelOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
+    });
+    
+    roomsOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+        Y = roomsOrigin.getBoundingClientRect().top + pageYOffset + (roomsOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
+    });
+
+    furnitureOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+      Y = furnitureOrigin.getBoundingClientRect().top + pageYOffset + (furnitureOrigin.clientHeight/2); 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+  });
+
+  animalsOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+      Y = animalsOrigin.getBoundingClientRect().top + pageYOffset + (animalsOrigin.clientHeight/2); 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+  });
+
+  childrenOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+      Y = childrenOrigin.getBoundingClientRect().top + pageYOffset + (childrenOrigin.clientHeight/2); 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+  });
+  
+  foreignerOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+      Y = foreignerOrigin.getBoundingClientRect().top + pageYOffset + (foreignerOrigin.clientHeight/2); 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+  });
+
+  smokersOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
+      Y = smokersOrigin.getBoundingClientRect().top + pageYOffset + (smokersOrigin.clientHeight/2); 
+      setTimeout(getOpacity, 1500);
+      function getOpacity() { 
+        O.style.opacity = 1
+      }
+  });
+
+    function move() { 
+    
+        let p = 'px';
+        O.style.top = Y + p;
+        setTimeout(move, 100);
+    }
+    move();
+
+});
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+// custom tooltipe all
 const salerOrigin = document.querySelector('#saler-origin')
 const stateOrigin = document.querySelector('#state-origin')
 const scoreOrigin = document.querySelector('#score-origin')
@@ -111,7 +226,6 @@ const deliveryOrigin = document.querySelector('#delivery-origin')
 window.addEventListener('load', function () { 
     let O = document.getElementById('custom-tooltipe'),
         Y = 0
-
 salerOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
         Y = salerOrigin.getBoundingClientRect().top + pageYOffset + (salerOrigin.clientHeight/2); 
         setTimeout(getOpacity, 1500);
