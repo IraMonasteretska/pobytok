@@ -114,25 +114,38 @@ window.addEventListener('load', function () {
 
 salerOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
         Y = salerOrigin.getBoundingClientRect().top + pageYOffset + (salerOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
     });
 
     stateOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
         Y = stateOrigin.getBoundingClientRect().top + pageYOffset + (stateOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
     });
 
     scoreOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
         Y = scoreOrigin.getBoundingClientRect().top + pageYOffset + (scoreOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
     });
     
     deliveryOrigin.parentNode.parentNode.children[2].addEventListener('click', function () {
         Y = deliveryOrigin.getBoundingClientRect().top + pageYOffset + (deliveryOrigin.clientHeight/2); 
+        setTimeout(getOpacity, 1500);
+        function getOpacity() { 
+          O.style.opacity = 1
+        }
     });
 
     function move() { 
-      setTimeout(getOpacity, 1500);
-      function getOpacity() { 
-        O.style.opacity = 1
-      }
+    
         let p = 'px';
         O.style.top = Y + p;
         setTimeout(move, 100);
