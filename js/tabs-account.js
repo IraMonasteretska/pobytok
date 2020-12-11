@@ -613,6 +613,30 @@ let addNewLeng2 = document.querySelector('.add-new-leng-work2')
 
 }
       
+
+
+if (
+  element.parentNode.previousSibling.previousSibling.classList.contains(
+    "select-category-adverts-js"
+  )
+) {
+  let catPolish = document.querySelectorAll(".select-custom-acc-cat");
+  for (i = 0; i < catPolish.length; i++) {
+    catPolish[i].classList.remove("active");
+  }
+  if (element.getAttribute("data-value") == "Ubezpieczenia") {
+    catPolish[0].classList.add("active");
+  } else if (element.getAttribute("data-value") == "Prawo") {
+    catPolish[1].classList.add("active");
+  } else if (element.getAttribute("data-value") == "Rekreacja") {
+    catPolish[2].classList.add("active");
+  } else if (element.getAttribute("data-value") == "Kredyty (Usługi finansowe)") {
+    catPolish[3].classList.add("active");
+  } 
+}
+
+
+
       if (
         element.parentNode.previousSibling.previousSibling.classList.contains(
           "select-category-notice-subCat"
