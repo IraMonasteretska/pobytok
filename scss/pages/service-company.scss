@@ -1127,4 +1127,13 @@ right: 10px;
   margin-top: 40px;
 }
 
+.personal__type-advert-b{
+  display: flex;
+  &:before{
+    display: none;
+  }
+}
 
+.personal__type-advert-bunner{
+  display: flex !important;
+}
