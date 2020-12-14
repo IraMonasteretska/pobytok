@@ -2044,10 +2044,13 @@ display: none;
 }
 
 .select-custom-acc-bunner-name{
-  display: block;
+  display: none;
 }
 
 .select-custom-acc-name-desc.active{
   display: block;
   }
   
+  .select-custom-acc-bunner-name.active{
+    display: block ;
+  }
