@@ -1145,3 +1145,29 @@ transform: rotate(-90deg);
 
 
 }
+
+
+
+.vacancy__head--bg-legal{
+  width: 24%;
+}
+
+@media (max-width: 718px) {
+  .vacancy__head--bg-legal{
+  width: 35%;
+}
+}
+
+.main__search__category-input-vacat{
+  text-transform: uppercase;
+}
+
+.vacancy__head--bg-insurnes{
+width: 28%;
+}
+
+@media (max-width: 718px) {
+  .vacancy__head--bg-insurnes{
+  width: 40%;
+}
+}
