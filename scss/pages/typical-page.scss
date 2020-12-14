@@ -1113,3 +1113,35 @@ transform: rotate(-90deg);
     margin-left:34.5%;
 }
 }
+
+
+
+.typical-page-business{
+
+.head__info.head__info--left{
+  top: 25%;
+}
+
+   .head__info.head__info--bottom{
+    right: 15%;
+    top: 61%;
+  }
+
+  .head__info.head__info--center{
+    top: 20%;
+  }
+
+  @media (max-width: 1500px) {
+    .head__info.head__info--left{
+  right: 40%;
+    }
+    @media (max-width: 1200px) {
+      .head__info.head__info--left{
+    right: 50%;
+      }
+    }
+  }
+
+
+
+}
