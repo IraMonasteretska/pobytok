@@ -815,6 +815,10 @@ let typeAdvertBunner = document.querySelector(".personal__type-advert-bunner");
 let typeAdvertB = document.querySelector(".personal__type-advert-b");
 let visualEditor = document.querySelector(".visual-editor-cont-desc");
 
+
+let inputNameAdverDesc = document.querySelector(".select-custom-acc-name-desc");
+let inputNameAdverBunner = document.querySelector(".select-custom-acc-bunner-name");
+
 typeAdvertBunner.addEventListener("click", getTypeAdvertBunner);
 function getTypeAdvertBunner() {
   uploadBanner.classList.add("active");
@@ -829,6 +833,9 @@ function getTypeAdvertBunner() {
   if (bunnerLabel.classList.contains("active")) {
     visualEditor.classList.add("active");
   }
+
+  inputNameAdverDesc.classList.remove('active')
+  inputNameAdverBunner.classList.add('active')
 }
 
 typeAdvertDesc.addEventListener("click", getTypeAdvertDesc);
@@ -842,6 +849,9 @@ function getTypeAdvertDesc() {
   typeAdvertBunnerIm.classList.add("active");
   typeAdvertDescIm.classList.remove("active");
   visualEditor.classList.add("active");
+
+  inputNameAdverDesc.classList.add('active')
+  inputNameAdverBunner.classList.remove('active')
 }
 
 
