@@ -744,46 +744,46 @@ function getStickBlock() {
   leadStick.classList.toggle("active");
 }
 
-let addStickRabat = document.querySelector(".add-stick-rabat");
-let adventR = document.querySelector(".sticer-advent-r");
-let addStickNic = document.querySelector(".add-stick-nic");
-let adventN = document.querySelector(".sticer-advent-n");
-let addStickKarta = document.querySelector(".add-stick-karta");
-let adventP = document.querySelector(".sticer-advent-p");
-let addStickPromocija = document.querySelector(".add-stick-promocija");
-let adventPr = document.querySelector(".sticer-advent-pr");
-addStickRabat.click();
-addStickRabat.addEventListener("click", getAddStickRabat);
-function getAddStickRabat() {
-  adventPr.classList.remove("active");
-  adventP.classList.remove("active");
-  adventN.classList.remove("active");
-  adventR.classList.add("active");
-}
+// let addStickRabat = document.querySelector(".add-stick-rabat");
+// let adventR = document.querySelector(".sticer-advent-r");
+// let addStickNic = document.querySelector(".add-stick-nic");
+// let adventN = document.querySelector(".sticer-advent-n");
+// let addStickKarta = document.querySelector(".add-stick-karta");
+// let adventP = document.querySelector(".sticer-advent-p");
+// let addStickPromocija = document.querySelector(".add-stick-promocija");
+// let adventPr = document.querySelector(".sticer-advent-pr");
+// addStickRabat.click();
+// addStickRabat.addEventListener("click", getAddStickRabat);
+// function getAddStickRabat() {
+//   adventPr.classList.remove("active");
+//   adventP.classList.remove("active");
+//   adventN.classList.remove("active");
+//   adventR.classList.add("active");
+// }
 
-addStickPromocija.addEventListener("click", getAddStickPromocija);
-function getAddStickPromocija() {
-  adventPr.classList.add("active");
-  adventP.classList.remove("active");
-  adventN.classList.remove("active");
-  adventR.classList.remove("active");
-}
+// addStickPromocija.addEventListener("click", getAddStickPromocija);
+// function getAddStickPromocija() {
+//   adventPr.classList.add("active");
+//   adventP.classList.remove("active");
+//   adventN.classList.remove("active");
+//   adventR.classList.remove("active");
+// }
 
-addStickKarta.addEventListener("click", getAddStickKarta);
-function getAddStickKarta() {
-  adventPr.classList.remove("active");
-  adventN.classList.remove("active");
-  adventR.classList.remove("active");
-  adventP.classList.add("active");
-}
+// addStickKarta.addEventListener("click", getAddStickKarta);
+// function getAddStickKarta() {
+//   adventPr.classList.remove("active");
+//   adventN.classList.remove("active");
+//   adventR.classList.remove("active");
+//   adventP.classList.add("active");
+// }
 
-addStickNic.addEventListener("click", getAddStickNic);
-function getAddStickNic() {
-  adventPr.classList.remove("active");
-  adventR.classList.remove("active");
-  adventP.classList.remove("active");
-  adventN.classList.add("active");
-}
+// addStickNic.addEventListener("click", getAddStickNic);
+// function getAddStickNic() {
+//   adventPr.classList.remove("active");
+//   adventR.classList.remove("active");
+//   adventP.classList.remove("active");
+//   adventN.classList.add("active");
+// }
 
 let addGalaryLabel = document.querySelector(".personal__add-galary-label");
 let adventDesc = document.querySelector(".bunner-advent-desc");
