@@ -224,6 +224,11 @@ margin-left: 15px;
 
 @media (max-width: 1250px) {
 
+
+
+
+
+
  
 .personal__frame-cv{
   .select-custom-acc-flex{
@@ -353,9 +358,57 @@ margin-top: 0;
   }
 }
 
-
-
 @media (max-width: 1100px) {
+
+
+  .open-notice {
+    &__start {
+      margin-bottom: 20px;
+    }
+  
+    &__container {
+      padding: 20px;
+    }
+
+  
+    &__start-left {
+      width: 65%;
+    }
+  
+    &__up-title {
+      font-size: 18px;
+
+    }
+  
+    &__title-main {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 50px;
+    }
+  
+    &__start-right {
+      width: 35%;
+    }
+  
+
+    &__name {
+      font-size: 18px;
+    }
+  
+    &__border-show-phone {
+      font-size: 16px;
+      height: 54px;
+      img {
+        margin-right: 6px;
+      }
+    }
+
+    &__time {
+      span {
+        margin-bottom: 0px;
+      }
+    }
+  }
 
   .personal {
     &__service-item {
@@ -467,7 +520,6 @@ text-align: center;
   padding: 0;
 }
 }
-
 
 @media (max-width: 1024px) {
   .personal__select-ul{
@@ -833,6 +885,38 @@ font-size: 15px ;
 
 @media (max-width: 776px) {
 
+  .open-notice {
+    &__start {
+      margin-bottom: 15px;
+    }
+  
+    &__container {
+      padding: 15px;
+    }
+
+    &__up-title {
+      font-size: 16px;
+    }
+  
+    &__title-main {
+      font-size: 22px;
+      margin-top: 30px;
+      line-height: 27px;
+      margin-bottom: 40px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  
+    &__border-show-phone {
+      max-width: 175px;
+      font-size: 14px;
+      height: 50px;
+    }
+
+  }
+
 
   .typical-page {
     &__big-title {
@@ -1193,7 +1277,6 @@ top: 30px;
 }
 }
 
-
 @media (max-width: 550px) {
   .document {
     &__button-container {
@@ -1547,7 +1630,6 @@ margin-top: 13px;
   }  
 
 }
-
 
 @media (max-width: 380px) {
   .container-flex-brutto{
