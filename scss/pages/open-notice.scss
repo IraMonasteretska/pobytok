@@ -176,11 +176,10 @@
     padding: 20px;
   }
 
-  &__data {
-    font-size: 18px;
-line-height: 26px;
+ &__data.open-notice__imp  {
+   
 text-align: center;
-color: #7B8A99;
+color: #7B8A99 ;
 
   }
 
@@ -230,3 +229,5 @@ color: #7B8A99;
     cursor: pointer;
   }
 }
+
+
