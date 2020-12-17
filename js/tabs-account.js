@@ -508,10 +508,11 @@ function createSelect() {
       
 if(document.querySelector('.exp-work-сontainer')){
   let  expWorkContainer = document.querySelector(".exp-work-сontainer-default");
-if(element == element.parentNode.children[1]){
+  console.log(element.parentNode.previousSibling.previousSibling.classList.contains('select-exp-level'))
+if(element == element.parentNode.children[1] && element.parentNode.previousSibling.previousSibling.classList.contains('select-exp-level')){
   expWorkContainer.classList.add('active')
   document.querySelector(".exp-work-container-main").style.display = 'block'
-} else if(element == element.parentNode.children[0]){
+} else if(element == element.parentNode.children[0] && element.parentNode.previousSibling.previousSibling.classList.contains('select-exp-level')){
   expWorkContainer.classList.remove('active')
   document.querySelector(".exp-work-container-main").style.display = 'none'
 }
@@ -547,12 +548,13 @@ document.querySelector(".remove-this-work-place-2").addEventListener('click', fu
 })
 
 let  educationWorkContainer = document.querySelector(".education-work-сontainer-default");
-if(element == element.parentNode.children[0]||
- element == element.parentNode.children[1] ||
-  element == element.parentNode.children[3]){
+if(element == element.parentNode.children[0] && element.parentNode.previousSibling.previousSibling.classList.contains('select-education-class')  ||
+ element == element.parentNode.children[1] && element.parentNode.previousSibling.previousSibling.classList.contains('select-education-class') ||
+  element == element.parentNode.children[3]  && element.parentNode.previousSibling.previousSibling.classList.contains('select-education-class') ){
   educationWorkContainer.classList.add('active')
+  console.log('asdasd')
   document.querySelector(".education-work-container-main").style.display = 'block'
-} else if(element == element.parentNode.children[2]){
+} else if(element == element.parentNode.children[2] && element.parentNode.previousSibling.previousSibling.classList.contains('select-education-class')){
   educationWorkContainer.classList.remove('active')
   document.querySelector(".education-work-container-main").style.display = 'none'
 }
