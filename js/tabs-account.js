@@ -508,10 +508,10 @@ function createSelect() {
       
 if(document.querySelector('.exp-work-сontainer')){
   let  expWorkContainer = document.querySelector(".exp-work-сontainer-default");
-if(element.textContent == 'Mam doświadczenie'){
+if(element == element.parentNode.children[1]){
   expWorkContainer.classList.add('active')
   document.querySelector(".exp-work-container-main").style.display = 'block'
-} else if(element.textContent == 'Brak doświadczenia zawodowego'){
+} else if(element == element.parentNode.children[0]){
   expWorkContainer.classList.remove('active')
   document.querySelector(".exp-work-container-main").style.display = 'none'
 }
@@ -547,10 +547,12 @@ document.querySelector(".remove-this-work-place-2").addEventListener('click', fu
 })
 
 let  educationWorkContainer = document.querySelector(".education-work-сontainer-default");
-if(element.textContent == 'Высшее'|| element.textContent == 'Неполное высшее' || element.textContent == 'Среднее специальное'){
+if(element == element.parentNode.children[0]||
+ element == element.parentNode.children[1] ||
+  element == element.parentNode.children[3]){
   educationWorkContainer.classList.add('active')
   document.querySelector(".education-work-container-main").style.display = 'block'
-} else if(element.textContent == 'Среднее'){
+} else if(element == element.parentNode.children[2]){
   educationWorkContainer.classList.remove('active')
   document.querySelector(".education-work-container-main").style.display = 'none'
 }
