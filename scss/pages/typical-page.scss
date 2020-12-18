@@ -1193,9 +1193,13 @@ background-size: 55%;
 
 
 .typical-page-insurance{
+
   .notice-board-greetings-bg{
     img{
-      right: 10%;
+      right: 12%;
+      width: 620px;
+      height: 550px;
+      top: 0;
     }
     @media (max-width: 840px) {
       img{
@@ -1239,8 +1243,8 @@ background-size: 55%;
 .typical-page-legal{  
   .notice-board-greetings-bg{
     img{
-      width: 600px;
-      height: 600px;
+      width: 550px;
+      height: 550px;
       right: 13%;
       top: 0;
     }
