@@ -318,5 +318,14 @@ width: max-content;
     color: #464646;
     margin-bottom: 25px;
   }
+
+  .finance-open__bunner{
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
 }
 
+.finance-open__bunner-img {
+  max-height: 255px;
+  object-fit: cover;
+}
