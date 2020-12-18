@@ -784,7 +784,11 @@ text-align: center;
 
 @media (max-width: 995px) {
 
-
+  .open-notice {
+    &__resume-df {
+  flex-wrap: wrap;
+    }
+  }
 
   
 
@@ -962,8 +966,11 @@ font-size: 15px ;
 
 
   .open-notice {
+
+
+    
     &__container-df {
-      margin-top: -20px;
+      margin-top: 0px;
 display: block;
     }
   
@@ -1001,6 +1008,7 @@ display: block;
   
     &__body-contact {
       padding: 15px;
+      margin-top: 20px;
     }
   
   
@@ -1016,7 +1024,8 @@ display: block;
   
     &__body-phone {
       padding: 15px;
-      margin-top: 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       p{
   font-size: 16px;
   line-height: 22px;
@@ -1182,6 +1191,18 @@ display: block;
 }
 
 @media (max-width: 650px) {
+
+  .open-notice {
+    &__resume-field-cont {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__resume-img {
+      height: 80%;
+      padding-right: 0px;
+    }
+  
+  }
 
   .service__wrapper-radio {
 display: block;
