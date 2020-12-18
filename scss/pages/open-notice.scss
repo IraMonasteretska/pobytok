@@ -4,6 +4,9 @@
 
 .show-number {
   display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hide-number.active {
@@ -45,6 +48,8 @@
   &__df {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-items: space-between;
   }
 
   &__start-left {
@@ -89,6 +94,13 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #063453;
+    display: flex;
+    align-items: center;
+    img{
+      width: 50px;
+      margin-right: 15px;
+      border-radius: 50px;
+    }
   }
 
   &__border-show-phone {
@@ -230,4 +242,82 @@ color: #7B8A99;
   }
 }
 
+
+
+.open-notice__resume{
+  .open-notice__title-main{
+    margin-bottom: -9px;
+  }
+  .open-notice__user-text{
+    font-size: 24px;
+line-height: 30px;
+font-family: "Cuprum-Bold", "Arial", sans-serif;
+color: #00AB5B;
+margin-bottom: 20px;
+padding-right: 20px;
+  }
+}
+
+
+.open-notice {
+
+ 
+  &__resume-df {
+    display: flex;
+    justify-content: space-between;
+    max-width: 470px;
+  }
+
+  // &__resume-left {
+
+  // }
+
+  &__resume-img {
+    // height: 180px;
+    height: 90%;
+    padding-right: 40px;
+  }
+
+  // &__resume-right {
+  // }
+
+  &__resume-field-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__resume-field-1 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #464646;
+    width: 160px;
+  }
+
+  &__resume-field-2 {
+    font-family: "Cuprum-Bold", "Arial", sans-serif;
+    font-size: 18px;
+line-height: 26px;
+color: #464646;
+width: 140px;
+  }
+
+  &__resume-field-2--color {
+    color: #00AB5B;
+  }
+
+  &__resume-bold {
+    font-family: "Cuprum-Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #464646;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  &__resume-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #464646;
+  }
+}
 
