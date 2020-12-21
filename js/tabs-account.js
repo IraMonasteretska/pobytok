@@ -122,6 +122,10 @@ target.parentNode.parentNode.remove(target.parentNode.parentNode)
 }
 
  btnAddWorkerEmail.addEventListener('click', function () {
+  let itemWorkerEmail = document.querySelectorAll('.email-add-worker-item')
+if(itemWorkerEmail.length > 3){
+  return
+}
   addWorkerEmailForm.innerHTML += exampleWorkerEmail.innerHTML
 document.querySelector('.service-button-gray').classList.remove('unactive')
  });

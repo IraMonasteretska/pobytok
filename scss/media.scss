@@ -789,12 +789,44 @@ text-align: center;
 @media (max-width: 995px) {
 
   .open-notice {
+    &__vacansion-title {
+      font-size: 18px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+    }
+  
+    &__vacansion-text, .open-notice__vacansion-text-p {
+      font-size: 16px;
+  line-height: 18px;
+    }
+  
+    &__character-item {
+      margin-right: 15px;
+      margin-top: 15px;
+  font-size: 16px;
+  padding: 6px;
+    }
+  }
+  
+  
+  .open-notice__vacansion-body{
+  .about-us {
+
+    &__desc {
+      font-size: 16px;
+    }
+  
+    &__add-desc {
+      font-size: 16px;
+    }
+  }
+  }
+
+  .open-notice {
     &__resume-df {
   flex-wrap: wrap;
     }
   }
-
-  
 
 .message-list {
   &__sort-cont {
@@ -939,6 +971,12 @@ max-width: 240px;
 }
 
 @media (max-width: 880px) {
+  .open-notice__vacansion{
+  .open-notice__subtitle-vacansion{
+font-size: 20px;
+margin-bottom: 15px;
+  }
+  }
 
   .messages__adver-name {
 font-size: 16px;
@@ -1195,8 +1233,15 @@ display: block;
 }
 
 @media (max-width: 650px) {
+  .open-notice__vacansion{
+  .open-notice__subtitle-vacansion{
+    font-size: 18px;
+      }
+
+    }
 
   .open-notice {
+    
     &__resume-field-cont {
       display: flex;
       flex-wrap: wrap;
