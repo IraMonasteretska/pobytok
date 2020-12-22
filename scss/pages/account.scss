@@ -2058,4 +2058,58 @@ display: none;
   .mandatory-registration-popup.mandatory-registration-popup-pay-accept{
 z-index: 51;
   }
+.personal__button-clear{
+  padding-top: 0;
+  margin-top: 0;
+  max-width: 260px;
+  margin-left: 20px;
+}
 
+  .flex-cont-favorites{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    margin-bottom: 20px;
+    align-items: center;
+  } 
+
+.favories-left {
+  width: 30%;
+} 
+
+.favorites-right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} 
+
+.counter-favorites {
+  font-size: 18px;
+line-height: 26px;
+color: #464646;
+} 
+
+
+.favorites-title{
+  font-family: "Cuprum-Bold";
+  font-size: 30px;
+  line-height: 40px;
+  color: #063453;
+}
+
+.personal__frame.personal__frame-favorites{
+  box-shadow: none;
+  padding: 0;
+  .personal__frame-cont--fav{
+    padding: 0;
+    width: 100%;
+  }
+  .fovorites-bg{
+    background: #FFFFFF;
+box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+padding-left: 5%;
+padding-right: 5%;
+  }
+}

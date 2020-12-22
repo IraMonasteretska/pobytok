@@ -365,6 +365,22 @@ margin-top: 0;
 }
 
 @media (max-width: 1100px) {
+
+  .personal__button-clear{
+    max-width: 210px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  
+  .counter-favorites {
+    font-size: 16px;
+  } 
+  
+  .favorites-title{
+    font-size: 25px;
+  }
+  
+ 
   .finance-open__bunner-img {
     max-height: 150px;
   }
@@ -802,6 +818,11 @@ text-align: center;
 }
 
 @media (max-width: 995px) {
+
+.personal__frame-cont--fav{
+  margin-top: 40px;
+}
+
   .open-notice {
     &__vacansion-title {
       font-size: 18px;
@@ -1247,6 +1268,53 @@ display: block;
 }
 
 @media (max-width: 650px) {
+
+
+  .flex-cont-favorites{
+   display: block;
+   padding-top: 20px;
+   padding-bottom: 15px;
+  } 
+
+  .personal__frame.personal__frame-favorites {
+  .fovorites-bg{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  }
+
+.favories-left {
+  width: 70%;
+ transform: translateY(-0px);
+} 
+
+.favorites-right {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+
+.counter-favorites {
+  font-size: 15px;
+  margin-right: 10px;
+} 
+
+
+.favorites-title{
+  font-size: 22px;
+}
+
+.personal__button-clear{
+font-size: 15px;
+  max-width: 200px;
+  margin-left: 0px;
+}
+
+
+
+
   .open-notice__vacansion{
   .open-notice__subtitle-vacansion{
     font-size: 18px;
