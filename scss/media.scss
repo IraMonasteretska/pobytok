@@ -229,6 +229,10 @@ margin-left: 15px;
 
 
 
+  
+.footer__logo{
+  width: 80% !important;
+}
 
 
  
@@ -590,6 +594,17 @@ text-align: center;
 }
 
 @media (max-width: 1024px) {
+  .footer{
+  .footer__logo{
+    margin-top: 0px;
+  }
+
+
+  .footer__enter-in-btn{
+    margin-left: -3px;
+  }
+}
+
   .personal__select-ul{
   max-width: 370px !important;
   width: 100%;
@@ -787,7 +802,6 @@ text-align: center;
 }
 
 @media (max-width: 995px) {
-
   .open-notice {
     &__vacansion-title {
       font-size: 18px;

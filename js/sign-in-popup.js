@@ -56,12 +56,27 @@
     });
   };
 
+
+  const regBtnFooter = document.querySelector('.footer__reg-in-btn');
+  const enterBtnFooter = document.querySelector('.footer__enter-in-btn');
+
+
   regBtnHeader.addEventListener('click', function () {
     getSignPopup(regWrap, regBtn);
     regBtnHeader.classList.add('sign-in-active-btn-registration');
     loginBtnHeader.classList.remove('sign-in-active-btn');
   });
+  regBtnFooter.addEventListener('click', function () {
+    getSignPopup(regWrap, regBtn);
+    regBtnHeader.classList.add('sign-in-active-btn-registration');
+    loginBtnHeader.classList.remove('sign-in-active-btn');
+  });
   loginBtnHeader.addEventListener('click', function () {
+    getSignPopup(loginWrap, loginBtn);
+    regBtnHeader.classList.remove('sign-in-active-btn-registration');
+    loginBtnHeader.classList.add('sign-in-active-btn');
+  });
+  enterBtnFooter.addEventListener('click', function () {
     getSignPopup(loginWrap, loginBtn);
     regBtnHeader.classList.remove('sign-in-active-btn-registration');
     loginBtnHeader.classList.add('sign-in-active-btn');

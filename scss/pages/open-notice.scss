@@ -637,6 +637,58 @@ padding-left: 10px;
   margin-bottom: 0;
 }
 
-// .open-notice__vacansion-body .about-us__add-btn:after {
-//   top: 6px;
-// }
+
+.footer{
+.registration-btn{
+border: none;
+padding: 0;
+height: 0;
+&:hover{
+  border: none;
+}
+  }
+  .login-btn{
+    padding: 0;
+  }
+  .footer__logo{
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .page-header__language-list{
+    padding: 0;
+ margin-top: 60px;
+  }
+}
+
+.footer__enter-in{
+  // margin-top: 28px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  span{
+    
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Cuprum-Bold", "Arial", sans-serif;
+    transition: all .5s ease-out;
+    &:hover{
+      color: #77CCF9;
+
+    }
+  }
+  svg{
+    margin-right: 10px;
+  }
+}
+.footer__wrap{
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+ 
+  
+}
