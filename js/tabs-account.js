@@ -123,13 +123,6 @@ if (document.querySelector(".company-data")) {
     const threeItemEmail = document.querySelector('.email-add-worker-item-three')
 
 
-    if (!firstItemEmail.classList.contains('active')) {
-        firstBtnEmail.classList.add('active')
-    } else if (!twoItemEmail.classList.contains('active')) {
-        twoBtnEmail.classList.add('active')
-    } else if (!threeItemEmail.classList.contains('active')) {
-        firstBtnEmail.classList.add('active')
-    }
 
 
     function removeParentEmail() {
@@ -163,7 +156,7 @@ if (document.querySelector(".company-data")) {
         } else if (!twoItemEmail.classList.contains('active')) {
             twoBtnEmail.classList.add('active')
         } else if (!threeItemEmail.classList.contains('active')) {
-            firstBtnEmail.classList.add('active')
+            threeBtnEmail.classList.add('active')
         }
     });
 
@@ -192,9 +185,20 @@ if (document.querySelector(".company-data")) {
         } else if (!twoItemEmail.classList.contains('active')) {
             twoBtnEmail.classList.add('active')
         } else if (!threeItemEmail.classList.contains('active')) {
-            firstBtnEmail.classList.add('active')
+            threeBtnEmail.classList.add('active')
         }
     });
+    console.log(firstItemEmail.classList)
+    if (!firstItemEmail.classList.contains('active')) {
+        firstBtnEmail.classList.add('active')
+
+    } else if (!twoItemEmail.classList.contains('active')) {
+        twoBtnEmail.classList.add('active')
+    } else if (!threeItemEmail.classList.contains('active')) {
+        threeBtnEmail.classList.add('active')
+
+    }
+
 
 }
 
