@@ -1967,3 +1967,16 @@
 .service-add-worker-email-3.active {
     display: block;
 }
+
+
+.personal__real-col-check{
+label{
+  padding: 0 !important; 
+  color: transparent;
+  &:before{
+    top: 0 !important;
+    left: -5px !important;
+
+  }
+}
+}
