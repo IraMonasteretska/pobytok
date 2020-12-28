@@ -37,7 +37,7 @@
     max-width: 1546px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px;
   }
 
   &__container-shadow {
@@ -159,7 +159,7 @@
 
   &__body-left {
     width: 70%;
-    padding: 40px;
+    padding: 50px;
   }
 
   &__body-title {
@@ -243,6 +243,8 @@ color: #7B8A99;
 .personal {
   &__button {
     cursor: pointer;
+    margin-top: 20px !important;
+    border: none;
   }
 }
 
@@ -614,7 +616,7 @@ padding-left: 10px;
     display: none;
   }
   .next-img{
-    right: 0.5%;
+    right: -10px;
   }
 
   .carousel-btn {

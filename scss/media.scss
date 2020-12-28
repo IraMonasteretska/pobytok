@@ -1091,12 +1091,16 @@ display: block;
   
     &__body-input {
       input{
+        max-width: none;
+      }
+      .personal__button{
         max-width: 320px;
+        margin: 0 auto;
       }
     }
 
     &__textarea {
-      max-width: 320px;
+      max-width: none;
     }
   
     &__body-phone {
@@ -1114,6 +1118,16 @@ display: block;
       }
     }
   }
+
+
+
+.open-notice__start{
+  .open-notice__container-shadow{
+padding-bottom: 25px;
+padding-top: 25px;
+  }
+}
+
 
   .open-notice {
 
@@ -1933,6 +1947,22 @@ bottom: 10px;
     } 
     }
 
+ .open-notice__start{
+
+  .open-notice__like button {
+    top: 25px;
+}
+   .open-notice__container-shadow{
+     padding-top: 25px;
+     padding-bottom: 25px;
+   }
+ }
+
+ .open-notice__vacansion-text .about-us__add-btn-realty {
+padding-bottom: 7px;
+ }
+
+
 
     .select-custom-acc-checkbox-national{
       .personal__radio-btn-two-cantry{
@@ -1982,6 +2012,12 @@ margin-top: 13px;
 }
 
 @media (max-width: 380px) {
+
+
+  .open-notice-greetings.greetings__container--onload {
+    background-position: center 30px;
+  }
+
   .container-flex-brutto{
     input{
       padding: 10px;
@@ -2023,6 +2059,11 @@ margin-top: 13px;
   .open-notice-greetings.greetings__container--onload {
 background: url(../img/svg/notice-greetings.svg) no-repeat ,#E5E9EE;
 background-size: 100%;
+  }
+
+
+  .open-notice-greetings.greetings__container--onload {
+    background-position: center 45px;
   }
 }
 
