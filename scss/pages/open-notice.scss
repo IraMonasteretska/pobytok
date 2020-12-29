@@ -500,8 +500,41 @@ color: #7B8A99;
 }
 
 
+// ---------------------------
+
+.carousel-nav-item{
+  max-height: 110px;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.carousel-nav-list{
+  height: 370px !important;
+}
+
+.slick-list{
+max-height: 370px;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.slick-slide{
+  img{
+    max-height: 370px;
+    height: 370px;
+    object-fit: cover;
+  }
+
+}
+
+
 .carousel-container{
   position: relative;
+max-height: 370px;
+
 }
 
 .carousel-container * {
@@ -557,7 +590,7 @@ padding-left: 10px;
   width: 50px;
 
   padding: 5px 0;
-  top:calc(50% - 50px);
+  top:calc(50% - 30px);
   text-align: center;
 }
 
@@ -664,7 +697,6 @@ height: 0;
 }
 
 .footer__enter-in{
-  // margin-top: 28px;
   margin-bottom: 28px;
   display: flex;
   align-items: center;

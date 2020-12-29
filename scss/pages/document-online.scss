@@ -165,6 +165,7 @@ margin-top: 0 !important;
 
 
 .personal-data__btn{
+  display: block;
   max-width: 277px;
   width: 100%;
 height: 48px;
@@ -176,7 +177,9 @@ line-height: 18px;
 font-family: "Cuprum-Bold";
 border-radius: 8px;
 transition: all .3s ease-out;
-
+margin-left: 10px;
+margin-top: 0;
+border: none;
 span svg path{
   transition: all .3s ease-out;
 }
@@ -190,6 +193,7 @@ span{
 
 .personal-data__btn-save{
   background: #00AB5B;
+  margin-left: 20px;
   color: #FFFFFF;
   &:hover span svg path{
     fill: #ADD9F4;
@@ -200,6 +204,7 @@ span{
 }
 
 .personal-data__btn-upload.personal-data__btn{
+  
   border: 1px solid #00AB5B;
   background: #fff;
   color: #00AB5B;
@@ -219,4 +224,99 @@ span{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.personal-data__cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+width: 60%;
+}
+
+
+
+
+.personal-data {
+
+  &__container-fb {
+
+ background: #F2F2F2;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__btn-document{
+padding-top: 50px;
+padding-bottom: 50px;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__up-text {
+    margin-top: 0;
+    line-height: 30px;
+color: #263238;
+font-family: "Khula-Bold", "Arial", sans-serif;
+font-weight: bold;
+padding-bottom: 50px;
+padding-top: 50px;
+font-size: 16px;
+  }
+
+
+
+  &__btn-back {
+    max-width: 180px;
+    span{
+      margin-top: 4px;
+    }
+  }
+
+  
+
+  &__next-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__next-text {
+    width: 7%;
+    font-size: 14px;
+line-height: 18px;
+color: #00B0F3;
+font-family: "Cuprum-Bold";
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 5px;
+padding-right: 5px;
+&:first-child{
+justify-content: flex-start;
+}
+&:last-child{
+  justify-content: flex-end;
+}
+&:hover{
+  color: #77CCF9;
+  transition: all .3s ease-out;
+}
+  }
+
+  &__next-line {
+    width: 100%;
+height: 1px;
+background: #ADD9F4;;
+  }
 }

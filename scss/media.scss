@@ -1,5 +1,15 @@
 @media (max-width: 1440px) {
 
+  .personal-data__cont{
+  width: 70%;
+  }
+
+  .personal-data__btn-document{
+    .personal-data__cont{
+      width: 60%;
+      }
+  }
+
   .doc__button-container{
     .doc__button{
       font-size: 14px;
@@ -119,7 +129,6 @@ padding-right: 15px;
 }
 @media (max-width: 1350px) {
 
-
   .personal__frame-cv{
     .select-custom-acc-flex{
       margin-left: 45px;
@@ -233,7 +242,47 @@ margin-left: 15px;
 }
 
 @media (max-width: 1250px) {
+  .personal-data__cont{
+  width: 100%;
+  }
 
+
+
+  
+
+  
+    .personal-data__btn{
+      max-width: 230px;
+    height: 42px;
+    font-size: 13px;
+    margin-left: 0px;    
+    margin-bottom: 27px;
+    margin-top: 10px;
+    span{
+      margin-right: 6px;
+    }
+    }
+    
+    .personal-data__btn-save{
+      margin-left: 0px;
+
+    }
+        
+    .personal-data__btn-cont{
+    display: block;
+    }
+
+
+    .personal-data__btn-document{
+     display: flex;
+     .personal-data__cont{
+      width: 54%;
+      button{
+        margin-left: 10px;
+      }
+      }
+    }
+  
 
 
 
@@ -242,8 +291,6 @@ margin-left: 15px;
   width: 80% !important;
 }
 
-
- 
 .personal__frame-cv{
   .select-custom-acc-flex{
     margin-top: -8px;
@@ -253,7 +300,6 @@ margin-left: 15px;
     }
   }
 }
-
 
 .personal__all-radio-cont-notice label{
   width: 50% ;
@@ -662,6 +708,14 @@ text-align: center;
 }
 
 @media (max-width: 998px) {
+
+  .personal-data {
+    &__btn-document{
+  padding-top: 20px;
+  padding-bottom: 10px;
+    }
+  }
+
   .personal__welcome {
     font-size: 25px;
   }
@@ -1027,6 +1081,21 @@ max-width: 240px;
 }
 
 @media (max-width: 880px) {
+
+
+
+
+
+    .personal-data__btn-document{
+     display: block;
+     .personal-data__cont{
+      width: 100%;
+      button{
+        margin-left: 0px;
+      }
+      }
+    }
+
   .open-notice__vacansion{
   .open-notice__subtitle-vacansion{
 font-size: 20px;
@@ -1050,6 +1119,15 @@ font-size: 15px ;
 }
 
 @media (max-width: 776px) {
+  .personal-data__up-text {
+    line-height: 27px;
+font-weight: bold;
+padding-bottom: 35px;
+padding-top: 35px;
+font-size: 14px;
+  }
+  
+
 
 
   .open-notice__resume{
@@ -1062,11 +1140,7 @@ font-size: 15px ;
     }
   }
 
-
   .open-notice {
-
-
-    
     &__container-df {
       margin-top: 0px;
 display: block;
@@ -1303,7 +1377,15 @@ padding-top: 25px;
 }
 
 @media (max-width: 650px) {
+  .personal-data {
+    &__next-text {
+      width: 10%;
+    }
 
+    &__next-line {
+      width: 80%;
+    }
+  }
 
   .flex-cont-favorites{
    display: block;
@@ -1610,6 +1692,14 @@ top: 30px;
 }
 
 @media (max-width: 550px) {
+
+  .personal-data__btn-save{
+  margin-bottom: 10px;
+
+  }
+  .personal-data__cont{
+    display: block;
+    }
 
   .open-notice-greetings.greetings__container--onload {
     height: 259px;
@@ -2002,6 +2092,18 @@ padding-bottom: 7px;
 }
 
 @media (max-width: 465px) {
+
+  .personal-data {
+    &__next-text {
+      width: 18%;
+    }
+
+    &__next-line {
+      width: 66%;
+    }
+  }
+
+
  .personal__frame-service-data{
     .select-custom-acc{
       position: relative;
