@@ -1,5 +1,13 @@
 'use strict';
 
+
+if(document.querySelector('.mandatory-registration-popup-activation')){
+  document.querySelector('.activation-popup__button-close').addEventListener('click', () => {
+    document.querySelector('.mandatory-registration-popup-activation').classList.add('visually-hidden')
+  })
+  }
+
+
 (function () {
   const mandatoryOverlay = document.querySelector('.mandatory-registration-popup');
   const mandatoryCloseBtn = document.querySelector('.mandatory-registration-popup .sign-wrap__btn');
@@ -65,4 +73,8 @@
   documentsName.forEach(el => el.addEventListener('click', function () {
     mandatoryOverlay.classList.remove('visually-hidden');
   }))
+
+ 
 })();
+
+
