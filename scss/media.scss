@@ -1,5 +1,22 @@
 @media (max-width: 1440px) {
 
+  .personal-data__bg{
+  padding-top: 0;
+  padding-bottom: 0;
+  }
+
+
+  .instruction {
+    padding-top: 0px;
+    padding-bottom: 0px;
+      &__container {
+        padding: 20px;
+        padding-top: 50px;
+      }
+    }
+    
+
+
   .personal-data__cont{
   width: 70%;
   }
@@ -1083,7 +1100,29 @@ max-width: 240px;
 @media (max-width: 880px) {
 
 
+  .instruction {
+      &__container {
+        padding: 20px;
+      }
 
+      h1{
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 23px;
+    margin-bottom: 16px;
+      }
+    
+      h3{
+        margin-top: 15px;
+    font-size: 14px;
+      }
+      p{
+    font-size: 14px;
+    line-height: 28px;
+
+      }
+    }
+    
 
 
     .personal-data__btn-document{
