@@ -1473,14 +1473,18 @@ class="overlay mandatory-registration-popup mandatory-registration-popup-activat
     <div class="mandatory-registration-popup__bottom-block">
   
 
-<input type="button" value="ЗАКРЫТЬ" name="" class="personal__button activation-popup__button">
+<input type="button" value="ЗАКРЫТЬ" name="" class="personal__button activation-popup__button activation-popup__button-close">
   
     </div>
   </div>
 </div>
 </section>
 
-
+<script>
+document.querySelector('.activation-popup__button-close').addEventListener('click', () => {
+  document.querySelector('.mandatory-registration-popup-activation').classList.add('visually-hidden')
+})
+</script>
 
 
 <script src="js/mandatory-reg.js"></script>
