@@ -121,3 +121,44 @@ margin-top: 0px;
   }
 }
 }
+
+.doc__button-container{
+opacity: 0;
+display: none;
+margin-top: 10px;
+margin-bottom: 10px;
+justify-content: center;
+align-items: center;
+.doc__button{
+  font-size: 18px;
+
+max-width: 226px;
+height: 58px;
+width: 100%;
+border: 2px solid #063453;
+border-radius: 8px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #063453;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-family: "Cuprum-Bold";
+  text-transform: uppercase;
+  &:hover{
+    transition: all .3s ease-out;
+    background-color: #DFE5EC;
+  }
+}
+}
+
+.doc__button-container.active{
+  display: flex;
+opacity: 1;
+}
+
+.personal__button.personal__button-add-realty.personal__button-add-white{
+margin-top: 0 !important;
+}
