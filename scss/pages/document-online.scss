@@ -162,3 +162,61 @@ opacity: 1;
 .personal__button.personal__button-add-realty.personal__button-add-white{
 margin-top: 0 !important;
 }
+
+
+.personal-data__btn{
+  max-width: 277px;
+  width: 100%;
+height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+line-height: 18px;
+font-family: "Cuprum-Bold";
+border-radius: 8px;
+transition: all .3s ease-out;
+
+span svg path{
+  transition: all .3s ease-out;
+}
+
+span{
+  margin-right: 8px;
+  transition: all .3s ease-out;
+}
+}
+
+
+.personal-data__btn-save{
+  background: #00AB5B;
+  color: #FFFFFF;
+  &:hover span svg path{
+    fill: #ADD9F4;
+  }
+  &:hover{
+    color: #ADD9F4;
+  }
+}
+
+.personal-data__btn-upload.personal-data__btn{
+  border: 1px solid #00AB5B;
+  background: #fff;
+  color: #00AB5B;
+  &:hover span svg path{
+    fill: #ADD9F4;
+  }
+  &:hover{
+    color: rgb(6, 52, 83);
+    border: 1px solid rgb(6, 52, 83);
+  }
+  &:hover span svg path{
+    fill: rgb(6, 52, 83);
+  }
+}
+
+.personal-data__btn-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
