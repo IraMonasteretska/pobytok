@@ -1732,6 +1732,58 @@ top: 30px;
 
 @media (max-width: 550px) {
 
+
+
+  .mandatory-registration-popup-activation {
+
+    .mandatory-registration-popup__bottom-block{
+      padding-top: 0px;
+      padding-bottom: 30px;
+    }
+  .activation-popup {
+  
+      &__title {
+       padding-top: 35px;
+       padding-bottom: 35px;
+        font-size: 16px;
+      }
+  
+      &__text--gray {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 7px auto;
+      }
+  
+      &__text-red {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 15px auto;
+      }
+  
+      &__output {
+        font-size: 16px;
+  line-height: 22px;
+  height: 50px;
+  margin: 15px auto;
+      }
+  
+      &__text-link {
+        font-size: 16px;
+  line-height: 22px;
+  margin: 15px auto;
+  
+      }
+  
+      &__link {
+        font-size: 16px;
+  line-height: 22px;
+      }
+
+  }
+  }
+
+
+
   .personal-data__btn-save{
   margin-bottom: 10px;
 
