@@ -578,6 +578,7 @@ padding-left: 10px;
       // height: 80%;
       border: 7px solid #fff;
       box-sizing: border-box;
+      max-height: 110px;
     }
   
   }
@@ -769,3 +770,17 @@ width: 24%;
   }
 
 }
+
+
+.personal__frame-favorites .offers-block__list {
+  min-height: 400px;
+  justify-content: flex-start;
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+}
+
+.personal__frame-favorites .offers-block__item {
+margin-right: 0.5%;
+margin-left: 0.5%;
+}
+
