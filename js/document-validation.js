@@ -2,14 +2,15 @@
 
 let onlyLat = document.querySelectorAll('.onlyLat')
 for(let i of onlyLat){
+ 
   i.addEventListener('keypress', (e) => {
+    console.log('sdfsd');
     var char = /["a-zA-Z]/;
     var val = String.fromCharCode(e.which);
     var test = char.test(val);
     
     if(!test){
-      i.value = i.value.substring(-1, i.value.length - 1);
-      return false
+      e.preventDefault()
     }
   })
 }
@@ -23,8 +24,7 @@ for(let i of numberLat){
     var test = char.test(val);
     
     if(!test){
-      i.value = i.value.substring(-1, i.value.length - 1);
-      return false
+      e.preventDefault()
     }
   })
 }
