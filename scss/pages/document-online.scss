@@ -397,3 +397,140 @@ line-height: 30px;
 color: #263238;
   }
 }
+
+
+.personal__document-data{
+  .faq, .faq__questions-block{
+    width: 100%;
+  }
+  .faq__list{
+    margin-top: 20px;
+  }
+
+  .faq__item{
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .panel{
+    padding: 0;
+  }
+
+  .accordion{
+    margin-left: 50px;
+
+   span{
+    font-family: "Cuprum-Bold";
+    font-size: 18px;
+    color: #063453;
+   }
+
+    &:after{
+      transition: all .3s ease-out;
+      transform: rotate(0deg);
+      right: auto;
+      left: -30px;
+      top: calc(50% - 10px);
+      background: url(../../img/svg/accordion-document.svg) no-repeat center;
+    }
+  }
+
+  .accordion.active{
+    &:after{
+     transform: rotate(180deg);
+    }
+  }
+  .personal__line-first{
+    margin-top: 5px;
+   margin-bottom: 30px;
+  }
+ 
+}
+
+
+.personal-accordion {
+
+
+
+.main__search{
+  margin-top: -10px;
+  max-width: 403px;
+}
+
+.personal__radio-two-container{
+  margin-top: 65px;
+  margin-left: 20px;
+}
+.personal__radio-right-part-over{
+  display: block;
+  label{
+margin-top: 9px;
+margin-bottom: 9px;
+  }
+}
+
+&__flex-line{
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 20px;
+  padding-top: 45px;
+}
+
+&__text-only.personal-accordion__text{
+  margin-left: 0;
+}
+
+&__inp-wrapper-center{
+  display: flex;
+  align-items: center;
+}
+
+&__flex-selec.personal-accordion__flex{
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+&__flex-selec-one.personal-accordion__flex{
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+
+  &__flex {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+
+  &__inp-wrapper {
+    max-width: 403px;
+    width: 100%;
+  &:first-child{
+    margin-right: 30px;
+  }
+
+  .select-dropdown{
+    margin-top: -10px;
+  }
+
+  .select-dropdown__button{
+    height: 63px;
+    max-width: 403px;
+  }
+  }
+
+  &__text {
+    font-size: 18px;
+line-height: 26px;
+color: #063453 !important;
+margin-left: 20px;
+margin-bottom: 13px;
+span{
+  color: #DC4955;
+}
+  }
+
+  &__inp {
+    width: 100%;
+    margin-top: -10px;
+  }
+}
