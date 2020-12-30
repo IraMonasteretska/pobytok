@@ -470,42 +470,116 @@
           <div class="faq__wrapper">
             <div class="faq__questions-block personal-accordion">
       
+
+<form action="#sfsd" >
+
               <ul class="faq__list">
                 <li class="faq__item">
                   <button class="accordion">
                     <span>Данные загран паспорта</span>
                   </button>
                   <div class="panel">
-                    <div class="personal__line"></div>
-              <div class="personal-accordion__flex">
-                <div class="personal-accordion__inp-wrapper">
-                  <p class="personal-accordion__text"> Номер телефона <span>*</span> </p>
-                  <input type="text" placeholder="Только цифры" class="personal-accordion__inp">
-                </div>
-                <div class="personal-accordion__inp-wrapper">
-                  <p class="personal-accordion__text">Адрес электронной почты <span>*</span>  </p>
-                  <input type="text" placeholder="Адрес электронной почты" class="personal-accordion__inp">
-                </div>
-              </div>
-              <div class="personal-accordion__flex">
-                <div class="personal-accordion__inp-wrapper">
-                  <p class="personal-accordion__text"> Номер телефона <span>*</span> </p>
-                  <input type="text" placeholder="Только цифры" class="personal-accordion__inp">
-                  <input type="text" placeholder="Только цифры" class="personal-accordion__inp">
-                </div>
-                <div class="personal-accordion__inp-wrapper">
-                  <p class="personal-accordion__text">Адрес электронной почты <span>*</span>  </p>
-                  <input type="text" placeholder="Адрес электронной почты" class="personal-accordion__inp">
-                </div>
-              
-              </div>
+                    <div class="personal__line personal__line-first personal__line-first-marg"></div>
+
+                    <div class="personal-accordion__flex personal-accordion__flex-line personal-accordion__flex-line-text">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text personal-accordion__text-only"> 
+                          Тип паспорта (Био. / обычный) </p>
+                      </div>
+                      <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-center">
+                        <div class="personal__radio-right-part personal__radio-right-part-over">
+                          
+                          <input
+                          type="radio"
+                          id="pasport1"
+                          name="pasport"
+                          value="sale"
+                          class="personal__radio-btn"
+                        />
+                        <label for="pasport1">Загран паспорт старого образца
+                        </label>
+                        
+                        <input
+                          type="radio"
+                          id="pasport2"
+                          name="pasport"
+                          value="burter"
+                          class="personal__radio-btn"
+                        />
+                        <label for="pasport2">Биометрический паспорт</label>
+       
+                        </div> 
+                       </div>
+                    </div>
+
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Имя <span>*</span> </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text">Фамилия <span>*</span>  </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-date">
+                        <p class="personal-accordion__text"> Дата рождения  </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text">Место рождения </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex personal-accordion__flex-date">
+                      <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-date">
+                        <p class="personal-accordion__text"> Дата выдачи  </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Дата окончания действия паспорта  </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex ">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text">Серия и номер паспорта <span> *</span>  </p>
+                        <input type="text" placeholder="Только цифры или латинские буквы" class="personal-accordion__inp numberLat">
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text">Идентификационный код <span> *</span></p>
+                        <input type="number" placeholder="Только цифры" class="personal-accordion__inp" maxlength="12">
+                      </div>
+                    </div>
             
-            
-
-
-
-
-
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text">Номер органа выдачи паспорта <span>*</span> </p>
+                        <input type="number" placeholder="Только цифры" class="personal-accordion__inp" maxlength="12">
+                      </div>
+                    </div>
 
                   </div>
                 </li>
@@ -514,49 +588,90 @@
                     <span>Виза</span>
                   </button>
                   <div class="panel">
+                    <div class="personal__line personal__line-first"></div>
+
                     <div class="personal-accordion__flex">
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text"> Номер телефона <span>*</span> </p>
-                        <input type="text" placeholder="Только цифры" class="personal-accordion__inp">
+                        <p class="personal-accordion__text"> Страна визы <span>*</span> </p>
+                        <input type="text" placeholder="Только цифры или латинские буквы" class="personal-accordion__inp numberLat">
                       </div>
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text">Адрес электронной почты <span>*</span>  </p>
-                        <input type="text" placeholder="Адрес электронной почты" class="personal-accordion__inp">
+                        <p class="personal-accordion__text">Номер визы <span>*</span>  </p>
+                        <input type="number" placeholder="Только цифры" class="personal-accordion__inp">
                       </div>
                     </div>
+
+                    <div class="personal-accordion__flex personal-accordion__flex-date">
+                      <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-date">
+                        <p class="personal-accordion__text"> Действует от </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Действует до  </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                    </div>
+
                     <div class="personal-accordion__flex">
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text"> Предыдущая фамилия: <span>*</span> </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                        <p class="personal-accordion__text"> Тип визы <span>*</span> </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                       </div>
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text">Родовая фамилия: <span>*</span>  </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                        <p class="personal-accordion__text">Количество дней пребывания <span>*</span>  </p>
+                        <input type="number" placeholder="Только цифры" class="personal-accordion__inp">
                       </div>
                     </div>
+
+                    <div class="personal-accordion__flex personal-accordion__flex-date">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Где выдана <span>*</span> </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                      </div>
+
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Дата выдачи  </p>
+                        <input
+                        type="text"
+                        name=""
+                        class="personal__input personal__input-date"
+                        placeholder="YYYY / mm / dd"
+                        onfocus="(this.type='date')"
+                      />
+                      </div>
+                    </div>
+
                     <div class="personal-accordion__flex">
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text"> Имя: <span>*</span> </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                        <p class="personal-accordion__text"> Имя <span>*</span> </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                       </div>
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text">Предыдущее имя:<span>*</span>  </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                        <p class="personal-accordion__text">Фамилия <span>*</span>  </p>
+                        <input type="number" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                       </div>
                     </div>
+
                     <div class="personal-accordion__flex">
                       <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text"> Имя отца: <span>*</span> </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                        <p class="personal-accordion__text"> Цель выдачи <span>*</span> </p>
+                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                       </div>
-                      <div class="personal-accordion__inp-wrapper">
-                        <p class="personal-accordion__text">Имя матери:<span>*</span>  </p>
-                        <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                      </div>
+                      
                     </div>
+
                   </div>
                 </li>
                 <li class="faq__item ">
@@ -569,54 +684,54 @@
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Номер телефона <span>*</span> </p>
-                          <input type="text" placeholder="Только цифры" class="personal-accordion__inp">
+                          <input type="number" placeholder="Только цифры" class="personal-accordion__inp">
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Адрес электронной почты <span>*</span>  </p>
-                          <input type="text" placeholder="Адрес электронной почты" class="personal-accordion__inp">
+                          <input type="text" placeholder="Адрес электронной почты" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Предыдущая фамилия: <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Родовая фамилия: <span>*</span>  </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Имя: <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Предыдущее имя:<span>*</span>  </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Имя отца: <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat" >
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Имя матери:<span>*</span>  </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Девичья фамилия матери: <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
@@ -3342,22 +3457,22 @@
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Район <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Гмина <span>*</span>  </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                       </div>
 
                       <div class="personal-accordion__flex">
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text"> Улица <span>*</span> </p>
-                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только латинские буквы" class="personal-accordion__inp onlyLat">
                         </div>
                         <div class="personal-accordion__inp-wrapper">
                           <p class="personal-accordion__text">Номер дома <span>*</span>  </p>
-                          <input type="text" placeholder="Только цифры или латинские буквы" class="personal-accordion__inp">
+                          <input type="text" placeholder="Только цифры или латинские буквы" class="personal-accordion__inp numberLat">
                         </div>
                       </div>
 
@@ -3461,7 +3576,8 @@
 
                       <div class="personal-accordion__flex personal-accordion__flex-line">
                         <div class="personal-accordion__inp-wrapper">
-                          <p class="personal-accordion__text personal-accordion__text-only"> Информация о средствах к существованию иностранца. </p>
+                          <p class="personal-accordion__text personal-accordion__text-only"> 
+                            Информация о средствах к существованию иностранца. </p>
                         </div>
                         <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-center">
                           <div class="personal__radio-right-part personal__radio-right-part-over">
@@ -3498,7 +3614,68 @@
                         
                       </div>
 
+                      <div class="personal-accordion__flex personal-accordion__flex-line">
+                        <div class="personal-accordion__inp-wrapper">
+                          <p class="personal-accordion__text personal-accordion__text-only"> 
+                            Информация о медицинском страховании иностранца. </p>
+                        </div>
+                        <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-center">
+                          <div class="personal__radio-right-part personal__radio-right-part-over">
+                            
+                            <input
+                            type="radio"
+                            id="insurance1"
+                            name="insurance"
+                            value="sale"
+                            class="personal__radio-btn"
+                          />
+                          <label for="insurance1">Застрахован в ZUS
+                          </label>
+                          
+                          <input
+                            type="radio"
+                            id="insurance2"
+                            name="insurance"
+                            value="burter"
+                            class="personal__radio-btn"
+                          />
+                          <label for="insurance2">Личная медицинская страховка</label>
+         
+                          </div> 
+                         </div>
+                      </div>
 
+                      <div class="personal-accordion__flex personal-accordion__flex-line ">
+                        <div class="personal-accordion__inp-wrapper">
+                          <p class="personal-accordion__text personal-accordion__text-only"> 
+                            Находится ли член семьи на территории Республики Польша? </p>
+                        </div>
+                        <div class="personal-accordion__inp-wrapper personal-accordion__inp-wrapper-center">
+                          <div class="personal__radio-right-part ">
+                            
+                            <input
+                            type="radio"
+                            id="teretory1"
+                            name="teretory"
+                            value="sale"
+                            class="personal__radio-btn"
+                          />
+                          <label for="teretory1"> Да
+                          </label>
+                          
+                          <input
+                            type="radio"
+                            id="teretory2"
+                            name="teretory"
+                            value="burter"
+                            class="personal__radio-btn"
+                          />
+                          <label for="teretory2">Нет</label>
+         
+                          </div> 
+                         </div>
+                      </div>
+<div class="personal-accordion__flex-last"></div>
 
 
 
@@ -3514,9 +3691,50 @@
                     <span>Информация для заявлений (Консульство Украины)</span>
                   </button>
                   <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat.</p>
+                    <div class="personal__line personal__line-first"></div>
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Прізвище  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Ім’я  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> По батькові  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Область  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Вулиця  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Район  </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp">
+                      </div>
+                    </div>
+
+                    <div class="personal-accordion__flex">
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Місто/село </p>
+                        <input type="text" placeholder="Тільки українські літери" class="personal-accordion__inp"  >
+                      </div>
+                      <div class="personal-accordion__inp-wrapper">
+                        <p class="personal-accordion__text"> Поштовий індекс </p>
+                        <input type="number" placeholder="Тільки числа" maxlength="5"  class="personal-accordion__inp">
+                      </div>
+                    </div>
                   </div>
                 </li>
   
@@ -3524,6 +3742,8 @@
              
               </ul>
       
+              <input type="button" value="Сохранить" name="" class="personal__button personal__button-add-realty">
+            </form>
             </div>
   
           </div>
@@ -3704,6 +3924,7 @@
     </footer>
 
 
+    <script src="js/document-validation.js"></script>
     <script src="js/select.js"></script>
     <script src="js/tablet-filter-city.js"></script>
     <script src="js/accordion.js"></script>

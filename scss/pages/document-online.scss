@@ -451,6 +451,29 @@ color: #263238;
 .personal-accordion {
 
 
+  .personal__line-first-marg{
+    margin-bottom: 0;
+  }
+
+&__flex-date{
+margin-bottom: 25px;
+}
+
+.personal__input-date{
+  margin-top: -7px;
+  max-width: 100%;
+  width: 100%;
+}
+  
+&__flex-last{
+ height: 50px;
+ width: 1px;
+ background: #fff;
+}
+
+&__flex-line-text{
+  margin-bottom: 30px;
+}
 
 .main__search{
   margin-top: -10px;
@@ -473,6 +496,10 @@ margin-bottom: 9px;
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 20px;
   padding-top: 45px;
+  .personal-accordion__inp-wrapper{
+    display: flex;
+    align-items: center;
+  }
 }
 
 &__text-only.personal-accordion__text{
