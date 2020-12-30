@@ -447,8 +447,8 @@
 }
 
 .typical-page--main.greetings__container--onload {
-  background: url(../../img/svg/ok-typical-page.svg) no-repeat,
-    url(../../img/svg/elipse-bg-typical.svg) no-repeat,
+  background: url(../img/svg/ok-typical-page.svg) no-repeat,
+    url(../img/svg/elipse-bg-typical.svg) no-repeat,
     linear-gradient(180deg, #cfd5dc 0%, #d7dde4 45.81%, #d7dce2 97.21%);
   background-position: 35% center;
   animation-duration: 2.5s;
@@ -1298,7 +1298,7 @@ height: 400px;
 }
 
 .typical-page-legal.greetings__container--onload {
-  background: url(../../img/svg/ok-legal-law.svg) no-repeat,url(../../img/svg/elipse-bg-typical.svg) no-repeat,linear-gradient(180deg, #F8F8F8 0%, #E4E7EA 45.81%, #DFDFDF 97.21%);
+  background: url(../img/svg/ok-legal-law.svg) no-repeat,url(../img/svg/elipse-bg-typical.svg) no-repeat,linear-gradient(180deg, #F8F8F8 0%, #E4E7EA 45.81%, #DFDFDF 97.21%);
   background-position: 35% center;
   @media (max-width: 1200px) {
 background-size: 55%;
@@ -1315,7 +1315,7 @@ background-size: 55%;
 }
 
 .typical-page-vacation.greetings__container--onload {
-  background: url(../../img/svg/ok-vacation.svg) no-repeat,url(../../img/svg/elipse-vacation.svg) no-repeat,linear-gradient(180deg, #E7E9ED 0%, #E9EBEF 45.61%, #E6E8EC 97.29%);
+  background: url(../img/svg/ok-vacation.svg) no-repeat,url(../img/svg/elipse-vacation.svg) no-repeat,linear-gradient(180deg, #E7E9ED 0%, #E9EBEF 45.61%, #E6E8EC 97.29%);
   background-position: 35% center;
   @media (max-width: 1200px) {
 background-size: 55%;
@@ -1411,7 +1411,7 @@ margin-top: -50px;
   }
   }
 
-  
+
 
 
 }
