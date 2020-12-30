@@ -1351,3 +1351,67 @@ background-size: 55%;
     }
   }
 }
+
+
+.typical-page--in-develop{
+ margin-bottom: 0;
+  &:after{
+    display: none;
+  }
+
+  .head__info{
+    display: none;
+  }
+.notice-board-greetings-bg{
+img{
+  width: 430px;
+}
+
+
+
+}
+
+.vacancy__header--ttl{
+  margin-top: -90px;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 226px;
+    width: 100%;
+    height: 58px;
+    background: #063453;
+    border-radius: 8px;
+    font-size: 18px;
+line-height: 30px;
+font-family: "Cuprum-Bold","Arial",sans-serif;
+text-align: center;
+color: #F2F2F2;
+margin-top: -50px;
+  }
+}
+
+
+@media (max-width: 1025px) {
+
+  .notice-board-greetings-bg{
+    top: 100px;
+    img{
+      width: 250px;
+      height: 430px;
+    }
+  }
+
+  .vacancy__header--ttl{
+    margin-top: -0px;
+    a{
+      margin-top: 20px;
+    }
+
+  }
+  }
+
+  
+
+
+}
