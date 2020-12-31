@@ -62,6 +62,13 @@ transition: all .3s ease-out;
 
 
 .personal__container-doc-generation{
+
+
+  .legalization-documents__item::after {
+
+background-position-x: right;
+  }
+
   .legalization-documents {
 background: #fff;
 .container{
