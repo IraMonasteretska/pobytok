@@ -654,6 +654,7 @@ border-top:1px solid #DDDDDD;
 }
 
 .document__two-input-container{
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -663,6 +664,10 @@ border-top:1px solid #DDDDDD;
     margin-bottom: 15px !important; 
   }
 
+.personal__button{
+max-width: 488px ;
+}
+
   .select-dropdown{
     margin: 0;
     max-width: 490px ;
@@ -670,5 +675,7 @@ border-top:1px solid #DDDDDD;
     button{
       max-width: 100% ;
     }
+
+
 }
 }
