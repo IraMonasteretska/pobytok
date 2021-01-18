@@ -678,4 +678,16 @@ max-width: 488px ;
 
 
 }
+
+}
+
+.document__two-radio-container{
+  max-width: 490px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  label{
+    margin: 10px;
+  }
 }
