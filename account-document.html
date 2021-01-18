@@ -422,11 +422,11 @@ LA DEMANDE POUR ACCORDS À UN ÉTRANGER LE PERMIS DE SEJOUR TEMPORAIRE
 <ul>
 <li class="document__input-container">
 <label class="document__form-text" >1. Nazwisko / Surname / Nom / Фамилия</label>
-<input type="text" class="document__form-input document__form-input--yellow" placeholder="Только латинские буквы">
+<input type="text" class="document__form-input document__form-input--yellow onlyLat" placeholder="Только латинские буквы">
 </li>
 <li class="document__input-container">
 <label class="document__form-text" >8. Nazwisko rodowe matki / Mother’s maiden name / Nom de jeune fille de la mėre / Девичья фамилия матери</label>
-<input type="text" class="document__form-input document__form-input--yellow" placeholder="Только латинские буквы">
+<input type="number" class="document__form-input document__form-input--yellow" placeholder="Только числа">
 </li>
 
 
@@ -434,8 +434,8 @@ LA DEMANDE POUR ACCORDS À UN ÉTRANGER LE PERMIS DE SEJOUR TEMPORAIRE
   <label class="document__form-text" >2. Nazwisko (nazwiska) poprzednie / Previously used surname (surnames) / Nom (noms) précédent(s) / Предыдущая фамилия (фамилии): </label>
  
  <div class="document__two-input-container">
-  <input type="text" class="document__form-input document__form-input--yellow" placeholder="Только латинские буквы">
-  <input type="text" class="document__form-input document__form-input--yellow" placeholder="Только латинские буквы">
+  <input type="text" class="document__form-input document__form-input--yellow onlyLat" placeholder="Только латинские буквы">
+  <input type="text" class="document__form-input document__form-input--yellow onlyLat" placeholder="Только латинские буквы">
  </div>
  
   </li>
@@ -788,7 +788,7 @@ LA DEMANDE POUR ACCORDS À UN ÉTRANGER LE PERMIS DE SEJOUR TEMPORAIRE
     </footer>
 
     <script src="js/select-for-document.js"></script>
-
+    <script src="js/document-validation.js"></script>
     <!-- <script src="js/mandatory-reg.js"></script>
     <script src="js/select.js"></script>
     <script src="js/tablet-filter-city.js"></script>
