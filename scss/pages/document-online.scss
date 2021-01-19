@@ -610,9 +610,9 @@ margin-bottom: 0 !important;
 }
 
 
-.document__form-input--yellow.document__form-input{
-  // border: 1px solid #ffb436;
-}
+// .document__form-input--yellow.document__form-input{
+//   // border: 1px solid #ffb436;
+// }
 
 .document__form-input--green.document__form-input{
   border-color: #2ecc71;
@@ -666,6 +666,7 @@ border-top:1px solid #DDDDDD;
 
 .personal__button{
 max-width: 488px ;
+text-transform: capitalize;
 }
 
   .select-dropdown{
@@ -771,8 +772,18 @@ padding-top: 20px;
     }
 
   }
- 
 
+}
 
-
+.document__larg-input-cont{
+  margin-top: -20px;
+  margin-bottom: 35px;
+  .select-dropdown__button, .select-dropdown__list {
+    max-width: none;
+  }
+ .document__form-text--mvn{
+   max-width: none;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
 }
