@@ -675,9 +675,15 @@ max-width: 488px ;
     button{
       max-width: 100% ;
     }
-
+    .select-dropdown__list {
+      max-width: 490px;
+    }
 
 }
+
+
+
+
 
 }
 
@@ -690,4 +696,83 @@ max-width: 488px ;
   label{
     margin: 10px;
   }
+}
+
+.document__form-text--bold{
+  font-family: "Cuprum-Bold";
+  color: #063453;
+  max-width: none;
+}
+
+.document__input-container-sub{
+  border: none;
+  padding: 10px 0 ;
+}
+
+.document__form-input--short{
+  max-width: 130px;
+}
+
+.document__form-input--short-cont{
+max-width: 490px;
+width: 100%;
+display: flex;justify-content: flex-start;
+}
+
+.document__container-part-form{
+  padding-bottom: 30px;
+padding-top: 20px;
+  border-top: 1px solid #DDDDDD;
+}
+
+
+
+.document__color-container{
+
+
+.select-dropdown__list-item{
+  position: relative;
+  
+  &:after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    right: 15px;
+    top: 13px;
+    // background: #000;
+  }
+  &:nth-child(1):after {
+      background: green;
+    }
+
+    &:nth-child(2):after {
+      background: #00f
+    }
+    &:nth-child(3):after {
+      background: #964b00;
+    }
+    &:nth-child(4):after {
+      background: #783c00;
+    }
+    &:nth-child(5):after {
+      background: #ce761e;
+    }
+    &:nth-child(6):after {
+      background: #ffbf00;
+    }
+    &:nth-child(7):after {
+      background: gray;
+    }
+    &:nth-child(8):after {
+      background: #000;
+    }
+
+  }
+ 
+
+
+
 }

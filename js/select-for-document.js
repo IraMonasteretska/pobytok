@@ -81,8 +81,12 @@ function createSelect() {
         elementParentSpan[0].textContent = element.textContent;
         elementParentSpan[0].parentNode.setAttribute('data-value', element.getAttribute('data-value'));
       }
+      element.parentNode.parentNode.children[1].style.color = "#464646";
 
     }
+
+
+
     function selectElement(id, valueToSelect) {
       var element = document.getElementById(id);
       element.value = valueToSelect;
