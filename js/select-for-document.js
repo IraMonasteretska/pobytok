@@ -82,6 +82,7 @@ function createSelect() {
         elementParentSpan[0].parentNode.setAttribute('data-value', element.getAttribute('data-value'));
       }
       element.parentNode.parentNode.children[1].style.color = "#464646";
+      element.parentNode.parentNode.children[0].classList.add('selected')
 
     }
 
