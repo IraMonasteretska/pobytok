@@ -207,3 +207,100 @@ for(let i of allBtnInForm){
   dataBtnBack.addEventListener("click", () =>  btnNextVisible())
   dataBtnNext.addEventListener("click", () =>  btnNextVisible())
 }
+
+
+
+if (document.querySelector(".add-worker-email")) {
+  function getPopapChangeCompany() {
+      document.querySelector('.popup-change-name-company').classList.remove('visually-hidden')
+  }
+
+  let addWorkerEmailForm = document.querySelector('.add-worker-email')
+  let addWorkerEmailBtn = document.querySelectorAll('.service-add-worker-email.active')
+
+  const firstBtnEmail = document.querySelector('.service-add-worker-email-1')
+  const twoBtnEmail = document.querySelector('.service-add-worker-email-2')
+  const threeBtnEmail = document.querySelector('.service-add-worker-email-3')
+
+  const firstItemEmail = document.querySelector('.email-add-worker-item-first')
+  const twoItemEmail = document.querySelector('.email-add-worker-item-two')
+  const threeItemEmail = document.querySelector('.email-add-worker-item-three')
+
+
+
+
+  function removeParentEmail() {
+      let target = event.target;
+      target.parentNode.parentNode.classList.remove('active')
+      // if (addWorkerEmailForm.childElementCount == 0) {
+      //     document.querySelector('.service-button-gray').classList.add('unactive')
+      // }
+
+      if (!firstItemEmail.classList.contains('active')) {
+          firstBtnEmail.classList.add('active')
+      } else if (!twoItemEmail.classList.contains('active')) {
+          twoBtnEmail.classList.add('active')
+      } else if (!threeItemEmail.classList.contains('active')) {
+          threeBtnEmail.classList.add('active')
+      }
+      let addWorkerEmailBtn = document.querySelectorAll('.service-add-worker-email.active')
+
+      if (addWorkerEmailBtn.length > 1) {
+          addWorkerEmailBtn[addWorkerEmailBtn.length - 1].classList.remove('active')
+      }
+  }
+
+  firstBtnEmail.addEventListener('click', () => {
+      firstBtnEmail.classList.remove('active')
+      document.querySelector('.email-add-worker-item-first').classList.add('active')
+      // document.querySelector('.service-button-gray').classList.remove('unactive')
+
+      if (!firstItemEmail.classList.contains('active')) {
+          firstBtnEmail.classList.add('active')
+      } else if (!twoItemEmail.classList.contains('active')) {
+          twoBtnEmail.classList.add('active')
+      } else if (!threeItemEmail.classList.contains('active')) {
+          threeBtnEmail.classList.add('active')
+      }
+  });
+
+  twoBtnEmail.addEventListener('click', () => {
+      twoBtnEmail.classList.remove('active')
+      document.querySelector('.email-add-worker-item-two').classList.add('active')
+      // document.querySelector('.service-button-gray').classList.remove('unactive')
+
+      if (!firstItemEmail.classList.contains('active')) {
+          firstBtnEmail.classList.add('active')
+      } else if (!twoItemEmail.classList.contains('active')) {
+          twoBtnEmail.classList.add('active')
+      } else if (!threeItemEmail.classList.contains('active')) {
+          threeBtnEmail.classList.add('active')
+      }
+  });
+
+  threeBtnEmail.addEventListener('click', () => {
+      threeBtnEmail.classList.remove('active')
+
+      document.querySelector('.email-add-worker-item-three').classList.add('active')
+      // document.querySelector('.service-button-gray').classList.remove('unactive')
+
+      if (!firstItemEmail.classList.contains('active')) {
+          firstBtnEmail.classList.add('active')
+      } else if (!twoItemEmail.classList.contains('active')) {
+          twoBtnEmail.classList.add('active')
+      } else if (!threeItemEmail.classList.contains('active')) {
+          threeBtnEmail.classList.add('active')
+      }
+  });
+  if (!firstItemEmail.classList.contains('active')) {
+      firstBtnEmail.classList.add('active')
+
+  } else if (!twoItemEmail.classList.contains('active')) {
+      twoBtnEmail.classList.add('active')
+  } else if (!threeItemEmail.classList.contains('active')) {
+      threeBtnEmail.classList.add('active')
+
+  }
+
+
+}
