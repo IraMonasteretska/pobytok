@@ -26,14 +26,18 @@ if (document.querySelector(".account-document-single")) {
   );
   document.querySelector(".first-page-btn").addEventListener("click", () => {
     for (let i of firstPageValidSelect) {
+     
       if (!i.classList.contains("selected")) {
         location.href = "#to-top-validation";
+        console.log(i);
         return;
       }
     }
     for (let i of firstPageValidField) {
+    
       location.href = "#to-top-validation";
       if (i.value == "") {
+        console.log(i);
         return;
       }
     }
