@@ -825,3 +825,31 @@ border-top: 1px solid #DDDDDD;
   transform: none;
 }
 }
+
+
+.document__form-text--bold-line{
+  padding-top: 20px;
+  border-top: 1px solid #DDDDDD;
+}
+
+.document__container-part-form-relative{
+  display: none;
+}
+.document__container-part-form-relative.active{
+  display: block;
+}
+.document__form-text-large{
+  width: 100%;
+  max-width: none;
+  cursor: pointer;
+}
+
+.document__input-container  .document__two-radio-container{
+padding: 0;
+
+}
+
+.document__input-container  .personal__select-ul-multi{
+margin: 0;
+max-width: 100%;
+}

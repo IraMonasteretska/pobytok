@@ -208,8 +208,6 @@ for(let i of allBtnInForm){
   dataBtnNext.addEventListener("click", () =>  btnNextVisible())
 }
 
-
-
 if (document.querySelector(".add-worker-email")) {
   function getPopapChangeCompany() {
       document.querySelector('.popup-change-name-company').classList.remove('visually-hidden')
@@ -302,5 +300,73 @@ if (document.querySelector(".add-worker-email")) {
 
   }
 
+
+}
+
+if (document.querySelector('.exp-work-сontainer')) {
+  document.querySelector(".checkbox-relative").addEventListener('change', () => {
+document.querySelector(".document__container-part-form-relative").classList.toggle('active')
+  })
+
+
+
+
+  let educationWorkContainerFirst = document.querySelector(".education-work-сontainer-add1");
+  let educationWorkContainerTwo = document.querySelector(".education-work-сontainer-add2");
+  let educationWorkContainerThree = document.querySelector(".education-work-сontainer-add3");
+  let educationWorkContainerFour = document.querySelector(".education-work-сontainer-add4");
+  let validationWokEdPlace_1 = document.querySelectorAll(".validation-work-place-ed-1");
+  let validationWokEdPlace_2 = document.querySelectorAll(".validation-work-place-ed-2");
+  let validationWokEdPlace_3 = document.querySelectorAll(".validation-work-place-ed-3");
+  let validationWokEdPlace_4 = document.querySelectorAll(".validation-work-place-ed-4");
+
+  document.querySelector(".add-education-work-1").addEventListener('click', function() {
+      for (let inp of validationWokEdPlace_1) {
+          if (inp.value == '') {
+              return
+          }
+      }
+      educationWorkContainerFirst.classList.add('active')
+  })
+
+  document.querySelector(".add-education-work-2").addEventListener('click', function() {
+      for (let inp of validationWokEdPlace_2) {
+          if (inp.value == '') {
+              return
+          }
+      }
+      educationWorkContainerTwo.classList.add('active')
+  })
+
+  document.querySelector(".add-education-work-3").addEventListener('click', function() {
+    for (let inp of validationWokEdPlace_3) {
+        if (inp.value == '') {
+            return
+        }
+    }
+    educationWorkContainerThree.classList.add('active')
+})
+
+document.querySelector(".add-education-work-4").addEventListener('click', function() {
+  for (let inp of validationWokEdPlace_4) {
+      if (inp.value == '') {
+          return
+      }
+  }
+  educationWorkContainerFour.classList.add('active')
+})
+
+  document.querySelector(".remove-this-education-place-1").addEventListener('click', function() {
+      educationWorkContainerFirst.classList.remove('active')
+  })
+  document.querySelector(".remove-this-education-place-2").addEventListener('click', function() {
+      educationWorkContainerTwo.classList.remove('active')
+  })
+  document.querySelector(".remove-this-education-place-3").addEventListener('click', function() {
+      educationWorkContainerThree.classList.remove('active')
+  })
+  document.querySelector(".remove-this-education-place-4").addEventListener('click', function() {
+      educationWorkContainerFour.classList.remove('active')
+  })
 
 }
