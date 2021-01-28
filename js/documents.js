@@ -213,12 +213,6 @@ for(let i of allBtnInForm){
 }
 
 if (document.querySelector(".add-worker-email")) {
-  function getPopapChangeCompany() {
-      document.querySelector('.popup-change-name-company').classList.remove('visually-hidden')
-  }
-
-  let addWorkerEmailForm = document.querySelector('.add-worker-email')
-  let addWorkerEmailBtn = document.querySelectorAll('.service-add-worker-email.active')
 
   const firstBtnEmail = document.querySelector('.service-add-worker-email-1')
   const twoBtnEmail = document.querySelector('.service-add-worker-email-2')
@@ -228,15 +222,9 @@ if (document.querySelector(".add-worker-email")) {
   const twoItemEmail = document.querySelector('.email-add-worker-item-two')
   const threeItemEmail = document.querySelector('.email-add-worker-item-three')
 
-
-
-
   function removeParentEmail() {
       let target = event.target;
       target.parentNode.parentNode.classList.remove('active')
-      // if (addWorkerEmailForm.childElementCount == 0) {
-      //     document.querySelector('.service-button-gray').classList.add('unactive')
-      // }
 
       if (!firstItemEmail.classList.contains('active')) {
           firstBtnEmail.classList.add('active')
@@ -255,7 +243,6 @@ if (document.querySelector(".add-worker-email")) {
   firstBtnEmail.addEventListener('click', () => {
       firstBtnEmail.classList.remove('active')
       document.querySelector('.email-add-worker-item-first').classList.add('active')
-      // document.querySelector('.service-button-gray').classList.remove('unactive')
 
       if (!firstItemEmail.classList.contains('active')) {
           firstBtnEmail.classList.add('active')
@@ -269,7 +256,6 @@ if (document.querySelector(".add-worker-email")) {
   twoBtnEmail.addEventListener('click', () => {
       twoBtnEmail.classList.remove('active')
       document.querySelector('.email-add-worker-item-two').classList.add('active')
-      // document.querySelector('.service-button-gray').classList.remove('unactive')
 
       if (!firstItemEmail.classList.contains('active')) {
           firstBtnEmail.classList.add('active')
@@ -284,7 +270,6 @@ if (document.querySelector(".add-worker-email")) {
       threeBtnEmail.classList.remove('active')
 
       document.querySelector('.email-add-worker-item-three').classList.add('active')
-      // document.querySelector('.service-button-gray').classList.remove('unactive')
 
       if (!firstItemEmail.classList.contains('active')) {
           firstBtnEmail.classList.add('active')
@@ -373,4 +358,42 @@ document.querySelector(".add-education-work-4").addEventListener('click', functi
       educationWorkContainerFour.classList.remove('active')
   })
 
+}
+
+if (document.querySelector('.document__travel-item')) {
+  const documentTravelItem = document.querySelectorAll('.document__travel-item')
+  const documentTravelBtnAdd = document.querySelector('.document__travel-add-button')
+
+  documentTravelBtnAdd.addEventListener('click', () => {
+for(let i= 0; i< documentTravelItem.length; i++){
+  if(documentTravelItem[i].classList.contains('hidden')){
+   if(!documentTravelItem[i - 1].querySelector('.select-category').classList.contains('selected') ){
+   return
+   }
+    documentTravelItem[i].classList.remove('hidden')
+     return
+   }
+   }
+  })
+
+  const documentTravelbtnsRemove = document.querySelectorAll('.btn-remove-travel-document')
+for(let i = 0; i < documentTravelbtnsRemove.length; i++){
+  documentTravelbtnsRemove[i].addEventListener('click', () => {
+    let target = event.target;
+    target.parentNode.parentNode.classList.add('hidden')
+  })
+}
+
+}
+
+if(document.querySelector('.document-radio-textarea')){
+  const documentClosedTextarea = document.querySelectorAll('.document__closed-textarea')
+  const documentOpenTextarea = document.querySelectorAll('.document__open-textarea')
+
+  for(let i of documentOpenTextarea){
+    i.addEventListener('click', () => i.parentElement.parentElement.querySelector('.document-radio-textarea').classList.remove('hidden') )
+  }
+  for(let i of documentClosedTextarea){
+    i.addEventListener('click', () =>  i.parentElement.parentElement.querySelector('.document-radio-textarea').classList.add('hidden') )
+  }
 }

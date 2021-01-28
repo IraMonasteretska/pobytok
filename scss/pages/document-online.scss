@@ -853,3 +853,40 @@ padding: 0;
 margin: 0;
 max-width: 100%;
 }
+
+.document__travel-item{
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #DDDDDD;
+  &:first-child{
+    border: none;
+  }
+}
+
+.document__travel-item.hidden{
+display: none;
+}
+
+.document__input-container{
+  position: relative;
+}
+
+.document__travel-item .remove-worker-email-svg{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.document__all-width-radio{
+  display: flex;
+  justify-content: space-around;
+}
+
+.document-radio-textarea{
+  margin-top: 25px;
+}
+
+.document-radio-textarea.hidden{
+  display: none;
+}
